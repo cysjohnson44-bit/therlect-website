@@ -11,12 +11,8 @@ export default function Footer() {
       <div className="container grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 relative z-10">
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 bg-white/10 rounded-sm p-1">
-              <img src="/assets/logo.png" alt="Therlect Logo" className="w-full h-full object-contain" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg text-foreground leading-none">THERLECT</span>
-              <span className="font-mono text-[9px] text-muted-foreground tracking-[0.2em] uppercase">泛海科技</span>
+            <div className="h-12 w-auto">
+              <img src="/assets/logo.png" alt="Therlect Logo" className="h-full w-auto object-contain" />
             </div>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed mb-6">

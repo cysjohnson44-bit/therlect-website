@@ -37,21 +37,12 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer group">
-            <div className="relative w-10 h-10 overflow-hidden rounded-sm bg-white/10 p-1 transition-transform group-hover:scale-105">
+            <div className="relative h-12 w-auto overflow-hidden transition-transform group-hover:scale-105">
               <img 
                 src="/assets/logo.png" 
                 alt="Therlect Logo" 
-                className="w-full h-full object-contain"
+                className="h-full w-auto object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-xl tracking-wide text-foreground leading-none">
-                THERLECT
-              </span>
-              <span className="font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase">
-                泛海科技
-              </span>
             </div>
           </div>
         </Link>
