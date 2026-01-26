@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer group">
-            <div className="relative h-12 w-auto overflow-hidden transition-transform group-hover:scale-105">
+            <div className="relative h-16 w-auto overflow-hidden transition-transform group-hover:scale-105">
               <img 
                 src="/assets/logo.png" 
                 alt="Therlect Logo" 
