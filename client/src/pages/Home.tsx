@@ -1,10 +1,31 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cpu, Thermometer, Zap, Activity, Layers, Globe } from "lucide-react";
+import { ArrowRight, Cpu, Thermometer, Zap, Activity, Layers, Globe, Calendar, MessageSquare } from "lucide-react";
 import { Link } from "wouter";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [bookingData, setBookingData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+    message: "",
+  });
+
+  const handleBookingSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Booking submitted:", bookingData);
+    setIsBookingOpen(false);
+    setBookingData({ name: "", email: "", phone: "", date: "", message: "" });
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30 selection:text-primary-foreground">
       <Navbar />
@@ -47,11 +68,15 @@ export default function Home() {
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link href="/contact">
-                <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 hover:text-primary rounded-sm px-8">
-                  聯絡我們
-                </Button>
-              </Link>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/30 hover:bg-primary/10 hover:text-primary rounded-sm px-8"
+                onClick={() => setIsBookingOpen(true)}
+              >
+                <Calendar className="mr-2 w-4 h-4" />
+                預約洽談
+              </Button>
             </div>
           </div>
           
@@ -287,11 +312,14 @@ export default function Home() {
               無論您面臨什麼樣的散熱挑戰，Therlect 的專家團隊都隨時準備為您提供協助。讓我們一起打造更高效、更可靠的產品。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 h-14 text-lg">
-                  立即諮詢專案
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 h-14 text-lg"
+                onClick={() => setIsBookingOpen(true)}
+              >
+                <Calendar className="mr-2 w-4 h-4" />
+                立即預約洽談
+              </Button>
               <Link href="/about">
                 <Button variant="outline" size="lg" className="border-white/20 hover:bg-white/10 text-foreground rounded-sm px-8 h-14 text-lg">
                   了解更多關於我們
@@ -301,6 +329,109 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Booking Dialog */}
+      <Dialog open={isBookingOpen} onOpenChange={setIsBookingOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>預約專家洽談</DialogTitle>
+            <DialogDescription>
+              請填寫您的基本資訊，我們的專家團隊將盡快與您聯絡。
+            </DialogDescription>
+          </DialogHeader>
+          <form onSubmit={handleBookingSubmit} className="space-y-4">
+            <div>
+              <label className="text-sm font-medium">姓名 *</label>
+              <Input
+                value={bookingData.name}
+                onChange={(e) => setBookingData({ ...bookingData, name: e.target.value })}
+                placeholder="請輸入您的姓名"
+                required
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">電子郵件 *</label>
+              <Input
+                type="email"
+                value={bookingData.email}
+                onChange={(e) => setBookingData({ ...bookingData, email: e.target.value })}
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">電話 *</label>
+              <Input
+                value={bookingData.phone}
+                onChange={(e) => setBookingData({ ...bookingData, phone: e.target.value })}
+                placeholder="+886-2-XXXX-XXXX"
+                required
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">預約日期 *</label>
+              <Input
+                type="date"
+                value={bookingData.date}
+                onChange={(e) => setBookingData({ ...bookingData, date: e.target.value })}
+                required
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">備註</label>
+              <Textarea
+                value={bookingData.message}
+                onChange={(e) => setBookingData({ ...bookingData, message: e.target.value })}
+                placeholder="請簡述您的需求..."
+                rows={3}
+              />
+            </div>
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+              提交預約
+            </Button>
+          </form>
+        </DialogContent>
+      </Dialog>
+
+      {/* AI Chat Button - Floating */}
+      <button
+        onClick={() => setIsChatOpen(!isChatOpen)}
+        className="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg flex items-center justify-center transition-transform hover:scale-110 z-40"
+        title="AI 助手"
+      >
+        <MessageSquare className="w-6 h-6" />
+      </button>
+
+      {/* AI Chat Box */}
+      {isChatOpen && (
+        <div className="fixed bottom-24 right-8 w-96 max-h-[600px] bg-card border border-white/10 rounded-xl shadow-2xl flex flex-col z-40">
+          <div className="bg-primary text-white p-4 rounded-t-xl flex items-center justify-between">
+            <h3 className="font-bold">Therlect AI 助手</h3>
+            <button
+              onClick={() => setIsChatOpen(false)}
+              className="text-white/70 hover:text-white"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            <div className="bg-primary/10 rounded-lg p-3 max-w-xs">
+              <p className="text-sm">
+                您好！我是 Therlect 的 AI 助手。我可以幫助您了解我們的熱管理解決方案、遠紅外線技術，以及回答任何技術問題。有什麼我可以幫助您的嗎？
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-white/10 p-4 flex gap-2">
+            <Input
+              placeholder="輸入您的問題..."
+              className="flex-1"
+            />
+            <Button size="sm" className="bg-primary hover:bg-primary/90">
+              發送
+            </Button>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
