@@ -44,6 +44,10 @@ export default function Navbar() {
                 className="h-full w-auto object-contain"
               />
             </div>
+            <div className="hidden sm:flex flex-col">
+              <span className="text-sm font-bold text-foreground">汎海科技</span>
+              <span className="text-xs text-muted-foreground">Therlect</span>
+            </div>
           </div>
         </Link>
 
