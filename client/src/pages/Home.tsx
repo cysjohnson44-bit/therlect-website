@@ -277,6 +277,177 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Core Services Section - Comprehensive Thermal Solutions */}
+      <section className="py-32 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
+          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
+        </div>
+
+        <div className="container relative z-10">
+          {/* Header */}
+          <div className="text-center max-w-4xl mx-auto mb-20 space-y-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/50 bg-primary/10 backdrop-blur-sm">
+              <Cpu className="w-4 h-4 text-primary" />
+              <span className="text-sm font-mono text-primary tracking-wider">核心服務內容</span>
+            </div>
+            
+            <h2 className="font-display font-bold text-5xl md:text-6xl leading-tight">
+              從虛擬到驗證<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">設計最佳化</span>
+            </h2>
+            
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              全方位的熱流體動力學解決方案。Therlect 汎海科技運用先進的 CFD 模擬技術、精密的實驗驗證和數據驅動的優化方法，為您的產品提供從概念到量產的完整熱管理解決方案。
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="space-y-20">
+            {/* Service 1: Virtual Design */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6 order-2 lg:order-1">
+                <h3 className="font-display font-bold text-3xl">虛擬設計與 CFD 分析</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  利用業界領先的 ANSYS Fluent 和 FloTherm 軟體，我們進行精密的計算流體動力學（CFD）模擬。通過三維熱流分析，精確預測產品內部的溫度分佈、熱流路徑和冷卻效率。我們的模擬精度達到 ±2°C，確保設計方案的可靠性。
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "3D 熱流場模擬與可視化",
+                    "多物理場耦合分析",
+                    "材料熱特性評估",
+                    "設計方案對比優化"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-muted-foreground">
+                      <span className="w-2 h-2 rounded-full bg-cyan-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="relative order-1 lg:order-2">
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/tecxOEbjhRiEnnMy.png" 
+                    alt="Virtual Thermal Design" 
+                    className="w-full h-auto hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2: Verification Testing */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/vZWlrVMJNCrTFeqe.png" 
+                    alt="Thermal Verification Lab" 
+                    className="w-full h-auto hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="space-y-6">
+                <h3 className="font-display font-bold text-3xl">實驗驗證與測試</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  我們擁有專業的熱驗證實驗室，配備最先進的測量設備。採用紅外熱成像、熱電偶陣列和實時數據採集系統，對設計方案進行全面的性能驗證。每個測試都遵循國際標準（IEC、ASTM），確保結果的準確性和可重複性。
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "紅外熱成像測量",
+                    "實時溫度監測系統",
+                    "環境模擬測試",
+                    "性能數據驗證"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-muted-foreground">
+                      <span className="w-2 h-2 rounded-full bg-purple-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Service 3: Optimization Analysis */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6 order-2 lg:order-1">
+                <h3 className="font-display font-bold text-3xl">優化分析與改進</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  基於模擬和實驗結果，我們運用數據驅動的優化算法進行迭代改進。通過參數化設計、靈敏度分析和多目標優化，在保證散熱性能的同時，實現成本最小化和結構輕量化。平均散熱效率提升 45%，功耗降低 30%。
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "參數化設計優化",
+                    "多目標優化算法",
+                    "成本與性能平衡",
+                    "可製造性評估"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-muted-foreground">
+                      <span className="w-2 h-2 rounded-full bg-cyan-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="relative order-1 lg:order-2">
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/DmHVzOKobuiglHso.png" 
+                    alt="Optimization Analysis" 
+                    className="w-full h-auto hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 4: Solution Delivery */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/zAEqrBajtpByqkxo.png" 
+                    alt="Solution Delivery" 
+                    className="w-full h-auto hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="space-y-6">
+                <h3 className="font-display font-bold text-3xl">完整方案交付與實施</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  從 CAD 設計文件、製造規格、工藝指導到大規模量產支持，我們提供完整的交付方案。與製造合作夥伴緊密協作，確保設計意圖在生產中得到完美實現。提供技術培訓、品質檢測和持續支持，確保產品在市場中的長期表現。
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "完整的 CAD 設計交付",
+                    "製造工藝指導",
+                    "品質檢測方案",
+                    "量產技術支持"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-muted-foreground">
+                      <span className="w-2 h-2 rounded-full bg-purple-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-20">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white rounded-sm px-12 py-6 text-lg font-semibold group"
+              onClick={() => setIsBookingOpen(true)}
+            >
+              開始您的熱管理優化之旅
+              <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Let Data Speak Section - HIGH IMPACT */}
       <section className="py-32 relative overflow-hidden">
         {/* Background Effects */}
@@ -298,102 +469,74 @@ export default function Home() {
               變得更<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">緊張、更有力</span>
             </h2>
             
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               想了解您的新一代極限產品在哪裡？我們準備好用最先進的分析工具和豐富的工程經驗，為您的產品設計保駕護航。Therlect 汎海科技以數據驅動的方式，為每個項目提供精準的熱管理解決方案，確保您的產品在市場中脫穎而出。
             </p>
           </div>
 
-          {/* Data Visualization Grid */}
+          {/* Data Cards Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Card 1 */}
-            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)]">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/DlWldeumAyrhlBLd.png" 
-                  alt="Thermal Analysis Data" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-              </div>
-              <div className="p-8 relative z-10">
-                <h3 className="font-display font-bold text-2xl mb-3 group-hover:text-cyan-400 transition-colors">熱分析精準度</h3>
-                <p className="text-muted-foreground mb-4">
-                  採用業界領先的 CFD 模擬技術，精確預測產品熱流分佈，誤差控制在 ±2°C 以內。我們的分析結果已被全球 500+ 企業驗證，確保設計方案的可靠性。
-                </p>
-                <div className="flex items-center gap-2 text-cyan-400 font-mono text-sm">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                  實時數據監測
+            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 p-8 space-y-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="font-display font-bold text-2xl text-primary mb-2">熱分析精準度</h3>
+                  <p className="text-muted-foreground">採用業界領先的 CFD 模擬技術</p>
                 </div>
+                <TrendingUp className="w-8 h-8 text-primary opacity-50" />
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-display font-bold">±2°C</div>
+                <p className="text-sm text-muted-foreground">誤差控制精度，已被全球 500+ 企業驗證</p>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BreuePwSaUjJhwfw.png" 
-                  alt="Performance Metrics" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-              </div>
-              <div className="p-8 relative z-10">
-                <h3 className="font-display font-bold text-2xl mb-3 group-hover:text-purple-400 transition-colors">性能優化成果</h3>
-                <p className="text-muted-foreground mb-4">
-                  平均提升散熱效率 45%，降低功耗 30%，延長產品壽命 60%。我們的優化方案已幫助客戶節省數百萬美元的能源成本，同時提升產品競爭力。
-                </p>
-                <div className="flex items-center gap-2 text-purple-400 font-mono text-sm">
-                  <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-                  持續性能改善
+            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 p-8 space-y-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="font-display font-bold text-2xl text-purple-400 mb-2">性能優化成果</h3>
+                  <p className="text-muted-foreground">平均提升散熱效率</p>
                 </div>
+                <Award className="w-8 h-8 text-purple-400 opacity-50" />
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-display font-bold">45%</div>
+                <p className="text-sm text-muted-foreground">降低功耗 30%，延長產品壽命 60%</p>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)]">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/UDUAJeVBDHuUSEWq.png" 
-                  alt="Engineering Excellence" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-              </div>
-              <div className="p-8 relative z-10">
-                <h3 className="font-display font-bold text-2xl mb-3 group-hover:text-cyan-400 transition-colors">工程卓越表現</h3>
-                <p className="text-muted-foreground mb-4">
-                  15 年技術積累，超 1000 個成功案例，涵蓋消費電子、工業控制、醫療設備等領域。我們的工程團隊擁有業界最高的設計成功率，確保每個項目都能達到預期目標。
-                </p>
-                <div className="flex items-center gap-2 text-cyan-400 font-mono text-sm">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                  行業領先標準
+            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 p-8 space-y-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="font-display font-bold text-2xl text-primary mb-2">工程卓越表現</h3>
+                  <p className="text-muted-foreground">15 年技術積累</p>
                 </div>
+                <Target className="w-8 h-8 text-primary opacity-50" />
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-display font-bold">1000+</div>
+                <p className="text-sm text-muted-foreground">成功案例，業界最高設計成功率</p>
               </div>
             </div>
 
             {/* Card 4 */}
-            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/CtSaIFzQXoDhvZrC.png" 
-                  alt="Innovation Insights" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-              </div>
-              <div className="p-8 relative z-10">
-                <h3 className="font-display font-bold text-2xl mb-3 group-hover:text-purple-400 transition-colors">創新洞見分析</h3>
-                <p className="text-muted-foreground mb-4">
-                  運用 AI 驅動的數據分析，提前預測產品熱管理風險，制定預防性方案。我們的創新方法論已獲得多項國際專利，為客戶帶來持續的技術優勢。
-                </p>
-                <div className="flex items-center gap-2 text-purple-400 font-mono text-sm">
-                  <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-                  前瞻性技術
+            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500 p-8 space-y-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="font-display font-bold text-2xl text-purple-400 mb-2">創新洞見分析</h3>
+                  <p className="text-muted-foreground">AI 驅動的數據分析</p>
                 </div>
+                <Lightning className="w-8 h-8 text-purple-400 opacity-50" />
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-display font-bold">99.8%</div>
+                <p className="text-sm text-muted-foreground">客戶滿意度，持續技術優勢</p>
               </div>
             </div>
           </div>
@@ -498,77 +641,54 @@ export default function Home() {
           
           <form onSubmit={handleBookingSubmit} className="space-y-4">
             <div>
-              <label className="text-sm font-medium">姓名 *</label>
+              <label className="text-sm font-medium mb-2 block">姓名</label>
               <Input 
-                placeholder="您的姓名"
+                placeholder="您的姓名" 
                 value={bookingData.name}
                 onChange={(e) => setBookingData({...bookingData, name: e.target.value})}
-                required
-                className="mt-1 bg-background/50 border-white/10"
+                className="bg-background/50 border-white/10"
               />
             </div>
-            
             <div>
-              <label className="text-sm font-medium">電子郵件 *</label>
+              <label className="text-sm font-medium mb-2 block">電子郵件</label>
               <Input 
                 type="email"
-                placeholder="您的電子郵件"
+                placeholder="您的郵件地址" 
                 value={bookingData.email}
                 onChange={(e) => setBookingData({...bookingData, email: e.target.value})}
-                required
-                className="mt-1 bg-background/50 border-white/10"
+                className="bg-background/50 border-white/10"
               />
             </div>
-            
             <div>
-              <label className="text-sm font-medium">電話 *</label>
+              <label className="text-sm font-medium mb-2 block">電話</label>
               <Input 
-                placeholder="您的電話號碼"
+                placeholder="您的電話號碼" 
                 value={bookingData.phone}
                 onChange={(e) => setBookingData({...bookingData, phone: e.target.value})}
-                required
-                className="mt-1 bg-background/50 border-white/10"
+                className="bg-background/50 border-white/10"
               />
             </div>
-            
             <div>
-              <label className="text-sm font-medium">預約日期 *</label>
+              <label className="text-sm font-medium mb-2 block">預約日期</label>
               <Input 
                 type="date"
                 value={bookingData.date}
                 onChange={(e) => setBookingData({...bookingData, date: e.target.value})}
-                required
-                className="mt-1 bg-background/50 border-white/10"
+                className="bg-background/50 border-white/10"
               />
             </div>
-            
             <div>
-              <label className="text-sm font-medium">備註</label>
+              <label className="text-sm font-medium mb-2 block">備註</label>
               <Textarea 
-                placeholder="請告訴我們您的需求和問題"
+                placeholder="請告訴我們您的需求..." 
                 value={bookingData.message}
                 onChange={(e) => setBookingData({...bookingData, message: e.target.value})}
-                className="mt-1 bg-background/50 border-white/10 resize-none"
-                rows={4}
+                className="bg-background/50 border-white/10 min-h-24"
               />
             </div>
-            
-            <div className="flex gap-3 pt-4">
-              <Button 
-                type="button"
-                variant="outline"
-                onClick={() => setIsBookingOpen(false)}
-                className="flex-1"
-              >
-                取消
-              </Button>
-              <Button 
-                type="submit"
-                className="flex-1 bg-primary hover:bg-primary/90"
-              >
-                提交預約
-              </Button>
-            </div>
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+              提交預約
+            </Button>
           </form>
         </DialogContent>
       </Dialog>
