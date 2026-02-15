@@ -37,12 +37,12 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/background_1.jpg" 
-            alt="Therlect Technology Background" 
-            className="w-full h-full object-cover opacity-40"
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BhxjNZzFIuldgDBi.jpg" 
+            alt="Thermal Energy Art Visualization" 
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/80" />
+          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
         </div>
 
         <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
