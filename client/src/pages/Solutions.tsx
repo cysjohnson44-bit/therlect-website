@@ -58,6 +58,33 @@ export default function Solutions() {
     }
   ];
 
+  const applicationDomains = [
+    {
+      title: "消費性電子",
+      description: "在消費性電子領域，我們專注於解決筆記型電腦、智慧型手機、遊戲主機和穿戴式裝置的散熱挑戰。隨著電子產品功能的不斷升級，發熱量也隨之增加。我們通過創新的散熱設計、高效能材料選擇和精密的熱流模擬，確保產品在高性能運行時保持最佳溫度。我們的解決方案不僅提升了產品的穩定性和壽命，還改善了用戶體驗。",
+      items: ["筆記型電腦散熱", "智慧型手機散熱", "遊戲主機冷卻", "穿戴式裝置熱管理"],
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/cFFkIfKuqfoIgihV.png"
+    },
+    {
+      title: "工業與通訊",
+      description: "工業與通訊領域對熱管理的要求最為嚴苛。伺服器機櫃、5G 基地台、工業電腦和大功率電源等設備需要在高溫、高濕、高塵環境下長期穩定運行。我們提供企業級的散熱解決方案，包括無風扇設計、液冷系統和模組化散熱器。這些方案不僅提高了設備的可靠性，還降低了運營成本和能耗。",
+      items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/tjnjgZEBKycODNoc.png"
+    },
+    {
+      title: "健康與生活",
+      description: "遠紅外線技術在健康與生活領域展現出獨特的應用價值。我們開發的遠紅外線治療儀、智慧保暖衣物、健康寢具和節能建築材料，利用熱管理技術為人們帶來舒適與健康。通過精確控制溫度和熱分佈，這些產品能夠提供最佳的治療效果和用戶體驗。我們致力於將先進的熱技術轉化為改善生活品質的實際應用。",
+      items: ["遠紅外線治療儀", "智慧保暖衣物", "健康寢具應用", "節能建築材料"],
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/FzWTkwovuaaXduAq.png"
+    },
+    {
+      title: "汽車與航空",
+      description: "汽車與航空領域的熱管理需求涉及極端條件。電動車電池散熱、航空發動機冷卻系統、飛行器電子設備溫控等應用對可靠性和性能要求極高。我們提供針對性的解決方案，包括高效能散熱模組、先進的材料應用和創新的設計理念。這些方案幫助客戶實現更高的效率、更長的使用壽命和更優的安全性能。",
+      items: ["電動車電池散熱", "航空發動機冷卻", "飛行器溫控系統", "汽車電子散熱"],
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AmuwytVpMPFqkdpy.png"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30 selection:text-primary-foreground">
       <Navbar />
@@ -126,51 +153,47 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Applications Section */}
+      {/* Applications Section - Enhanced with Images */}
       <section className="py-24 bg-secondary/5 border-y border-white/5">
         <div className="container">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="font-display font-bold text-4xl mb-4">多元應用領域</h2>
-            <p className="text-muted-foreground text-lg">我們的技術廣汎應用於各行各業，為不同場景提供定制化解決方案</p>
+            <p className="text-muted-foreground text-lg mb-4">我們的分析經驗涵蓋高發熱量與精密電子領域</p>
+            <p className="text-muted-foreground text-base max-w-3xl mx-auto leading-relaxed">Therlect 汎海科技擁有超過十五年的熱管理經驗，在消費性電子、工業通訊、健康與生活、汽車與航空等多個領域積累了豐富的技術知識與成功案例。我們的解決方案已廣泛應用於全球知名企業，幫助他們解決複雜的熱管理挑戰，提升產品性能與市場競爭力。</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "消費性電子",
-                items: ["筆記型電腦散熱", "智慧型手機散熱", "遊戲主機冷卻", "穿戴式裝置熱管理"],
-                image: "/assets/thermal_module.jpg"
-              },
-              {
-                title: "工業與通訊",
-                items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
-                image: "/assets/thermal_analysis.jpg"
-              },
-              {
-                title: "健康與生活",
-                items: ["遠紅外線治療儀", "智慧保暖衣物", "健康寢具應用", "節能建築材料"],
-                image: "/assets/far_infrared_tech.jpg"
-              }
-            ].map((app, i) => (
-              <div key={i} className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/50 hover:bg-card/80 transition-all duration-500">
-                <div className="h-48 overflow-hidden relative">
-                  <img 
-                    src={app.image} 
-                    alt={app.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-                  <h3 className="absolute bottom-4 left-6 font-display font-bold text-2xl text-white">{app.title}</h3>
+          <div className="space-y-24">
+            {applicationDomains.map((app, i) => (
+              <div key={i} className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 items-center`}>
+                {/* Text Content */}
+                <div className="flex-1">
+                  <div className="space-y-4">
+                    <h3 className="font-display font-bold text-3xl text-foreground">{app.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-base">{app.description}</p>
+                    <div className="pt-4">
+                      <h4 className="font-semibold text-foreground mb-3">主要應用領域：</h4>
+                      <div className="grid grid-cols-2 gap-3">
+                        {app.items.map((item, j) => (
+                          <div key={j} className="flex items-center gap-2 text-muted-foreground">
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                            <span className="text-sm">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <ul className="space-y-3">
-                    {app.items.map((item, j) => (
-                      <li key={j} className="flex items-center gap-3 text-muted-foreground group-hover:text-foreground transition-colors">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span className="text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                {/* Image */}
+                <div className="flex-1">
+                  <div className="relative overflow-hidden rounded-xl border border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500 group">
+                    <img 
+                      src={app.image} 
+                      alt={app.title}
+                      className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
                 </div>
               </div>
             ))}
