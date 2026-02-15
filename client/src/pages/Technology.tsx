@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function Technology() {
   const [cfdExpanded, setCfdExpanded] = useState(false);
+  const [irExpanded, setIrExpanded] = useState(false);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30 selection:text-primary-foreground">
@@ -221,6 +222,92 @@ export default function Technology() {
                   </div>
                 ))}
               </div>
+
+              {/* Learn More Button */}
+              <button
+                onClick={() => setIrExpanded(!irExpanded)}
+                className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-500/10 border border-purple-500/30 hover:border-purple-500/60 text-purple-400 hover:text-purple-300 transition-all duration-300"
+              >
+                <span className="font-semibold">了解更多遠紅外線技術</span>
+                <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${irExpanded ? 'rotate-180' : ''}`} />
+              </button>
+
+              {/* IR Expanded Content */}
+              {irExpanded && (
+                <div className="mt-8 space-y-8 pt-8 border-t border-white/10 animate-in fade-in duration-300">
+                  {/* IR Hero */}
+                  <div className="space-y-4">
+                    <h3 className="font-display font-bold text-2xl text-purple-400">汎海科技遠紅外線光波技術——啟動生命與能源的共振</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      引領多元產業變革，以非接觸式熱能釋放極致效能
+                    </p>
+                  </div>
+
+                  {/* IR Overview */}
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-lg text-purple-300">技術總覽</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      作為遠紅外線技術領域的先驅，汎海科技致力於探索光波與生物效應的無限可能。我們採用獨特的非接觸式熱能傳遞技術，讓能量波段精準地與目標分子產生共振焦點。這不僅是一項加熱技術，更是一種能廣泛應用於多元產業評估、實現高效生物活化的創新解決方案。
+                    </p>
+                  </div>
+
+                  {/* IR Image */}
+                  <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <img 
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PEwsYhWRfFKWsVlo.jpg" 
+                      alt="遠紅外線技術應用" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+
+                  {/* IR Advantages */}
+                  <div className="space-y-6">
+                    <h4 className="font-bold text-lg text-purple-300">技術優勢與特點</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="bg-card/30 border border-white/5 p-6 rounded-xl hover:bg-card/50 transition-colors">
+                        <div className="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-4">
+                          <Zap className="w-6 h-6 text-purple-400" />
+                        </div>
+                        <h5 className="font-bold text-foreground mb-3">高效能轉化 (High Efficiency)</h5>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          突破熱能極限，能源利用率最大化。汎海科技的遠紅外線系統具備卓越的熱效率，高達 95% 的能量可直接轉換為目標物體的內能。透過精準的能量傳遞，大幅減少傳統加熱過程中的能源耗損，為企業與使用者提供最經濟、最高效的能源解決方案。
+                        </p>
+                      </div>
+
+                      <div className="bg-card/30 border border-white/5 p-6 rounded-xl hover:bg-card/50 transition-colors">
+                        <div className="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-4">
+                          <Layers className="w-6 h-6 text-purple-400" />
+                        </div>
+                        <h5 className="font-bold text-foreground mb-3">均勻加熱技術 (Uniform Heating)</h5>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          內外兼修，完美溫控不失衡。有別於傳統熱源僅作用於表層，汎海科技的能量投射技術能穿透物體表面，實現真正的「內外均勻加熱」。這種深層共振效應能有效避免局部過熱或受熱不均的問題，確保產品加工或應用過程中的品質穩定性。
+                        </p>
+                      </div>
+
+                      <div className="bg-card/30 border border-white/5 p-6 rounded-xl hover:bg-card/50 transition-colors">
+                        <div className="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-4">
+                          <Activity className="w-6 h-6 text-purple-400" />
+                        </div>
+                        <h5 className="font-bold text-foreground mb-3">健康與生物效益 (Health Benefits)</h5>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          光波養生，啟動身體修復力。科技始終源於對人的關懷。汎海科技特別篩選出的特定遠紅外線波長，能深入人體組織，有效促進血液循環並緩解累積疲勞。我們將醫療保健的概念融入技術之中，讓使用者在享受科技便利的同時，也能獲得深層的生物活化與健康照護。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* IR CTA */}
+                  <div className="pt-6 border-t border-white/10">
+                    <p className="text-muted-foreground mb-4">探索遠紅外線技術如何為您的產業帶來革新。</p>
+                    <Link href="/contact">
+                      <Button size="lg" className="bg-purple-500 hover:bg-purple-600 text-white rounded-sm px-8 group">
+                        聯繫我們的技術團隊
+                        <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
