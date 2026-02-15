@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Layers, TrendingUp, Cpu } from "lucide-react";
+import { ArrowRight, Zap, Layers, TrendingUp, Cpu, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "wouter";
+import { useState } from "react";
 
 export default function ThermalModuleDesign() {
+  const [expandedModule, setExpandedModule] = useState<number | null>(null);
+
   const advantages = [
     {
       title: "結構緊湊設計",
@@ -29,6 +32,45 @@ export default function ThermalModuleDesign() {
       subtitle: "Customization",
       description: "無論是消費性電子、車用電子或工業設備，我們均能根據您的特定規格與應用場景，提供靈活且精準的散熱解決方案。",
       icon: Cpu,
+    },
+  ];
+
+  const thermalModules = [
+    {
+      id: 1,
+      title: "結構緊湊設計",
+      subtitle: "Compact Thermal Module Design",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/MyEwSFodKSUeNKCQ.png",
+      description: "針對不同產品需求，設計高效、低成本且結構緊湊的客製化散熱模組。",
+      details: "我們的結構緊湊設計方案專門針對空間受限的高端應用。通過 3D 堆疊技術和異質材料結合，在最小化體積的同時最大化散熱表面積。採用先進的熱管 (Heat Pipe) 和均溫板 (Vapor Chamber) 技術，確保熱量均勻分佈。每個設計都經過 CFD 模擬驗證，在開模前即確保最佳效能。我們的團隊擁有超過 15 年的經驗，已為全球頂級科技企業提供超過 500+ 個成功案例。",
+      applications: ["AI 伺服器散熱", "行動裝置冷卻", "高密度電子模組", "邊緣計算設備"],
+    },
+    {
+      id: 2,
+      title: "高效熱傳導技術",
+      subtitle: "Advanced Heat Transfer Technology",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/zxdoYDAnpfMYXdUs.png",
+      description: "利用相變化元件與 CFD 模擬，實現最優化的熱傳導效能。",
+      details: "我們的高效熱傳導技術整合了業界最先進的相變化元件。通過熱管 (Heat Pipe) 的毛細作用和均溫板 (Vapor Chamber) 的相變化機制，實現超高效的熱傳導。採用 Ansys、Flotherm 等專業軟體進行多物理場耦合分析，精確預測溫度分佈和流場特性。我們的 CFD 模擬準確度達 95% 以上，大幅降低試錯成本。每個設計方案都包含詳細的熱分析報告和可視化結果，為您的決策提供科學依據。",
+      applications: ["熱管設計優化", "均溫板應用", "CFD 熱流分析", "多物理場耦合分析"],
+    },
+    {
+      id: 3,
+      title: "成本與量產優化",
+      subtitle: "Manufacturing & Cost Optimization",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AdrtsymfOIFqRAzp.png",
+      description: "導入 DFM 思維，確保設計的製造可行性與成本效益。",
+      details: "我們的成本與量產優化方案從設計初期就考慮製程可行性。導入 DFM (Design for Manufacturing) 設計思維，在保證散熱效能的同時，最大化成本效益。與全球優質供應商建立長期合作關係，確保原材料穩定供應。從精密模具開發、注塑成型、機械加工到組裝測試，每個環節都遵循嚴格的質量標準。採用先進的自動化設備與工藝，提高生產效率與產品一致性。我們可根據訂單量提供靈活的生產方案，從小批量試產到大規模量產。",
+      applications: ["模具開發設計", "製程可行性分析", "成本降低方案", "量產品質控制"],
+    },
+    {
+      id: 4,
+      title: "高度客製化解決方案",
+      subtitle: "Customized Thermal Solutions",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/JnhWyeooMRsJwZCV.png",
+      description: "根據您的特定需求，提供靈活且精準的客製化散熱解決方案。",
+      details: "我們提供完全客製化的散熱解決方案，針對消費性電子、車用電子、工業設備等不同領域的特殊需求。每個項目都由經驗豐富的工程團隊進行深入分析，考慮您的產品特性、應用場景、性能需求和成本預算。我們的設計方案不僅滿足當前需求，還預留了未來升級空間。提供完整的技術文檔、設計圖紙和製造指南。長期技術支援和升級方案確保您的產品在整個生命週期內保持最佳效能。",
+      applications: ["消費性電子", "車用電子", "工業設備", "航空應用"],
     },
   ];
 
@@ -89,6 +131,102 @@ export default function ThermalModuleDesign() {
                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,240,255,0.3)] rounded-2xl border border-white/10"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Thermal Module Design Section - Rich Content */}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/10 to-background" />
+          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
+        </div>
+
+        <div className="container relative z-10">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="font-display font-bold text-4xl md:text-5xl">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
+                散熱模組設計方案
+              </span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              針對不同產品需求，設計高效、低成本且結構緊湊的客製化散熱模組
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {thermalModules.map((module, index) => (
+              <div key={module.id} className="group">
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "lg:grid-cols-2 lg:[&>*:first-child]:order-2" : ""}`}>
+                  {/* Image */}
+                  <div className="relative overflow-hidden rounded-lg border border-primary/20 group-hover:border-primary/50 transition-all duration-300">
+                    <img
+                      src={module.image}
+                      alt={module.title}
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-primary font-mono tracking-wider uppercase">{module.subtitle}</p>
+                      <h3 className="font-display font-bold text-3xl text-foreground">{module.title}</h3>
+                    </div>
+
+                    <p className="text-muted-foreground leading-relaxed">{module.description}</p>
+
+                    {/* Expandable Details */}
+                    <div className="space-y-4">
+                      <button
+                        onClick={() => setExpandedModule(expandedModule === module.id ? null : module.id)}
+                        className="flex items-center gap-2 text-primary hover:text-cyan-400 transition-colors font-semibold group/btn"
+                      >
+                        <span>{expandedModule === module.id ? "收起詳細內容" : "了解更多"}</span>
+                        {expandedModule === module.id ? (
+                          <ChevronUp className="w-5 h-5 transition-transform group-hover/btn:translate-y-1" />
+                        ) : (
+                          <ChevronDown className="w-5 h-5 transition-transform group-hover/btn:-translate-y-1" />
+                        )}
+                      </button>
+
+                      {expandedModule === module.id && (
+                        <div className="space-y-4 animate-in fade-in slide-in-from-top-2 duration-300">
+                          <p className="text-muted-foreground leading-relaxed border-l-2 border-primary/30 pl-4">
+                            {module.details}
+                          </p>
+
+                          <div className="space-y-3">
+                            <p className="text-sm font-semibold text-foreground">主要應用領域：</p>
+                            <div className="grid grid-cols-2 gap-3">
+                              {module.applications.map((app, idx) => (
+                                <div key={idx} className="flex items-center gap-2 p-3 rounded-lg bg-primary/5 border border-primary/20 hover:border-primary/50 transition-all">
+                                  <div className="w-2 h-2 rounded-full bg-gradient-to-r from-cyan-400 to-purple-600" />
+                                  <span className="text-sm text-foreground">{app}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    <Link href="/contact">
+                      <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white rounded-sm px-6 group/btn">
+                        諮詢此方案
+                        <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                {index < thermalModules.length - 1 && (
+                  <div className="mt-12 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
