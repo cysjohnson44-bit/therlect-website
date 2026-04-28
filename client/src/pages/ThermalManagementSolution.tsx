@@ -43,7 +43,7 @@ export default function ThermalManagementSolution() {
         </div>
       </section>
 
-      {/* Overview Section */}
+      {/* Overview Section with Image */}
       <section className="py-20 border-b border-primary/20">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -64,7 +64,7 @@ export default function ThermalManagementSolution() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 rounded-2xl blur-3xl" />
               <img
-                src="https://via.placeholder.com/500x400?text=Thermal+Solution"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/thermal-solution-overview-aHDkSumMgiJ9Hps5Zpzokp.webp"
                 alt="熱管理解決方案"
                 className="relative z-10 w-full rounded-2xl border border-primary/30 shadow-2xl"
               />
@@ -113,7 +113,7 @@ export default function ThermalManagementSolution() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Process Section with Images */}
       <section className="py-20 border-b border-primary/20">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
@@ -131,27 +131,69 @@ export default function ThermalManagementSolution() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="space-y-12">
             {[
-              { step: "1", title: "需求分析", desc: "深入了解您的產品需求和應用場景，進行詳細的技術評估" },
-              { step: "2", title: "方案設計", desc: "根據需求設計最優的熱管理方案，包括 CFD 分析和模擬" },
-              { step: "3", title: "原型製作", desc: "製作原型並進行測試驗證，確保方案的可行性" },
-              { step: "4", title: "量產支持", desc: "提供完整的量產支持和技術指導，確保品質穩定" },
-              { step: "5", title: "售後服務", desc: "持續的技術支持和改進建議，確保長期合作成功" },
+              { 
+                step: "1", 
+                title: "需求分析", 
+                desc: "深入了解您的產品需求和應用場景，進行詳細的技術評估",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/process-step1-requirements-8yxRVC7MkfV4BeCvnBv48o.webp"
+              },
+              { 
+                step: "2", 
+                title: "方案設計", 
+                desc: "根據需求設計最優的熱管理方案，包括 CFD 分析和模擬",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/process-step2-design-ETD297WAcnJGgj9jiBK4Jj.webp"
+              },
+              { 
+                step: "3", 
+                title: "原型製作", 
+                desc: "製作原型並進行測試驗證，確保方案的可行性",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/process-step3-prototype-RM9BK92kLsF7c7VnQLvRXS.webp"
+              },
+              { 
+                step: "4", 
+                title: "量產支持", 
+                desc: "提供完整的量產支持和技術指導，確保品質穩定",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/process-step4-production-WpMM2PcNuUyP4H7X2pkU3e.webp"
+              },
+              { 
+                step: "5", 
+                title: "售後服務", 
+                desc: "持續的技術支持和改進建議，確保長期合作成功",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/process-step5-support-eTepo3WGqetGV6UB9KeC6S.webp"
+              },
             ].map((process, idx) => (
-              <div key={idx} className="relative group p-6 rounded-lg border border-primary/20 bg-card/50 hover:border-primary/50 hover:bg-card/80 transition-all duration-300 pt-16">
-                <div className="absolute -top-6 left-6 w-12 h-12 rounded-full border-2 border-primary/50 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center font-bold text-white group-hover:border-primary transition-all">
-                  {process.step}
+              <div key={idx} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className={idx % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className="relative p-6 rounded-lg border border-primary/20 bg-card/50 space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-full border-2 border-primary/50 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center font-bold text-white flex-shrink-0">
+                        {process.step}
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-semibold">{process.title}</h3>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed text-lg">{process.desc}</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{process.title}</h3>
-                <p className="text-sm text-muted-foreground">{process.desc}</p>
+                <div className={idx % 2 === 1 ? "lg:order-1" : ""}>
+                  <div className="relative rounded-2xl overflow-hidden border border-primary/30 shadow-2xl">
+                    <img
+                      src={process.image}
+                      alt={process.title}
+                      className="w-full h-auto rounded-2xl"
+                    />
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Applications Section */}
+      {/* Applications Section with Images */}
       <section className="py-20 border-b border-primary/20">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
@@ -169,24 +211,63 @@ export default function ThermalManagementSolution() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { icon: Cpu, title: "消費電子", desc: "為筆記本電腦、手機、平板等消費電子產品提供高效散熱方案" },
-              { icon: Server, title: "伺服器系統", desc: "為數據中心和伺服器提供企業級的熱管理解決方案" },
-              { icon: Cog, title: "工業設備", desc: "為工業設備和機械提供可靠的散熱系統設計" },
-              { icon: Car, title: "汽車電子", desc: "為汽車電子控制系統提供高溫環境下的熱管理方案" },
-              { icon: Heart, title: "醫療設備", desc: "為醫療設備提供精密的溫度控制和散熱解決方案" },
-              { icon: Radio, title: "通訊設備", desc: "為 5G 基站和通訊設備提供高效的熱管理系統" },
+              { 
+                icon: Cpu, 
+                title: "消費電子", 
+                desc: "為筆記本電腦、手機、平板等消費電子產品提供高效散熱方案",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-consumer-electronics-jUBEXyDbSY2rKk97wDboaX.webp"
+              },
+              { 
+                icon: Server, 
+                title: "伺服器系統", 
+                desc: "為數據中心和伺服器提供企業級的熱管理解決方案",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-server-systems-Uzs6rDBZ9XhvPgxUA2bUTB.webp"
+              },
+              { 
+                icon: Cog, 
+                title: "工業設備", 
+                desc: "為工業設備和機械提供可靠的散熱系統設計",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-industrial-equipment-imKiarzufvMAmcxEW6E3zg.webp"
+              },
+              { 
+                icon: Car, 
+                title: "汽車電子", 
+                desc: "為汽車電子控制系統提供高溫環境下的熱管理方案",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-automotive-electronics-mTw8Gm6sGFbBrEzGVKiNdq.webp"
+              },
+              { 
+                icon: Heart, 
+                title: "醫療設備", 
+                desc: "為醫療設備提供精密的溫度控制和散熱解決方案",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-medical-devices-mssFVLsmsT22ivqNAbp8xY.webp"
+              },
+              { 
+                icon: Radio, 
+                title: "通訊設備", 
+                desc: "為 5G 基站和通訊設備提供高效的熱管理系統",
+                image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-communication-equipment-7C6CmUoX8TjvdHcj5BTzkA.webp"
+              },
             ].map((app, idx) => (
-              <div key={idx} className="group p-6 rounded-lg border border-primary/20 bg-card/50 hover:border-primary/50 hover:bg-card/80 transition-all duration-300">
-                <div className="w-12 h-12 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center mb-4 group-hover:border-primary/50 transition-all">
-                  <app.icon className="w-6 h-6 text-primary" />
+              <div key={idx} className="group rounded-lg border border-primary/20 bg-card/50 hover:border-primary/50 hover:bg-card/80 transition-all duration-300 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={app.image}
+                    alt={app.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">{app.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{app.desc}</p>
-                <div className="flex items-center gap-2 text-primary text-sm font-semibold">
-                  <span>了解更多</span>
-                  <ArrowRight className="w-4 h-4" />
+                <div className="p-6 space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:border-primary/50 transition-all">
+                    <app.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{app.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{app.desc}</p>
+                  <div className="flex items-center gap-2 text-primary text-sm font-semibold">
+                    <span>了解更多</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
                 </div>
               </div>
             ))}
