@@ -487,7 +487,7 @@ export default function Home() {
             </div>
             
             <h2 className="font-display font-bold text-5xl md:text-6xl leading-tight">
-              變得更<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">緊張、更有力</span>
+              變得更<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">精致、更有力</span>
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
