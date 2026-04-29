@@ -125,18 +125,18 @@ export default function About() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {[
-              { name: "Foxconn", logo: "/manus-storage/01-foxconn_7d583a76.png" },
-              { name: "HP", logo: "/manus-storage/02-hp_79c14ca0.png" },
-              { name: "Audeo", logo: "/manus-storage/03-audeo_ae32f493.png" },
-              { name: "Arcadyan", logo: "/manus-storage/04-arcadyan_272eb338.png" },
-              { name: "FIH Mobile", logo: "/manus-storage/05-fih-mobile_f5a7089b.jpg" },
-              { name: "Gigatek", logo: "/manus-storage/06-gigatek_86488c8c.jpg" },
-              { name: "AUO", logo: "/manus-storage/07-auo_be94b1a4.webp" },
-              { name: "Kenmec", logo: "/manus-storage/08-kenmec_1f0cafaf.jpeg" },
-              { name: "NTU", logo: "/manus-storage/09-ntu_9e58019b.png" },
-              { name: "PCEE", logo: "/manus-storage/10-pcee_436f4ed5.jpg" },
-              { name: "Mytek", logo: "/manus-storage/11-mytek_dec82098.png" },
-              { name: "Cruise", logo: "/manus-storage/12-cruise-new_e02d3e4e.png" }
+              { name: "Foxconn", logo: "/manus-storage/foxconn_4fa56b66.png" },
+              { name: "HP", logo: "/manus-storage/hp_bcfe3d3f.png" },
+              { name: "Audeo", logo: "/manus-storage/audeo_a27bf508.png" },
+              { name: "Arcadyan", logo: "/manus-storage/arcadyan_3db3c7a4.png" },
+              { name: "FIH Mobile", logo: "/manus-storage/fih-mobile_e382202e.jpg" },
+              { name: "Gigatek", logo: "/manus-storage/gigatek_7955aa75.jpg" },
+              { name: "AUO", logo: "/manus-storage/auo_52ce723f.webp" },
+              { name: "Kenmec", logo: "/manus-storage/kenmec_a2011930.png" },
+              { name: "NTU", logo: "/manus-storage/ntu_e33d8572.png" },
+              { name: "PCEE", logo: "/manus-storage/pcee_4c014cab.jpg" },
+              { name: "Mytek", logo: "/manus-storage/mytek_e3d07d03.png" },
+              { name: "Cruise", logo: "/manus-storage/cruise_bbb7754d.png" }
             ].map((client, i) => (
               <div key={i} className="h-32 flex flex-col items-center justify-center border border-white/10 rounded-xl bg-card/50 hover:bg-card/80 hover:border-primary/50 transition-all cursor-default group shadow-lg hover:shadow-xl hover:-translate-y-1 overflow-hidden">
                 <img 
