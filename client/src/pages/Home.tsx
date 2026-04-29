@@ -155,7 +155,7 @@ export default function Home() {
             <h2 className="font-display font-bold text-4xl md:text-5xl">核心技術領域</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full" />
             <p className="text-muted-foreground text-lg">
-              我們結合尖端熱力學工程與創新的遠紅外線技術，為產業帶來革命性的改變。
+              我們結合尖端熱力學工程與創新的遠紅外線技術，為產業帶來創新性的進步。
             </p>
           </div>
 
@@ -491,7 +491,7 @@ export default function Home() {
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              想了解您的新一代極限產品在哪裡？我們準備好用最先進的分析工具和豐富的工程經驗，為您的產品設計保駕護航。Therlect 汎海科技以數據驅動的方式，為每個項目提供精準的熱管理解決方案，確保您的產品在市場中脫穎而出。
+              想了解您的新一代極限產品在哪裡？我們準備好用最先進的分析工具和豐富的工程經驗，為您的產品設計提供全面支持。Therlect 汎海科技以數據驅動的方式，為每個項目提供精準的熱管理解決方案，確保您的產品在市場中獲得領先地位。
             </p>
           </div>
 

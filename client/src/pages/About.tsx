@@ -61,10 +61,10 @@ export default function About() {
                 Therlect 汎海科技成立於 2009 年，由一群資深熱流工程師所創立。我們深信，熱管理不僅是一門科學，更是一門藝術。
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                在過去的十多年裡，我們見證了電子產品效能的飛躍式成長，也解決了隨之而來的散熱挑戰。從早期的被動散熱到現在的主動式液冷與相變技術，我們始終走在技術的最前沿。
+                在過去的十多年裡，我們見證了電子產品效能的快速發展，也解決了隨之而來的散熱挑戰。從早期的被動散熱到現在的主動式液冷與相變技術，我們始終走在技術的最前沿。
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                除了熱管理，我們更將視野拓展至遠紅外線技術，探索熱能對人體健康與工業應用的無限可能。我們不僅是您的供應商，更是您在熱能領域最值得信賴的策略夥伴。
+                除了熱管理，我們更將視野拓展至遠紅外線技術，探索熱能對人體健康與工業應用的廣泛應用。我們不僅是您的供應商，更是您在熱能領域最值得信賴的策略夥伴。
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function About() {
         <div className="container relative z-10 max-w-3xl">
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-6">加入我們的行列</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            我們始終在尋找對熱力學充滿熱情的人才。如果您也想改變世界，歡迎加入 Therlect。
+            我們始終在尋找對熱力學充滿熱情的人才。如果您也想推動技術進步，歡迎加入 Therlect。
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8">
