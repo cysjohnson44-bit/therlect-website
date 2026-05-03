@@ -115,6 +115,22 @@ export default function About() {
         </div>
       </section>
 
+      {/* Trusted Partner Section */}
+      <section className="py-24 bg-gradient-to-b from-primary/5 to-transparent border-t border-white/5">
+        <div className="container">
+          <div className="text-center space-y-6 mb-12">
+            <h2 className="font-display font-bold text-4xl md:text-5xl">值得信賴的合作夥伴</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">我們有幸與眾多國際知名企業合作，共同創造價值</p>
+            <Link href="/contact">
+              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white rounded-sm px-8 group">
+                立即預約洽談
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Clients Logo Grid */}
       <section className="py-24">
         <div className="container">
