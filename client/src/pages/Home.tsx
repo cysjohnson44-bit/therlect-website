@@ -603,13 +603,12 @@ export default function Home() {
             <p className="text-muted-foreground">我們有幸與眾多國際知名企業合作，共同創造價值</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-70">
-            {/* Client Logos Placeholders - Using text for now as we don't have all logos */}
-            {["FOXCONN", "AUO", "HP", "Cruise", "MYTEK", "FIH Mobile", "Arcadyan", "KENMEC", "Auden", "NTU", "Anli", "華宮"].map((client, i) => (
-              <div key={i} className="h-16 flex items-center justify-center border border-white/5 rounded-lg bg-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default">
-                <span className="font-display font-bold text-lg text-muted-foreground">{client}</span>
-              </div>
-            ))}
+          <div className="flex justify-center items-center opacity-70 hover:opacity-100 transition-opacity">
+            <img 
+              src="/manus-storage/partners-logos-transparent_d0f3eed0.png" 
+              alt="Partner Companies Logos" 
+              className="max-w-full h-auto"
+            />
           </div>
         </div>
       </section>
