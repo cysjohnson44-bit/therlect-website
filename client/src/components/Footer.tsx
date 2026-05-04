@@ -52,9 +52,17 @@ export default function Footer() {
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-              <span className="text-muted-foreground text-sm">
-                241557 新北市三重區<br />光復路一段61巷27號9樓之3
-              </span>
+              <div className="text-muted-foreground text-sm">
+                <div className="font-medium text-foreground text-xs mb-1">新北辦公室</div>
+                <div>241557 新北市三重區<br />光復路一段61巷27號9樓之3</div>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div className="text-muted-foreground text-sm">
+                <div className="font-medium text-foreground text-xs mb-1">台南辦公室</div>
+                <div>台南市新市區中華路49號</div>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary shrink-0" />
