@@ -603,11 +603,11 @@ export default function Home() {
             <p className="text-muted-foreground">我們有幸與眾多國際知名企業合作，共同創造價值</p>
           </div>
           
-          <div className="flex justify-center items-center opacity-70 hover:opacity-100 transition-opacity">
+          <div className="flex justify-center items-center opacity-80 hover:opacity-100 transition-opacity">
             <img 
-              src="/manus-storage/partners-logos-transparent_d0f3eed0.png" 
+              src="/manus-storage/partners-logos-clean_f14a1951.png" 
               alt="Partner Companies Logos" 
-              className="max-w-full h-auto"
+              className="max-w-full h-auto drop-shadow-lg"
             />
           </div>
         </div>
