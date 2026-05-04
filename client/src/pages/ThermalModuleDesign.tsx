@@ -375,6 +375,8 @@ export default function ThermalModuleDesign() {
               "AI 伺服器",
               "車用電子",
               "工業設備",
+              "半導體設備",
+              "AI 晶片測試",
             ].map((industry, index) => (
               <div
                 key={index + 1}
