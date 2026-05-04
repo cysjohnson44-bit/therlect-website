@@ -269,3 +269,14 @@
 - [x] 驗證 Facebook 連接正確工作並開啟正確頁面
 - [x] 將頁腳中的 LinkedIn 圖標連接到 https://tw.linkedin.com/company/therlect-co-ltd
 - [x] 驗證 LinkedIn 連接正確工作並開啟正確頁面
+
+
+## 郵件互動功能 - 客服詢問與訊息回覆系統
+- [x] 創建郵件互動數據庫表 (messages, conversations)
+- [x] 實現郵件收發 API 端點
+- [x] 創建客服詢問頁面或模態框組件
+- [x] 實現訊息歷史記錄查看功能
+- [x] 添加郵件通知功能 (jimmy.chen@therlect.com)
+- [x] 實現自動回覆功能
+- [x] 測試郵件互動流程
+- [x] 保存檢查點

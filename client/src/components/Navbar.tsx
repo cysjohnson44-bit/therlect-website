@@ -26,6 +26,7 @@ export default function Navbar() {
     { href: "/thermal-module-design", label: "散熱模組" },
     { href: "/about", label: "關於我們" },
     { href: "/contact", label: "聯絡我們" },
+    { href: "/email-messaging", label: "客服詢問" },
   ];
 
   return (

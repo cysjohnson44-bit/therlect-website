@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { eq, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, bookings, InsertBooking, Booking, chatMessages, InsertChatMessage } from "../drizzle/schema";
+import { InsertUser, users, bookings, InsertBooking, Booking, chatMessages, InsertChatMessage, emailConversations, InsertEmailConversation, EmailConversation, emailMessages, InsertEmailMessage, EmailMessage } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -120,6 +120,64 @@ export async function getChatHistory(sessionId: string) {
   if (!db) throw new Error("Database not available");
   
   return db.select().from(chatMessages).where(eq(chatMessages.sessionId, sessionId)).orderBy(chatMessages.createdAt);
+}
+
+// Email conversation queries
+export async function createEmailConversation(conversation: InsertEmailConversation): Promise<EmailConversation> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  const result = await db.insert(emailConversations).values(conversation);
+  const id = result[0].insertId as number;
+  const created = await db.select().from(emailConversations).where(eq(emailConversations.id, id)).limit(1);
+  return created[0]!;
+}
+
+export async function getEmailConversations(limit = 50, offset = 0) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return db.select().from(emailConversations).orderBy(desc(emailConversations.updatedAt)).limit(limit).offset(offset);
+}
+
+export async function getEmailConversationById(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  const result = await db.select().from(emailConversations).where(eq(emailConversations.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function updateEmailConversationStatus(id: number, status: "open" | "replied" | "closed") {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return db.update(emailConversations).set({ status, updatedAt: new Date() }).where(eq(emailConversations.id, id));
+}
+
+// Email message queries
+export async function saveEmailMessage(message: InsertEmailMessage): Promise<EmailMessage> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  const result = await db.insert(emailMessages).values(message);
+  const id = result[0].insertId as number;
+  const created = await db.select().from(emailMessages).where(eq(emailMessages.id, id)).limit(1);
+  return created[0]!;
+}
+
+export async function getEmailMessages(conversationId: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return db.select().from(emailMessages).where(eq(emailMessages.conversationId, conversationId)).orderBy(emailMessages.createdAt);
+}
+
+export async function markEmailMessageAsRead(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return db.update(emailMessages).set({ isRead: 1 }).where(eq(emailMessages.id, id));
 }
 
 // TODO: add feature queries here as your schema grows.

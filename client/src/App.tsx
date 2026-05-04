@@ -13,6 +13,7 @@ import AluminumModuleDesign from "./pages/AluminumModuleDesign";
 import ThermalManagementSolution from "./pages/ThermalManagementSolution";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import EmailMessaging from "./pages/EmailMessaging";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -27,6 +28,7 @@ function Router() {
       <Route path={"/thermal-management-solution"} component={ThermalManagementSolution} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/email-messaging"} component={EmailMessaging} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

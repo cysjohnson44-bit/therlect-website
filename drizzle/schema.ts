@@ -52,3 +52,34 @@ export const chatMessages = mysqlTable("chatMessages", {
 
 export type ChatMessage = typeof chatMessages.$inferSelect;
 export type InsertChatMessage = typeof chatMessages.$inferInsert;
+
+// Email conversations table for customer support
+export const emailConversations = mysqlTable("emailConversations", {
+  id: int("id").autoincrement().primaryKey(),
+  visitorEmail: varchar("visitorEmail", { length: 320 }).notNull(),
+  visitorName: varchar("visitorName", { length: 255 }).notNull(),
+  subject: varchar("subject", { length: 255 }).notNull(),
+  status: mysqlEnum("status", ["open", "replied", "closed"]).default("open").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type EmailConversation = typeof emailConversations.$inferSelect;
+export type InsertEmailConversation = typeof emailConversations.$inferInsert;
+
+// Email messages table for storing conversation history
+export const emailMessages = mysqlTable("emailMessages", {
+  id: int("id").autoincrement().primaryKey(),
+  conversationId: int("conversationId").notNull(),
+  sender: mysqlEnum("sender", ["customer", "admin"]).notNull(),
+  senderEmail: varchar("senderEmail", { length: 320 }).notNull(),
+  senderName: varchar("senderName", { length: 255 }).notNull(),
+  subject: varchar("subject", { length: 255 }),
+  message: text("message").notNull(),
+  attachmentUrl: varchar("attachmentUrl", { length: 512 }),
+  isRead: int("isRead").default(0).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type EmailMessage = typeof emailMessages.$inferSelect;
+export type InsertEmailMessage = typeof emailMessages.$inferInsert;

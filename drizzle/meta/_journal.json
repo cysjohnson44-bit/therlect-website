@@ -15,6 +15,13 @@
       "when": 1769152258285,
       "tag": "0001_panoramic_pride",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1777859857672,
+      "tag": "0002_colossal_magneto",
+      "breakpoints": true
     }
   ]
 }
