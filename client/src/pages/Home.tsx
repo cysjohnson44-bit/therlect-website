@@ -596,14 +596,53 @@ export default function Home() {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20 bg-background border-t border-white/5">
+      <section className="py-20 bg-gradient-to-b from-primary/5 to-primary/10 border-t border-primary/20">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-3xl mb-4">值得信賴的合作夥伴</h2>
-            <p className="text-muted-foreground">我們有幸與眾多國際知名企業合作，共同創造價值</p>
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-4xl mb-4 text-white">值得信賴的合作夥伴</h2>
+            <p className="text-muted-foreground text-lg">我們有幸與眾多國際知名企業合作，共同創造價值</p>
           </div>
           
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logos_processed_final-YYxiJXj2o4fvQGxUQHaC6x.webp" alt="合作夥伴商標" className="w-full max-w-4xl mx-auto object-contain hover:scale-105 transition-transform" />
+          {/* Logo Grid with Card Design */}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {/* Individual Logo Cards */}
+              {[
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_1-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_2-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_3-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_4-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_5-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_6-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_7-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_8-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_9-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_10-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_11-processed.webp',
+                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_12-processed.webp',
+              ].map((logo, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-6 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
+                >
+                  {/* Gradient Border Effect */}
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
+                  
+                  {/* Logo Container */}
+                  <div className="relative h-32 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={logo}
+                      alt={`合作夥伴 ${index + 1}`}
+                      className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md group-hover:drop-shadow-lg"
+                    />
+                  </div>
+                  
+                  {/* Top Border Accent */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-lg" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
