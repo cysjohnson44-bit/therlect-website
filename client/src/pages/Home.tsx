@@ -608,18 +608,30 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {/* Individual Logo Cards */}
               {[
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_1-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_2-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_3-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_4-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_5-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_6-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_7-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_8-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_9-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_10-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_11-processed.webp',
-                'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/logo_12-processed.webp',
+                { name: 'Google', url: '/manus-storage/Google_cc729089.png' },
+                { name: 'Meta', url: '/manus-storage/Meta_fb196677.png' },
+                { name: 'MobileDrive', url: '/manus-storage/MobileDrive_e06829c2.png' },
+                { name: 'WinWay', url: '/manus-storage/WinWay_35d6e3f8.png' },
+                { name: 'FIH', url: '/manus-storage/FIH_8e8a667b.png' },
+                { name: 'Foxconn', url: '/manus-storage/Foxconn_749d5347.png' },
+                { name: 'AUO', url: '/manus-storage/AUO_b64ec3cc.png' },
+                { name: 'MYTEK', url: '/manus-storage/MYTEK_fbccfd80.png' },
+                { name: 'Cruise', url: '/manus-storage/Cruise_d89892a2.png' },
+                { name: 'Arcaduan', url: '/manus-storage/Arcaduan_21b66879.png' },
+                { name: 'Broadcom', url: '/manus-storage/Broadcom_cce07024.png' },
+                { name: 'Auden', url: '/manus-storage/Auden_8c87d4b3.png' },
+                { name: 'C&T', url: '/manus-storage/C&T_5ac14ce3.png' },
+                { name: 'MaxLinear', url: '/manus-storage/MaxLinear_5cfba387.png' },
+                { name: 'Panuit', url: '/manus-storage/Panuit_c0831c0d.png' },
+                { name: 'Onyx', url: '/manus-storage/Onyx_99e125db.png' },
+                { name: 'Marvell', url: '/manus-storage/Marvell_bf4c929c.png' },
+                { name: 'Kenmec', url: '/manus-storage/Kenmec_b2071e0f.png' },
+                { name: 'NTIS', url: '/manus-storage/NTIS_589b15ff.png' },
+                { name: 'NTU', url: '/manus-storage/NTU_fac22000.png' },
+                { name: 'Tailyn', url: '/manus-storage/Tailyn_089dc9c0.png' },
+                { name: 'Catapult', url: '/manus-storage/Catapult_aafdc5ae.png' },
+                { name: 'Premio', url: '/manus-storage/Premio_c380980b.png' },
+                { name: 'RapidTek', url: '/manus-storage/RapidTek_d2c50874.png' },
               ].map((logo, index) => (
                 <div
                   key={index}
@@ -631,8 +643,8 @@ export default function Home() {
                   {/* Logo Container */}
                   <div className="relative h-32 flex items-center justify-center overflow-hidden">
                     <img
-                      src={logo}
-                      alt={`合作夥伴 ${index + 1}`}
+                      src={logo.url}
+                      alt={logo.name}
                       className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md group-hover:drop-shadow-lg"
                     />
                   </div>
