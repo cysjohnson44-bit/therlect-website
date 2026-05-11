@@ -33,7 +33,7 @@ export default function About() {
             <div className="w-full md:w-1/2 relative">
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-video">
                 <img 
-                  src="/assets/partnership_concept.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/therlect_team_research-8qedcTBkV5kL8w2eHjnHq3.webp" 
                   alt="Therlect Team" 
                   className="w-full h-full object-cover"
                 />
