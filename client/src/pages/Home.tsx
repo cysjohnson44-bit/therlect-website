@@ -214,13 +214,12 @@ export default function Home() {
                     <img
                       src={logo.url}
                       alt={logo.name}
-                      className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                      className="w-full h-full object-contain opacity-100 group-hover:opacity-100 transition-all duration-300 brightness-150 contrast-125"
                       loading="lazy"
                       decoding="async"
+                      style={{ filter: 'brightness(1.3) contrast(1.2) saturate(1.1)' }}
                     />
                   </div>
-                  {/* Logo Name - White Text */}
-                  <p className="text-white text-xs font-medium mt-2 text-center">{logo.name}</p>
                 </div>
               ))}
             </div>
