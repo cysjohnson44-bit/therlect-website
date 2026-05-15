@@ -166,9 +166,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients Section - Full Width with Grid Background */}
-      <section className="relative overflow-hidden" style={{
-        backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/CyHLrWNzWTGuRIIv.png)',
+      {/* Clients Se      {/* Trusted Partners Section */}
+      <section className="relative py-24 overflow-hidden" style={{
+        backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ZmQWZPEeVAKqBOlT.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -183,40 +183,41 @@ export default function Home() {
             <p className="text-white/80 text-lg">我們有幸與眾多國際知名企業合作，共同創造價值</p>
           </div>
           
-          {/* Logo Grid with Full Width */}
+          {/* Logo Grid with Full Width - Optimized Layout */}
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4">
-              {/* Individual Logo Cards with Removed Backgrounds */}
+            <div className="grid grid-cols-5 gap-4 px-4 auto-rows-max">              {/* Logo Grid - Organized by Reference Image Order */}
               {[
-                { name: 'Partner 1', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AgSbLcVyQnojDVCy.png' },
-                { name: 'Partner 2', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/mOBewmTgADqarnhH.png' },
-                { name: 'Partner 3', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/sLBgsmpLJlUVjagP.png' },
-                { name: 'Partner 4', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/wdRToODPBqXaxnny.png' },
-                { name: 'Partner 5', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/frrFeHXLfyOhvYur.png' },
-                { name: 'Partner 6', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ayNUjBEWStkkZsBm.png' },
-                { name: 'Partner 7', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/TAEjnuHWwBrnGWmQ.png' },
-                { name: 'Partner 8', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/RiXHOPsKjMTZRDXM.png' },
-                { name: 'Partner 9', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GgJiAehLluvJFdgd.png' },
-                { name: 'Partner 10', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/gxMTdpHJCSQYPYvN.png' },
-                { name: 'Partner 11', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GlGDejRngXEqycpD.png' },
-                { name: 'Partner 12', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BEnsCGCbksMWdXlW.png' },
-                { name: 'Partner 13', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/zUuFoLELaEBRqwUD.png' },
-                { name: 'Partner 14', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/HPbEVXFYbDaoQiIL.png' },
-                { name: 'Partner 15', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/VYaSFdErTYukKIxs.png' },
-                { name: 'Partner 16', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/udgxYkEorMjTTwYv.png' },
-                { name: 'Partner 17', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PCGibyvtYuEOrUkQ.png' },
-                { name: 'Partner 18', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AUXXzbMPnvXAalRC.png' },
-                { name: 'Partner 19', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/CcvxapewxVDegxHC.png' },
-                { name: 'Partner 20', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/LeUmgCoOoQWSwCYi.png' },
-                { name: 'Partner 21', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/LlmAoJCQRfcheTDl.png' },
-                { name: 'Partner 22', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/DZZGBRuMuzFsiTIv.png' },
+                // Row 1: Google, Meta, Broadcom, Marvell, MaxLinear
+                { name: 'Google', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AgSbLcVyQnojDVCy.png' },
+                { name: 'Meta', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/mOBewmTgADqarnhH.png' },
+                { name: 'Broadcom', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/sLBgsmpLJlUVjagP.png' },
+                { name: 'Marvell', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/wdRToODPBqXaxnny.png' },
+                { name: 'MaxLinear', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/frrFeHXLfyOhvYur.png' },
+                // Row 2: Foxconn, Jabil, Bosch, FIH, Semio
+                { name: 'Foxconn', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ayNUjBEWStkkZsBm.png' },
+                { name: 'Jabil', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/TAEjnuHWwBrnGWmQ.png' },
+                { name: 'Bosch', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/RiXHOPsKjMTZRDXM.png' },
+                { name: 'FIH', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GgJiAehLluvJFdgd.png' },
+                { name: 'Semio', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/gxMTdpHJCSQYPYvN.png' },
+                // Row 3: MYTEK, WinWay, AUO, Onyx, KENMEC
+                { name: 'MYTEK', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GlGDejRngXEqycpD.png' },
+                { name: 'WinWay', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BEnsCGCbksMWdXlW.png' },
+                { name: 'AUO', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/zUuFoLELaEBRqwUD.png' },
+                { name: 'Onyx', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/HPbEVXFYbDaoQiIL.png' },
+                { name: 'KENMEC', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/VYaSFdErTYukKIxs.png' },
+                // Row 4: NTU, NCIST, Sysgration, Arcadyan, Stellantis
+                { name: 'NTU', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/udgxYkEorMjTTwYv.png' },
+                { name: 'NCIST', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PCGibyvtYuEOrUkQ.png' },
+                { name: 'Sysgration', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AUXXzbMPnvXAalRC.png' },
+                { name: 'Arcadyan', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/CcvxapewxVDegxHC.png' },
+                { name: 'Stellantis', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/LeUmgCoOoQWSwCYi.png' },
               ].map((logo, index) => (
                 <div
                   key={index}
                   className="group relative flex items-center justify-center hover:opacity-80 transition-opacity duration-300"
                 >
-                  {/* Logo Container - Further Enlarged by 40% to 78 */}
-                  <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
+                  {/* Logo Container - Optimized Size */}
+                  <div className="relative w-full h-24 flex items-center justify-center overflow-hidden">
                     <img
                       src={logo.url}
                       alt={logo.name}
