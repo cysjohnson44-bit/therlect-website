@@ -207,7 +207,7 @@ export default function Home() {
               ].map((logo, index) => (
                 <div
                   key={index}
-                  className="group relative flex items-center justify-center hover:opacity-80 transition-opacity duration-300"
+                  className="group relative flex flex-col items-center justify-center hover:opacity-80 transition-opacity duration-300"
                 >
                   {/* Logo Container - Optimized Size */}
                   <div className="relative w-full h-24 flex items-center justify-center overflow-hidden">
@@ -219,6 +219,8 @@ export default function Home() {
                       decoding="async"
                     />
                   </div>
+                  {/* Logo Name - White Text */}
+                  <p className="text-white text-xs font-medium mt-2 text-center">{logo.name}</p>
                 </div>
               ))}
             </div>

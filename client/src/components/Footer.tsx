@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="flex gap-4">
             <a href="https://www.facebook.com/Therlect" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook size={20} /></a>
             <a href="https://tw.linkedin.com/company/therlect-co-ltd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={20} /></a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Youtube size={20} /></a>
+            <a href="https://www.youtube.com/watch?v=aigp6jhZZnQ" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Youtube size={20} /></a>
           </div>
         </div>
 
