@@ -183,15 +183,15 @@ export default function Home() {
                 // Row 1: Google, Meta, Broadcom, Marvell, MaxLinear
                 { name: 'Google', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AgSbLcVyQnojDVCy.png' },
                 { name: 'Meta', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/mOBewmTgADqarnhH.png' },
-                { name: 'Broadcom', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/sLBgsmpLJlUVjagP.png' },
-                { name: 'Marvell', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/wdRToODPBqXaxnny.png' },
+                { name: 'Broadcom', url: '/manus-storage/broadcom-cleaned_e03e219e.png' },
+                { name: 'Marvell', url: '/manus-storage/marvell-cleaned_63cfa1da.png' },
                 { name: 'MaxLinear', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/frrFeHXLfyOhvYur.png' },
                 // Row 2: Foxconn, Jabil, Bosch, FIH, Semio
                 { name: 'Foxconn', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ayNUjBEWStkkZsBm.png' },
                 { name: 'Jabil', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/TAEjnuHWwBrnGWmQ.png' },
                 { name: 'Bosch', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/RiXHOPsKjMTZRDXM.png' },
                 { name: 'FIH', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GgJiAehLluvJFdgd.png' },
-                { name: 'Semio', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/gxMTdpHJCSQYPYvN.png' },
+                { name: 'Semio', url: '/manus-storage/aemio-cleaned_40ad63fe.png' },
                 // Row 3: MYTEK, WinWay, AUO, Onyx, KENMEC
                 { name: 'MYTEK', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GlGDejRngXEqycpD.png' },
                 { name: 'WinWay', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BEnsCGCbksMWdXlW.png' },
@@ -202,7 +202,7 @@ export default function Home() {
                 { name: 'NTU', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/udgxYkEorMjTTwYv.png' },
                 { name: 'NCIST', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PCGibyvtYuEOrUkQ.png' },
                 { name: 'Sysgration', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AUXXzbMPnvXAalRC.png' },
-                { name: 'Arcadyan', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/CcvxapewxVDegxHC.png' },
+                { name: 'Arcadyan', url: '/manus-storage/arcadyan-cleaned_1dca03a1.png' },
                 { name: 'Stellantis', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/LeUmgCoOoQWSwCYi.png' },
               ].map((logo, index) => (
                 <div
