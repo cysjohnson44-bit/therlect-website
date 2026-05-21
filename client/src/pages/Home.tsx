@@ -181,29 +181,29 @@ export default function Home() {
             <div className="grid grid-cols-5 gap-4 px-4 auto-rows-max">              {/* Logo Grid - Organized by Reference Image Order */}
               {[
                 // Row 1: Google, Meta, Broadcom, Marvell, MaxLinear
-                { name: 'Google', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AgSbLcVyQnojDVCy.png' },
-                { name: 'Meta', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/mOBewmTgADqarnhH.png' },
-                { name: 'Broadcom', url: '/manus-storage/broadcom-cleaned_e03e219e.png' },
-                { name: 'Marvell', url: '/manus-storage/marvell-white-text_0251df49.png' },
-                { name: 'MaxLinear', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/frrFeHXLfyOhvYur.png' },
+                { name: 'Google', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/google-logo-hq-XVPjwm4SjLTsfbLVU2SxbA.png' },
+                { name: 'Meta', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/meta-logo-hq-XVPjwm4SjLTsfbLVU2SxbA.png' },
+                { name: 'Broadcom', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/broadcom-logo-hq-L5biP2PzWNGukSmiZaNmYP.png' },
+                { name: 'Marvell', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/marvell-logo-hq-5wMwqMeExrgv7gYkCNLYMY.png' },
+                { name: 'MaxLinear', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/maxlinear-logo-hq-ditv8gvyEz9rsnn8EY52Ng.png' },
                 // Row 2: Foxconn, Jabil, Bosch, FIH, Semio
-                { name: 'Foxconn', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ayNUjBEWStkkZsBm.png' },
-                { name: 'Jabil', url: '/manus-storage/jabil-white-text_9b09da5c.png' },
-                { name: 'Bosch', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/RiXHOPsKjMTZRDXM.png' },
-                { name: 'FIH', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GgJiAehLluvJFdgd.png' },
-                { name: 'Semio', url: '/manus-storage/aemio-cleaned_40ad63fe.png' },
+                { name: 'Foxconn', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/foxconn-logo-hq-FNGcuKXGmjjP6gUv7ZLmk9.png' },
+                { name: 'Jabil', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/jabil-logo-hq-VNesvxp2NNYyd2oSNUJDPa.png' },
+                { name: 'Bosch', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/bosch-logo-hq-AbwZATSQ9fRUM6rvNCqQmY.png' },
+                { name: 'FIH', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/fih-logo-hq-ZYhPUbkr4f2VAXkW32mo4R.png' },
+                { name: 'Semio', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/semio-logo-hq-RdtpLxerUWMHdSXXzZ5fYj.png' },
                 // Row 3: MYTEK, WinWay, AUO, Onyx, KENMEC
-                { name: 'MYTEK', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GlGDejRngXEqycpD.png' },
-                { name: 'WinWay', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/BEnsCGCbksMWdXlW.png' },
-                { name: 'AUO', url: '/manus-storage/auo-white-text_c3dee359.png' },
-                { name: 'Onyx', url: '/manus-storage/onyx-light-text_309ad324.png' },
-                { name: 'KENMEC', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/VYaSFdErTYukKIxs.png' },
+                { name: 'MYTEK', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/mytek-logo-hq-fPUHhNNPk3rxoT2MBobxiG.png' },
+                { name: 'WinWay', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/winway-logo-hq-MLWM5rHBXd9JkJmyENU4Gk.png' },
+                { name: 'AUO', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/auo-logo-hq-CZiUMuEuFenxsHZSmKV6iW.png' },
+                { name: 'Onyx', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/onyx-logo-hq-QhZM4NrPpxz242WURApUe8.png' },
+                { name: 'KENMEC', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/kenmec-logo-hq-4QMdmoKAf9DMmt3WdFT9hs.png' },
                 // Row 4: NTU, NCIST, Sysgration, Arcadyan, Stellantis
-                { name: 'NTU', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/udgxYkEorMjTTwYv.png' },
-                { name: 'NCIST', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PCGibyvtYuEOrUkQ.png' },
-                { name: 'Sysgration', url: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/AUXXzbMPnvXAalRC.png' },
-                { name: 'Arcadyan', url: '/manus-storage/arcadyan-cleaned_1dca03a1.png' },
-                { name: 'Stellantis', url: '/manus-storage/stellantis-white-text_68d0b036.png' },
+                { name: 'NTU', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ntu-logo-hq-PFfKjsSxe3F9TgthhKeGjy.png' },
+                { name: 'NCIST', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ncist-logo-hq-Hz32H3rzZxzGZ48eHnTg9f.png' },
+                { name: 'Sysgration', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/sysgration-logo-hq-jJuhNxqzFjfhQLPRB875tx.png' },
+                { name: 'Arcadyan', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/arcadyan-logo-hq-Bj4WHdkBSitNN9rLB3SNbJ.png' },
+                { name: 'Stellantis', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/stellantis-logo-hq-995DbYfX24fWh3qnA8HWJn.png' },
               ].map((logo, index) => (
                 <div
                   key={index}
