@@ -166,20 +166,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted Partners Section - Full Image Background */}
-      <section className="relative overflow-hidden bg-background">
-        {/* Full Screen Background Image with 4:3 Aspect Ratio */}
-        <div
-          className="w-full h-auto"
-          style={{
-            backgroundImage: 'url(/manus-storage/1779421114827~2_2fe9fdb1.png)',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            aspectRatio: '4 / 3',
-            minHeight: 'auto',
-          }}
-        />
+      {/* Trusted Partners Section */}
+      <section className="py-24 relative overflow-hidden bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-4xl mb-4 text-white">值得信賴的合作夥伴</h2>
+            <p className="text-muted-foreground text-lg">與全球領先企業合作，提供頂級熱管理解決方案</p>
+          </div>
+          
+          {/* Logo placeholder - waiting for image upload */}
+          <div
+            className="w-full bg-white/5 border border-dashed border-primary/30 rounded-lg flex items-center justify-center"
+            style={{
+              aspectRatio: '4 / 3',
+              minHeight: '300px',
+            }}
+          >
+            <p className="text-muted-foreground text-lg">合作夥伴商標區域（待上傳）</p>
+          </div>
+        </div>
       </section>
 
       {/* CTA Section */}
