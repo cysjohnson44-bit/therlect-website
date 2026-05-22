@@ -166,71 +166,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted Partners Section */}
-      <section className="relative py-24 overflow-hidden bg-background">
-        {/* Background Image - Full Width */}
+      {/* Trusted Partners Section - Full Image Background */}
+      <section className="relative overflow-hidden bg-background">
+        {/* Full Screen Background Image */}
         <div
-          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          className="w-full h-auto"
           style={{
-            backgroundImage: 'url(/manus-storage/partners-section-white-bg_deaac046.png)',
+            backgroundImage: 'url(/manus-storage/1779421114827~2_0da15bec.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            minHeight: '600px',
           }}
         />
-        
-        <div className="container relative z-10 py-24">
-          <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl mb-4 text-white">值得信賴的合作夥伴</h2>
-            <p className="text-white/80 text-lg">我們有幸與眾多國際知名企業合作，共同創造價值</p>
-          </div>
-          
-          {/* Logo Grid with Full Width - Optimized Layout */}
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-5 gap-4 px-4 auto-rows-max">              {/* Logo Grid - Organized by Reference Image Order */}
-              {[
-                // Row 1: Google, Meta, Broadcom, Marvell, MaxLinear
-                { name: 'Google', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/google-logo-hq-XVPjwm4SjLTsfbLVU2SxbA.png' },
-                { name: 'Meta', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/meta-logo-hq-XVPjwm4SjLTsfbLVU2SxbA.png' },
-                { name: 'Broadcom', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/broadcom-logo-hq-L5biP2PzWNGukSmiZaNmYP.png' },
-                { name: 'Marvell', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/marvell-logo-hq-5wMwqMeExrgv7gYkCNLYMY.png' },
-                { name: 'MaxLinear', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/maxlinear-logo-hq-ditv8gvyEz9rsnn8EY52Ng.png' },
-                // Row 2: Foxconn, Jabil, Bosch, FIH, Semio
-                { name: 'Foxconn', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/foxconn-logo-hq-FNGcuKXGmjjP6gUv7ZLmk9.png' },
-                { name: 'Jabil', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/jabil-logo-hq-VNesvxp2NNYyd2oSNUJDPa.png' },
-                { name: 'Bosch', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/bosch-logo-hq-AbwZATSQ9fRUM6rvNCqQmY.png' },
-                { name: 'FIH', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/fih-logo-hq-ZYhPUbkr4f2VAXkW32mo4R.png' },
-                { name: 'Semio', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/semio-logo-hq-RdtpLxerUWMHdSXXzZ5fYj.png' },
-                // Row 3: MYTEK, WinWay, AUO, Onyx, KENMEC
-                { name: 'MYTEK', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/mytek-logo-hq-fPUHhNNPk3rxoT2MBobxiG.png' },
-                { name: 'WinWay', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/winway-logo-hq-MLWM5rHBXd9JkJmyENU4Gk.png' },
-                { name: 'AUO', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/auo-logo-hq-CZiUMuEuFenxsHZSmKV6iW.png' },
-                { name: 'Onyx', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/onyx-logo-hq-QhZM4NrPpxz242WURApUe8.png' },
-                { name: 'KENMEC', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/kenmec-logo-hq-4QMdmoKAf9DMmt3WdFT9hs.png' },
-                // Row 4: NTU, NCIST, Sysgration, Arcadyan, Stellantis
-                { name: 'NTU', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ntu-logo-hq-PFfKjsSxe3F9TgthhKeGjy.png' },
-                { name: 'NCIST', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ncist-logo-hq-Hz32H3rzZxzGZ48eHnTg9f.png' },
-                { name: 'Sysgration', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/sysgration-logo-hq-jJuhNxqzFjfhQLPRB875tx.png' },
-                { name: 'Arcadyan', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/arcadyan-logo-hq-Bj4WHdkBSitNN9rLB3SNbJ.png' },
-                { name: 'Stellantis', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/stellantis-logo-hq-995DbYfX24fWh3qnA8HWJn.png' },
-              ].map((logo, index) => (
-                <div
-                  key={index}
-                  className="group relative flex flex-col items-center justify-center hover:opacity-80 transition-opacity duration-300"
-                >
-                  {/* Logo Container - Optimized Size */}
-                  <div className="relative w-full h-24 flex items-center justify-center overflow-hidden">
-                    <img
-                      src={logo.url}
-                      alt={logo.name}
-                      className="w-full h-full object-contain opacity-100 group-hover:opacity-100 transition-all duration-300 brightness-150 contrast-125"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ filter: 'brightness(1.3) contrast(1.2) saturate(1.1)' }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* CTA Section */}
