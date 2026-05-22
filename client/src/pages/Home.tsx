@@ -168,9 +168,15 @@ export default function Home() {
 
       {/* Trusted Partners Section */}
       <section className="relative py-24 overflow-hidden bg-background">
-        {/* No overlay - using same background as rest of page */}
+        {/* Background Image - Full Width */}
+        <div
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/manus-storage/partners-section-white-bg_deaac046.png)',
+          }}
+        />
         
-        <div className="container relative z-0 py-24">
+        <div className="container relative z-10 py-24">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-4xl mb-4 text-white">值得信賴的合作夥伴</h2>
             <p className="text-white/80 text-lg">我們有幸與眾多國際知名企業合作，共同創造價值</p>
