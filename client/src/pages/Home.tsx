@@ -168,15 +168,16 @@ export default function Home() {
 
       {/* Trusted Partners Section - Full Image Background */}
       <section className="relative overflow-hidden bg-background">
-        {/* Full Screen Background Image */}
+        {/* Full Screen Background Image with 4:3 Aspect Ratio */}
         <div
           className="w-full h-auto"
           style={{
-            backgroundImage: 'url(/manus-storage/1779421114827~2_0da15bec.png)',
-            backgroundSize: 'cover',
+            backgroundImage: 'url(/manus-storage/1779421114827~2_2fe9fdb1.png)',
+            backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            minHeight: '600px',
+            aspectRatio: '4 / 3',
+            minHeight: 'auto',
           }}
         />
       </section>
