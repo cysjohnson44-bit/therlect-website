@@ -199,54 +199,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* How to Check Messages Section */}
-      <section className="py-20 relative border-t border-white/5">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display font-bold text-3xl mb-8 text-center">如何查看客戶訊息</h2>
-            <p className="text-center text-muted-foreground mb-8">
-              您需要使用正常的郵件客戶端查看 jimmy.chen@therlect.com 的收件箱
-            </p>
-
-            {/* Simple Table */}
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-card/50 border-b border-white/10">
-                    <th className="px-6 py-4 text-left font-bold text-lg">方式</th>
-                    <th className="px-6 py-4 text-left font-bold text-lg">步驟</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-white/10 hover:bg-card/30 transition-colors">
-                    <td className="px-6 py-4 font-medium">網頁郵箱</td>
-                    <td className="px-6 py-4 text-muted-foreground">
-                      登入 jimmy.chen@therlect.com 的郵件服務（如 Gmail、Outlook 等），查看收件箱
-                    </td>
-                  </tr>
-                  <tr className="border-b border-white/10 hover:bg-card/30 transition-colors">
-                    <td className="px-6 py-4 font-medium">郵件應用</td>
-                    <td className="px-6 py-4 text-muted-foreground">
-                      在 Outlook、Apple Mail 等應用中添加 jimmy.chen@therlect.com 帳戶，查看收件箱
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-card/30 transition-colors">
-                    <td className="px-6 py-4 font-medium">手機郵件</td>
-                    <td className="px-6 py-4 text-muted-foreground">
-                      在手機郵件應用中添加此帳戶，隨時查看新訊息
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 p-4 bg-primary/5 border border-primary/20 rounded-lg text-sm text-muted-foreground text-center">
-              客戶提交聯絡表單時，訊息會自動發送到 jimmy.chen@therlect.com 的郵箱
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Map Section */}
       <section className="py-20 bg-card/30 border-t border-white/5">
         <div className="container">
