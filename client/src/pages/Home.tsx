@@ -70,11 +70,12 @@ export default function Home() {
               {/* Abstract 3D Element or Product Visualization */}
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 rounded-full blur-[100px] animate-pulse-slow" />
               <img 
-                src="/assets/thermal_analysis.jpg" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/SkBOsMXCQUfIHLHm.png" 
                 alt="Thermal Analysis Visualization" 
                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,240,255,0.3)] rounded-2xl border border-white/10"
                 loading="lazy"
                 decoding="async"
+                style={{ opacity: 0.7 }}
               />
               
               {/* Floating Data Cards */}
@@ -195,23 +196,20 @@ export default function Home() {
       </section>
 
       {/* Trusted Partners Section */}
-      <section className="relative overflow-hidden" style={{ backgroundColor: '#0f1729' }}>
-        <div className="container py-12 mb-0">
+      <section className="w-full" style={{ backgroundColor: '#0f1729', padding: 0, margin: 0 }}>
+        <div className="container py-12" style={{ backgroundColor: '#0f1729' }}>
           <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white text-center">值得信賴的合作夥伴</h2>
           <p className="text-gray-300 text-lg text-center">與全球領先企業合作，提供頂級熱管理解決方案</p>
         </div>
         
-        {/* Full-width partner logos background with hover zoom effect */}
-        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0f1729', minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
+        <div style={{ width: '100%', backgroundColor: '#0f1729', padding: '40px 0' }}>
           <img
-            src="/manus-storage/partner-logos-new_9930f1eb.png"
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/XYkTAEAdpiBSyhOK.png"
             alt="Trusted Partners Logos"
-            className="transition-transform duration-500 ease-out hover:scale-105"
             style={{
-              imageRendering: 'crisp-edges',
-              display: 'block',
               width: '100%',
               height: 'auto',
+              display: 'block',
               maxWidth: '100%',
               objectFit: 'contain',
             }}
