@@ -51,20 +51,7 @@ export const appRouter = router({
           }),
         });
 
-        // Send notification email to admin (both mailboxes)
-        await sendEmail({
-          to: "jimmy.chen@therlect.com",
-          subject: `新的預約洽談申請 - ${input.name}`,
-          htmlContent: generateBookingNotificationTemplate({
-            name: input.name,
-            email: input.email,
-            phone: input.phone,
-            date: input.date,
-            message: input.message,
-          }),
-        });
-
-        // Send to second mailbox
+        // Send notification email to admin
         await sendEmail({
           to: "cmcjc8888@gmail.com",
           subject: `新的預約洽談申請 - ${input.name}`,
@@ -132,25 +119,7 @@ export const appRouter = router({
           }),
         });
 
-        // Send contact form to admin (both mailboxes with error handling)
-        try {
-          await sendEmail({
-            to: "jimmy.chen@therlect.com",
-            subject: `新的聯絡表單提交 - ${input.subject} (來自 ${input.name})`,
-            htmlContent: generateContactEmailTemplate({
-              name: input.name,
-              email: input.email,
-              phone: input.phone,
-              company: input.company,
-              subject: input.subject,
-              message: input.message,
-            }),
-          });
-        } catch (error) {
-          console.error("Failed to send email to jimmy.chen@therlect.com:", error);
-        }
-
-        // Send to second mailbox (with error handling)
+        // Send contact form to admin (with error handling)
         try {
           await sendEmail({
             to: "cmcjc8888@gmail.com",
