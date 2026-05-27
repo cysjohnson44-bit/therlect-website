@@ -195,26 +195,18 @@ export default function Home() {
       </section>
 
       {/* Trusted Partners Section */}
-      <section className="py-24 relative overflow-hidden bg-background">
-        <div className="container">
-          <div className="text-center mb-20">
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">值得信賴的合作夥伴</h2>
-            <p className="text-muted-foreground text-lg">與全球領先企業合作，提供頂級熱管理解決方案</p>
-          </div>
-          
-          {/* Partner Logos Image - High Resolution Display */}
-          <div className="relative group rounded-lg overflow-hidden border border-primary/30 hover:border-primary/60 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
-            <img
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/SbOLJZtQLsSpCvcm.png"
-              alt="Trusted Partners Logos"
-              className="w-full object-contain"
-              style={{
-                aspectRatio: '4 / 3',
-                minHeight: '500px',
-                imageRendering: 'crisp-edges',
-              }}
-            />
-          </div>
+      <section className="relative overflow-hidden bg-background">
+        {/* Full-width partner logos background */}
+        <div className="w-full">
+          <img
+            src="/manus-storage/partner-logos_65eefeb8.png"
+            alt="Trusted Partners Logos"
+            className="w-full h-auto object-cover"
+            style={{
+              imageRendering: 'crisp-edges',
+              display: 'block',
+            }}
+          />
         </div>
       </section>
 
