@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           
           <div className="relative hidden lg:block animate-in zoom-in-95 duration-1000 delay-300 fade-in">
-            <div className="relative w-full aspect-square max-w-[600px] mx-auto">
+            <div className="relative w-full aspect-square max-w-[480px] mx-auto">
               {/* Abstract 3D Element or Product Visualization */}
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 rounded-full blur-[100px] animate-pulse-slow" />
               <img 
