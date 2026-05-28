@@ -202,7 +202,7 @@ export default function Home() {
           <p className="text-gray-300 text-lg text-center">與全球領先企業合作，提供頂級熱管理解決方案</p>
         </div>
         
-        <div style={{ width: '100%', backgroundColor: '#0f1729', padding: '40px 0', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ width: '100%', backgroundColor: 'oklch(0.15 0.04 260)', padding: '40px 0', display: 'flex', justifyContent: 'center' }}>
           <img
             src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/XYkTAEAdpiBSyhOK.png"
             alt="Trusted Partners Logos"
