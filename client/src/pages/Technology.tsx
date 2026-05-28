@@ -43,6 +43,8 @@ export default function Technology() {
                   src="/assets/thermal_analysis.jpg" 
                   alt="Thermodynamic Engineering" 
                   className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 <div className="absolute bottom-6 left-6">
@@ -184,6 +186,8 @@ export default function Technology() {
                   src="/assets/far_infrared_tech.jpg" 
                   alt="Far-Infrared Technology" 
                   className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 <div className="absolute bottom-6 left-6">
@@ -259,6 +263,8 @@ export default function Technology() {
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/PEwsYhWRfFKWsVlo.jpg" 
                       alt="遠紅外線技術應用" 
                       className="w-full h-auto object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
 
