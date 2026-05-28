@@ -41,16 +41,9 @@ export default function About() {
               </div>
               {/* Stats Card */}
               <div className="absolute -bottom-8 -right-8 bg-card border border-white/10 p-6 rounded-xl shadow-xl hidden md:block">
-                <div className="flex gap-8">
-                  <div className="text-center">
-                    <div className="text-3xl font-display font-bold text-primary mb-1">7+</div>
-                    <div className="text-xs text-muted-foreground font-mono uppercase">Years Exp.</div>
-                  </div>
-                  <div className="w-px bg-white/10" />
-                  <div className="text-center">
-                    <div className="text-3xl font-display font-bold text-primary mb-1">2019</div>
-                    <div className="text-xs text-muted-foreground font-mono uppercase">Founded</div>
-                  </div>
+                <div className="text-center">
+                  <div className="text-3xl font-display font-bold text-primary mb-1">2019</div>
+                  <div className="text-xs text-muted-foreground font-mono uppercase">Founded</div>
                 </div>
               </div>
             </div>
