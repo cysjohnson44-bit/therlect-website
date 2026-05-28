@@ -140,7 +140,7 @@ export default function About() {
       }}>
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/80" />
         <div className="container relative z-10">
-
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-white text-center mb-16">我們的客戶</h2>
         </div>
       </section>
 

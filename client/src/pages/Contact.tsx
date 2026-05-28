@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Youtube } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -195,6 +195,25 @@ export default function Contact() {
                 </Button>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* YouTube Section */}
+      <section className="py-20 border-t border-white/5">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display font-bold text-3xl mb-6">觀看我們的技術分享</h2>
+            <p className="text-muted-foreground text-lg mb-8">了解更多關於 Therlect 汎海科技的熱管理解決方案和技術創新</p>
+            <a 
+              href="https://www.youtube.com/watch?v=aigp6jhZZnQ" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-colors duration-300"
+            >
+              <Youtube className="w-6 h-6" />
+              觀看 YouTube 頻道
+            </a>
           </div>
         </div>
       </section>
