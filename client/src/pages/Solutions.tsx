@@ -66,6 +66,18 @@ export default function Solutions() {
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
     },
     {
+      title: "無人載具",
+      description: "無人機、無人車等無人載具在高性能運行時產生大量熱量。我們提供專業的熱管理解決方案，確保無人載具在長時間飛行或行駛時保持穩定的性能。通過優化散熱設計和材料選擇，我們幫助客戶延長續航時間、提升安全性和可靠性。",
+      items: ["無人機散熱", "無人車電池冷卻", "飛行控制系統溫控", "動力電池熱管理"],
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
+    },
+    {
+      title: "穿戴式產品",
+      description: "智慧手錶、智慧眼鏡、健康監測設備等穿戴式產品需要在緊湊的空間內實現高效散熱。我們設計輕量化、高效能的散熱方案，確保穿戴式設備在長時間使用時不會過熱。通過精密的熱管理技術，我們為用戶提供舒適的穿戴體驗。",
+      items: ["智慧手錶散熱", "智慧眼鏡溫控", "健康監測設備冷卻", "穿戴式電池熱管理"],
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
+    },
+    {
       title: "工業與通訊",
       description: "工業與通訊領域對熱管理的要求最為嚴苛。伺服器機櫃、5G 基地台、工業電腦和大功率電源等設備需要在高溫、高濕、高塵環境下長期穩定運行。我們提供企業級的散熱解決方案，包括無風扇設計、液冷系統和模組化散熱器。這些方案不僅提高了設備的可靠性，還降低了運營成本和能耗。",
       items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
