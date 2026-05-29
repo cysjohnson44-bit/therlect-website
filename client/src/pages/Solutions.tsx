@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Settings, PenTool, BarChart3, Box, Award } from "lucide-react";
+import { ArrowRight, CheckCircle2, Settings, PenTool, BarChart3, Box, Award, ChevronDown } from "lucide-react";
 import { Link } from "wouter";
+import React from "react";
 
 export default function Solutions() {
+  const [expandedDomain, setExpandedDomain] = React.useState<string | null>(null);
+
   const processSteps = [
     {
       icon: PenTool,
@@ -62,24 +65,28 @@ export default function Solutions() {
     {
       title: "消費性電子",
       description: "在消費性電子領域，我們專注於解決筆記型電腦、智慧型手機、遊戲主機和穿戴式裝置的散熱挑戰。隨著電子產品功能的不斷升級，發熱量也隨之增加。我們通過創新的散熱設計、高效能材料選擇和精密的熱流模擬，確保產品在高性能運行時保持最佳溫度。我們的解決方案不僅提升了產品的穩定性和壽命，還改善了用戶體驗。",
+      detailedContent: "消費性電子產品對散熱效能要求日益嚴格。我們針對不同產品類型提供客製化方案：\n\n• 筆記型電腦：採用高效能散熱模組，確保長時間運行不降頻\n• 智慧型手機：超薄液冷設計，在有限空間內實現最大散熱效能\n• 遊戲主機：多層散熱架構，支持高性能遊戲長時間運行\n• 穿戴式裝置：輕量化散熱方案，兼顧舒適度與效能\n\n我們的解決方案已應用於全球知名消費電子品牌，幫助他們提升產品競爭力。",
       items: ["筆記型電腦散熱", "智慧型手機散熱", "遊戲主機冷卻", "穿戴式裝置熱管理"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
     },
     {
       title: "無人載具",
       description: "無人機、無人車等無人載具在高性能運行時產生大量熱量。我們提供專業的熱管理解決方案，確保無人載具在長時間飛行或行駛時保持穩定的性能。通過優化散熱設計和材料選擇，我們幫助客戶延長續航時間、提升安全性和可靠性。",
+      detailedContent: "無人載具的熱管理直接影響續航能力和安全性。我們提供全面的解決方案：\n\n• 無人機：輕量化散熱設計，最大化續航時間\n• 無人車：高效能電池冷卻系統，確保長時間行駛\n• 飛行控制系統：精密溫控，保證飛行穩定性\n• 動力電池：專業熱管理模組，延長電池壽命\n\n我們的技術已成功應用於多家無人載具製造商，顯著提升了產品性能。",
       items: ["無人機散熱", "無人車電池冷卻", "飛行控制系統溫控", "動力電池熱管理"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
     },
     {
       title: "穿戴式產品",
       description: "智慧手錶、智慧眼鏡、健康監測設備等穿戴式產品需要在緊湊的空間內實現高效散熱。我們設計輕量化、高效能的散熱方案，確保穿戴式設備在長時間使用時不會過熱。通過精密的熱管理技術，我們為用戶提供舒適的穿戴體驗。",
+      detailedContent: "穿戴式產品的散熱挑戰在於空間限制與舒適度平衡。我們的解決方案包括：\n\n• 智慧手錶：超薄散熱設計，不影響穿戴舒適度\n• 智慧眼鏡：隱形散熱技術，保持產品美觀\n• 健康監測設備：精密溫控，確保傳感器準確性\n• 穿戴式電池：高能量密度配合高效散熱\n\n我們的創新技術使穿戴式產品能夠在長時間使用中保持最佳性能。",
       items: ["智慧手錶散熱", "智慧眼鏡溫控", "健康監測設備冷卻", "穿戴式電池熱管理"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-consumer-electronics-solutions-8yoSh8DjZR9tpgF6UHVe99.webp"
     },
     {
       title: "工業與通訊",
       description: "工業與通訊領域對熱管理的要求最為嚴苛。伺服器機櫃、5G 基地台、工業電腦和大功率電源等設備需要在高溫、高濕、高塵環境下長期穩定運行。我們提供企業級的散熱解決方案，包括無風扇設計、液冷系統和模組化散熱器。這些方案不僅提高了設備的可靠性，還降低了運營成本和能耗。",
+      detailedContent: "工業與通訊領域要求 24/7 不間斷運行，熱管理至關重要。我們的企業級解決方案包括：\n\n• 伺服器機櫃：高密度散熱設計，支持大規模部署\n• 5G 基地台：極端環境適應性，確保信號穩定\n• 工業電腦：無風扇設計，降低故障率與維護成本\n• 大功率電源：高效散熱，提升能源轉換效率\n\n我們的方案已應用於全球數據中心和通訊基礎設施。",
       items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-industrial-communication-7Z2anCshdttibH6uR34wSD.webp"
     },
@@ -87,6 +94,7 @@ export default function Solutions() {
     {
       title: "汽車與航空",
       description: "汽車與航空領域的熱管理需求涉及極端條件。電動車電池散熱、航空發動機冷卻系統、飛行器電子設備溫控等應用對可靠性和性能要求極高。我們提供針對性的解決方案，包括高效能散熱模組、先進的材料應用和創新的設計理念。這些方案幫助客戶實現更高的效率、更長的使用壽命和更優的安全性能。",
+      detailedContent: "汽車與航空領域對可靠性要求最高，熱管理直接關係安全性。我們的專業方案包括：\n\n• 電動車電池：高效散熱確保電池壽命與安全性\n• 航空發動機：極限條件下的冷卻系統設計\n• 飛行器電子設備：輕量化高效能溫控方案\n• 汽車電子：車規級可靠性認證\n\n我們的技術已通過汽車與航空業最嚴格的認證標準。",
       items: ["電動車電池散熱", "航空發動機冷卻", "飛行器溫控系統", "汽車電子散熱"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/application-automotive-aerospace-GBvqcPRPaoi57Gb8TS4DPU.webp"
     }
@@ -173,13 +181,36 @@ export default function Solutions() {
           </div>
 
           <div className="space-y-24">
-            {applicationDomains.map((app, i) => (
+            {applicationDomains.map((app, i) => {
+              const isExpanded = expandedDomain === app.title;
+              return (
               <div key={i} className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 items-center`}>
                 {/* Text Content */}
                 <div className="flex-1">
                   <div className="space-y-4">
-                    <h3 className="font-display font-bold text-3xl text-foreground">{app.title}</h3>
+                    <button
+                      onClick={() => setExpandedDomain(isExpanded ? null : app.title)}
+                      className="w-full text-left group hover:opacity-80 transition-opacity"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-display font-bold text-3xl text-foreground group-hover:text-primary transition-colors">{app.title}</h3>
+                        <ChevronDown className={`w-6 h-6 text-primary transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
+                      </div>
+                    </button>
                     <p className="text-muted-foreground leading-relaxed text-base">{app.description}</p>
+                    
+                    {/* Expandable Detailed Content */}
+                    {isExpanded && app.detailedContent && (
+                      <div className="mt-6 p-6 bg-primary/10 rounded-lg border border-primary/20 animate-in fade-in duration-300">
+                        <p className="text-foreground leading-relaxed whitespace-pre-line">{app.detailedContent}</p>
+                        <Link href="/contact">
+                          <Button size="sm" className="mt-4 bg-primary hover:bg-primary/90 text-white rounded-sm">
+                            了解更多 <ArrowRight className="ml-2 w-3 h-3" />
+                          </Button>
+                        </Link>
+                      </div>
+                    )}
+                    
                     <div className="pt-4">
                       <h4 className="font-semibold text-foreground mb-3">主要應用領域：</h4>
                       <div className="grid grid-cols-2 gap-3">
@@ -209,7 +240,8 @@ export default function Solutions() {
                   </div>
                 </div>
               </div>
-            ))}
+            );
+            })}
           </div>
         </div>
       </section>
