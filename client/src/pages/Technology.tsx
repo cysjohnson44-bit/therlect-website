@@ -95,13 +95,15 @@ export default function Technology() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Passive Cooling */}
             <div className="bg-card/30 border border-white/5 p-8 rounded-xl hover:bg-card/50 transition-colors">
-              <button
-                onClick={() => setPassiveExpanded(!passiveExpanded)}
-                className="w-full flex items-center justify-between mb-4"
-              >
-                <h3 className="font-display font-bold text-2xl text-cyan-400">被動散熱</h3>
-                <ChevronDown className={`w-6 h-6 text-cyan-400 transition-transform duration-300 ${passiveExpanded ? 'rotate-180' : ''}`} />
-              </button>
+              <Link href="/technology/passive-cooling">
+                <button
+                  onClick={() => setPassiveExpanded(!passiveExpanded)}
+                  className="w-full flex items-center justify-between mb-4 hover:text-cyan-300 transition-colors"
+                >
+                  <h3 className="font-display font-bold text-2xl text-cyan-400">被動散熱</h3>
+                  <ChevronDown className={`w-6 h-6 text-cyan-400 transition-transform duration-300 ${passiveExpanded ? 'rotate-180' : ''}`} />
+                </button>
+              </Link>
               <p className="text-muted-foreground mb-4">無需主動能源驅動的高效散熱方案</p>
               {passiveExpanded && (
                 <div className="mt-6 space-y-4 pt-6 border-t border-white/10 animate-in fade-in duration-300">
@@ -124,13 +126,15 @@ export default function Technology() {
 
             {/* Active Cooling */}
             <div className="bg-card/30 border border-white/5 p-8 rounded-xl hover:bg-card/50 transition-colors">
-              <button
-                onClick={() => setActiveExpanded(!activeExpanded)}
-                className="w-full flex items-center justify-between mb-4"
-              >
-                <h3 className="font-display font-bold text-2xl text-purple-400">主動冷卻</h3>
-                <ChevronDown className={`w-6 h-6 text-purple-400 transition-transform duration-300 ${activeExpanded ? 'rotate-180' : ''}`} />
-              </button>
+              <Link href="/technology/active-cooling">
+                <button
+                  onClick={() => setActiveExpanded(!activeExpanded)}
+                  className="w-full flex items-center justify-between mb-4 hover:text-purple-300 transition-colors"
+                >
+                  <h3 className="font-display font-bold text-2xl text-purple-400">主動冷卻</h3>
+                  <ChevronDown className={`w-6 h-6 text-purple-400 transition-transform duration-300 ${activeExpanded ? 'rotate-180' : ''}`} />
+                </button>
+              </Link>
               <p className="text-muted-foreground mb-4">主動驅動的高效能散熱解決方案</p>
               {activeExpanded && (
                 <div className="mt-6 space-y-4 pt-6 border-t border-white/10 animate-in fade-in duration-300">

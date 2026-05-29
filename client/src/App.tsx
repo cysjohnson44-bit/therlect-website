@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 
 // 代碼分割 - 延遲加載非首頁路由
 const Technology = lazy(() => import("./pages/Technology"));
+const PassiveCooling = lazy(() => import("./pages/PassiveCooling"));
+const ActiveCooling = lazy(() => import("./pages/ActiveCooling"));
 const Solutions = lazy(() => import("./pages/Solutions"));
 const CFDAnalysis = lazy(() => import("./pages/CFDAnalysis"));
 const ThermalModuleDesign = lazy(() => import("./pages/ThermalModuleDesign"));
@@ -36,6 +38,8 @@ function Router() {
       <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/technology"} component={Technology} />
+      <Route path={"/technology/passive-cooling"} component={PassiveCooling} />
+      <Route path={"/technology/active-cooling"} component={ActiveCooling} />
       <Route path={"/solutions"} component={Solutions} />
       <Route path={"/cfd-analysis"} component={CFDAnalysis} />
       <Route path={"/thermal-module-design"} component={ThermalModuleDesign} />
