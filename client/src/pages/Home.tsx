@@ -71,12 +71,12 @@ export default function Home() {
               {/* Abstract 3D Element or Product Visualization */}
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 rounded-full blur-[100px] animate-pulse-slow" />
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/SkBOsMXCQUfIHLHm.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/hero_thermal_visualization-VjJ7un5PSb8V4XxQde6YRz.webp" 
                 alt="Thermal Analysis Visualization" 
                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,240,255,0.3)] rounded-2xl border border-white/10"
                 loading="lazy"
                 decoding="async"
-                style={{ opacity: 0.7, contentVisibility: 'auto', willChange: 'opacity' }}
+                style={{ contentVisibility: 'auto', willChange: 'opacity' }}
               />
               
               {/* Floating Data Cards */}
@@ -104,8 +104,8 @@ export default function Home() {
         </div>
 
         {/* Statistics Section - DigitalOcean Style */}
-        <div className="container relative z-10 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="container relative z-10 w-full mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-8 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
@@ -139,7 +139,7 @@ export default function Home() {
             <p className="text-muted-foreground text-lg">從被動散熱到主動冷卻，涵蓋全方位的熱管理需求</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               {
                 icon: <Cpu className="w-8 h-8" />,
@@ -187,8 +187,8 @@ export default function Home() {
                   <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
                     {solution.icon}
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 text-white">{solution.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{solution.description}</p>
+                  <h3 className="font-semibold text-base md:text-lg mb-3 text-white">{solution.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">{solution.description}</p>
                 </div>
               </div>
             ))}

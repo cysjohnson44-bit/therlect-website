@@ -37,8 +37,13 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        passes: 2,
+        pure_funcs: ['console.log', 'console.info'],
       },
       mangle: true,
+      format: {
+        comments: false,
+      },
     },
     rollupOptions: {
       output: {
@@ -51,7 +56,7 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 500,
-    assetsInlineLimit: 4096,
+    assetsInlineLimit: 8192,
     cssCodeSplit: true,
     reportCompressedSize: true,
     sourcemap: false,

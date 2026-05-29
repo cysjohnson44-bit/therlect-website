@@ -117,7 +117,7 @@ export default function Solutions() {
       <section className="py-20 relative">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <div className="space-y-20">
+            <div className="space-y-16">
               {processSteps.map((step, index) => (
                 <div key={index} className="relative">
                   {/* Timeline Dot and Line */}
