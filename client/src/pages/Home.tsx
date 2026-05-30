@@ -105,26 +105,26 @@ export default function Home() {
 
         {/* Statistics Section - DigitalOcean Style */}
         <div className="container relative z-10 w-full mt-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-8 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-4xl md:text-5xl font-bold text-primary mb-2">7+</p>
-                <p className="text-sm text-muted-foreground">年專業經驗</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">7+</p>
+                <p className="text-base text-muted-foreground">年專業經驗</p>
               </div>
             </div>
-            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-8 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-4xl md:text-5xl font-bold text-primary mb-2">100+</p>
-                <p className="text-sm text-muted-foreground">全球客戶</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">100+</p>
+                <p className="text-base text-muted-foreground">全球客戶</p>
               </div>
             </div>
-            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-8 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-4xl md:text-5xl font-bold text-primary mb-2">50+</p>
-                <p className="text-sm text-muted-foreground">成功項目</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">50+</p>
+                <p className="text-base text-muted-foreground">成功項目</p>
               </div>
             </div>
           </div>
@@ -139,42 +139,42 @@ export default function Home() {
             <p className="text-muted-foreground text-lg">從被動散熱到主動冷卻，涵蓋全方位的熱管理需求</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: <Cpu className="w-8 h-8" />,
+                icon: <Cpu className="w-12 h-12" />,
                 title: "被動散熱",
                 description: "高效能散熱片和導熱材料，無需額外電力消耗"
               },
               {
-                icon: <Activity className="w-8 h-8" />,
+                icon: <Activity className="w-12 h-12" />,
                 title: "主動冷卻",
                 description: "風扇和液冷系統，為高功率設備提供強大冷卻能力"
               },
               {
-                icon: <Layers className="w-8 h-8" />,
+                icon: <Layers className="w-12 h-12" />,
                 title: "熱介面材料",
                 description: "導熱膏、墊片和相變材料，優化熱傳導效率"
               },
               {
-                icon: <Globe className="w-8 h-8" />,
+                icon: <Globe className="w-12 h-12" />,
                 title: "系統集成",
                 description: "完整的熱管理系統設計和集成解決方案"
               },
               {
-                icon: <Thermometer className="w-8 h-8" />,
+                icon: <Thermometer className="w-12 h-12" />,
                 title: "溫度監測",
                 description: "實時溫度監測和智能控制系統"
               },
               {
-                icon: <Zap className="w-8 h-8" />,
+                icon: <Zap className="w-12 h-12" />,
                 title: "能效優化",
                 description: "降低能耗，提高系統效能和可靠性"
               }
             ].map((solution, index) => (
               <div
                 key={index}
-                className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-8 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
+                className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-10 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
               >
                 {/* Gradient Border Effect */}
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
@@ -184,11 +184,11 @@ export default function Home() {
                 
                 {/* Content */}
                 <div className="relative">
-                  <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
                     {solution.icon}
                   </div>
-                  <h3 className="font-semibold text-base md:text-lg mb-3 text-white">{solution.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">{solution.description}</p>
+                  <h3 className="font-semibold text-lg md:text-xl mb-4 text-white">{solution.title}</h3>
+                  <p className="text-muted-foreground text-base leading-relaxed line-clamp-3">{solution.description}</p>
                 </div>
               </div>
             ))}
