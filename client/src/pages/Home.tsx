@@ -48,7 +48,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed border-l-2 border-primary/30 pl-6">
-              Therlect 汎海科技，憑藉超過7年的熱管理專業經驗，致力於為全球客戶提供從理論分析到市場應用的全方位解決方案。
+              Therlect 汎海科技，憑藉超過20年的熱管理專業經驗，致力於為全球客戶提供從理論分析到市場應用的全方位解決方案。
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
@@ -109,7 +109,7 @@ export default function Home() {
             <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">7+</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">20+</p>
                 <p className="text-base text-muted-foreground">年專業經驗</p>
               </div>
             </div>
