@@ -393,14 +393,14 @@ export default function Home() {
       </section>
 
       {/* Trusted Partners Section */}
-      <section className="relative overflow-hidden" style={{ backgroundColor: '#0a0e1a' }}>
+      <section className="relative overflow-hidden" style={{ backgroundColor: '#0d1117' }}>
         <div className="container py-12 mb-0">
           <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white text-center">值得信賴的合作夥伴</h2>
           <p className="text-gray-300 text-lg text-center">與全球領先企業合作，提供頂級熱管理解決方案</p>
         </div>
         
         {/* Full-width partner logos background with hover zoom effect */}
-        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0a0e1a', minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
+        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0d1117', minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
           <img
             src="/manus-storage/partner-logos-combined_f0d673fd.jpg"
             alt="Trusted Partners Logos"
