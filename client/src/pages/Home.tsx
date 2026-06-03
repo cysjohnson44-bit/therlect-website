@@ -408,7 +408,7 @@ export default function Home() {
             style={{
               imageRendering: 'crisp-edges',
               display: 'block',
-              width: '75%',
+              width: '56%',
               height: 'auto',
               maxWidth: '100%',
               objectFit: 'contain',
