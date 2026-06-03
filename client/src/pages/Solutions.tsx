@@ -67,7 +67,7 @@ export default function Solutions() {
       description: "在消費性電子領域，我們專注於解決筆記型電腦、智慧型手機、遊戲主機和穿戴式裝置的散熱挑戰。隨著電子產品功能的不斷升級，發熱量也隨之增加。我們通過創新的散熱設計、高效能材料選擇和精密的熱流模擬，確保產品在高性能運行時保持最佳溫度。我們的解決方案不僅提升了產品的穩定性和壽命，還改善了用戶體驗。",
       detailedContent: "消費性電子產品對散熱效能要求日益嚴格。我們針對不同產品類型提供客製化方案：\n\n• 筆記型電腦：採用高效能散熱模組，確保長時間運行不降頻\n• 智慧型手機：超薄液冷設計，在有限空間內實現最大散熱效能\n• 遊戲主機：多層散熱架構，支持高性能遊戲長時間運行\n• 穿戴式裝置：輕量化散熱方案，兼顧舒適度與效能\n\n我們的解決方案已應用於全球知名消費電子品牌，幫助他們提升產品競爭力。",
       items: ["筆記型電腦散熱", "智慧型手機散熱", "遊戲主機冷卻", "穿戴式裝置熱管理"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-consumer-electronics-YRRYgrbb5ZQ9K3HqNsSqDw.webp"
+      image: "/manus-storage/consumer_electronics_8e24011a.png"
     },
     {
       title: "無人載具",
