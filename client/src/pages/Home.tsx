@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Cpu, Thermometer, Zap, Activity, Layers, Globe } from "lucide-react";
 import { Link } from "wouter";
+import { useEffect, useState } from "react";
 
 /**
  * All content in this page are only for example, replace with your own feature implementation
@@ -11,6 +12,23 @@ import { Link } from "wouter";
 export default function Home() {
   // The userAuth hooks provides authentication state
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    // 預加載關鍵圖片
+    const criticalImages = [
+      '/manus-storage/rocket_launch_hero_f51d3cd5.png',
+      '/manus-storage/wearable-cooling_46f219b9.jpg',
+    ];
+    
+    criticalImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+    
+    // 標記圖片已加載
+    setImagesLoaded(true);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30 selection:text-primary-foreground">
@@ -34,7 +52,7 @@ export default function Home() {
 
         {/* Main Hero Content */}
         <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="space-y-8 animate-in slide-in-from-left-10 duration-1000 fade-in">
+            <div className="space-y-8" style={{ animation: 'slide-in-from-left 1s ease-out both' }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-xs font-mono text-primary tracking-wider">THERMAL MANAGEMENT EXPERTS</span>
@@ -66,7 +84,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="relative hidden lg:block animate-in zoom-in-95 duration-1000 delay-300 fade-in">
+          <div className="relative hidden lg:block" style={{ animation: 'zoom-in-95 1s ease-out 0.3s both' }}>
             <div className="relative w-full max-w-[640px] mx-auto">
               {/* Rocket Launch Hero Image */}
               <img 
@@ -203,7 +221,7 @@ export default function Home() {
             <p className="text-muted-foreground text-lg">從消費電子到工業應用，為各行業提供專業的熱管理方案</p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-16" style={{ contentVisibility: 'auto' }}>
             {/* Wearable Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
@@ -237,6 +255,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
+                  style={{ contentVisibility: 'auto' }}
                 />
               </div>
             </div>
@@ -250,6 +269,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
+                  style={{ contentVisibility: 'auto' }}
                 />
               </div>
               <div>
@@ -311,6 +331,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
+                  style={{ contentVisibility: 'auto' }}
                 />
               </div>
             </div>
@@ -324,6 +345,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
+                  style={{ contentVisibility: 'auto' }}
                 />
               </div>
               <div>

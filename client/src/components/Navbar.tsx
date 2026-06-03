@@ -3,6 +3,38 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+function LanguageSwitcher() {
+  const { language, setLanguage } = useLanguage();
+  return (
+    <div className="flex items-center gap-2">
+      <button
+        onClick={() => setLanguage('zh')}
+        className={cn(
+          "text-xs font-medium px-2 py-1 rounded transition-colors",
+          language === 'zh'
+            ? "text-primary bg-primary/10"
+            : "text-muted-foreground hover:text-primary"
+        )}
+      >
+        中文
+      </button>
+      <span className="text-muted-foreground/50">|</span>
+      <button
+        onClick={() => setLanguage('en')}
+        className={cn(
+          "text-xs font-medium px-2 py-1 rounded transition-colors",
+          language === 'en'
+            ? "text-primary bg-primary/10"
+            : "text-muted-foreground hover:text-primary"
+        )}
+      >
+        English
+      </button>
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -117,6 +149,10 @@ export default function Navbar() {
               )}
             </div>
           ))}
+          {/* Language Switcher */}
+          <div className="flex items-center gap-2 pl-4 border-l border-border/30">
+            <LanguageSwitcher />
+          </div>
           <Link href="/contact">
             <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10 hover:text-primary font-mono text-xs tracking-wider">
               GET IN TOUCH
