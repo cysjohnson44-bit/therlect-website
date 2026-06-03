@@ -97,7 +97,7 @@ export default function Solutions() {
       description: "汽車與航空領域的熱管理需求涉及極端條件。電動車電池散熱、航空發動機冷卻系統、飛行器電子設備溫控等應用對可靠性和性能要求極高。我們提供針對性的解決方案，包括高效能散熱模組、先進的材料應用和創新的設計理念。這些方案幫助客戶實現更高的效率、更長的使用壽命和更優的安全性能。",
       detailedContent: "汽車與航空領域對可靠性要求最高，熱管理直接關係安全性。我們的專業方案包括：\n\n• 電動車電池：高效散熱確保電池壽命與安全性\n• 航空發動機：極限條件下的冷卻系統設計\n• 飛行器電子設備：輕量化高效能溫控方案\n• 汽車電子：車規級可靠性認證\n\n我們的技術已通過汽車與航空業最嚴格的認證標準。",
       items: ["電動車電池散熱", "航空發動機冷卻", "飛行器溫控系統", "汽車電子散熱"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/app-automotive-aerospace-SShgTsz2RitcJ5o5yMVwzW.webp"
+      image: "/manus-storage/automotive_aerospace_7be64cff.png"
     }
   ];
 
