@@ -121,17 +121,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 rounded-xl bg-card/30 border border-white/5 hover:bg-card/50 transition-colors">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">電子郵件</h3>
-                    <a href="mailto:jimmy.chen@therlect.com" className="text-muted-foreground hover:text-primary transition-colors font-mono text-lg">
-                      jimmy.chen@therlect.com
-                    </a>
-                  </div>
-                </div>
+
 
                 <div className="flex items-start gap-4 p-6 rounded-xl bg-card/30 border border-white/5 hover:bg-card/50 transition-colors">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">

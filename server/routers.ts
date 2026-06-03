@@ -51,18 +51,7 @@ export const appRouter = router({
           }),
         });
 
-        // Send notification email to admin
-        await sendEmail({
-          to: "cmcjc8888@gmail.com",
-          subject: `新的預約洽談申請 - ${input.name}`,
-          htmlContent: generateBookingNotificationTemplate({
-            name: input.name,
-            email: input.email,
-            phone: input.phone,
-            date: input.date,
-            message: input.message,
-          }),
-        });
+        // Email notifications disabled
 
         return booking;
       }),
@@ -119,23 +108,7 @@ export const appRouter = router({
           }),
         });
 
-        // Send contact form to admin (with error handling)
-        try {
-          await sendEmail({
-            to: "cmcjc8888@gmail.com",
-            subject: `新的聯絡表單提交 - ${input.subject} (來自 ${input.name})`,
-            htmlContent: generateContactEmailTemplate({
-              name: input.name,
-              email: input.email,
-              phone: input.phone,
-              company: input.company,
-              subject: input.subject,
-              message: input.message,
-            }),
-          });
-        } catch (error) {
-          console.error("Failed to send email to cmcjc8888@gmail.com:", error);
-        }
+        // Email notifications disabled
 
         return {
           success: true,

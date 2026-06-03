@@ -4,25 +4,25 @@
  */
 
 export const EMAIL_CONFIG = {
-  // Admin email address for all notifications
-  ADMIN_EMAIL: "jimmy.chen@therlect.com",
+  // Admin email address for all notifications (DISABLED)
+  ADMIN_EMAIL: "",
   
   // Email notification types and their configurations
   NOTIFICATION_TYPES: {
     BOOKING: {
       name: "預約洽談",
       description: "客戶提交預約洽談表單時發送",
-      enabled: true,
+      enabled: false,
     },
     CONTACT_FORM: {
       name: "聯絡表單",
       description: "客戶提交聯絡表單時發送",
-      enabled: true,
+      enabled: false,
     },
     CUSTOMER_INQUIRY: {
       name: "客服詢問",
       description: "客戶提交客服詢問時發送",
-      enabled: true,
+      enabled: false,
     },
   },
 
@@ -33,7 +33,7 @@ export const EMAIL_CONFIG = {
   COMPANY: {
     name: "Therlect 汎海科技",
     phone: "+886-2-2999-5596",
-    email: "jimmy.chen@therlect.com",
+    email: "",
   },
 };
 
