@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Home",
+    "coreTechnology": "Core Technology",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "language": "English",
+    "getInTouch": "GET IN TOUCH"
+  },
+  "hero": {
+    "badge": "THERMAL MANAGEMENT EXPERTS",
+    "title": "Unleash the",
+    "titleHighlight": "Unlimited Potential of Thermal Energy",
+    "description": "Therlect, with over 20 years of professional thermal management expertise, is dedicated to providing comprehensive solutions from theoretical analysis to market applications for global customers.",
+    "exploreSolutions": "Explore Solutions",
+    "contactUs": "Contact Us"
+  },
+  "stats": {
+    "temperatureControl": "Temperature Control",
+    "temperatureControlValue": "±0.5°C",
+    "performanceImprovement": "Performance Improvement",
+    "performanceImprovementValue": "45%",
+    "yearsOfExperience": "Years of Professional Experience",
+    "yearsOfExperienceValue": "20+",
+    "globalClients": "Global Clients",
+    "globalClientsValue": "100+",
+    "successfulProjects": "Successful Projects",
+    "successfulProjectsValue": "50+"
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": "From passive cooling to active refrigeration, covering comprehensive thermal management needs",
+    "passiveCooling": {
+      "title": "Passive Cooling",
+      "description": "High-performance heat sinks and thermal conductive materials with no additional power consumption"
+    },
+    "activeCooling": {
+      "title": "Active Cooling",
+      "description": "Fan and liquid cooling systems providing powerful cooling capability for high-power devices"
+    },
+    "thermalInterface": {
+      "title": "Thermal Interface Materials",
+      "description": "Thermal conductive paste, pads, and phase-change materials optimizing thermal conductivity efficiency"
+    },
+    "systemIntegration": {
+      "title": "System Integration",
+      "description": "Complete thermal management system design and integrated solutions"
+    },
+    "temperatureMonitoring": {
+      "title": "Temperature Monitoring",
+      "description": "Real-time temperature monitoring and intelligent control systems"
+    },
+    "energyOptimization": {
+      "title": "Energy Efficiency Optimization",
+      "description": "Reducing energy consumption while improving system performance and reliability"
+    }
+  },
+  "applications": {
+    "title": "Comprehensive Thermal Dissipation Solutions",
+    "subtitle": "Providing professional thermal management solutions for various industries from consumer electronics to industrial applications",
+    "wearables": {
+      "title": "Wearable Device Thermal Dissipation",
+      "description": "Providing lightweight, high-performance thermal dissipation solutions for smartwatches, AR/VR glasses, and health monitoring devices. Our designs ensure devices maintain optimal temperatures during extended operation while preserving slim product profiles.",
+      "app1": "Smartwatch Heat Dissipation Module - Ultra-thin design with precise temperature control",
+      "app2": "AR/VR Glasses Cooling System - Comfortable wearing experience for extended periods",
+      "app3": "Health Monitoring Devices - Precise temperature control for accurate data",
+      "learnMore": "Learn More"
+    },
+    "industrial": {
+      "title": "Industrial Application Thermal Dissipation",
+      "description": "Providing reliable thermal dissipation solutions for industrial manufacturing, testing equipment, and precision instruments. Our products undergo rigorous testing to maintain stable performance in harsh environments.",
+      "app1": "CNC Machinery Cooling - High-precision temperature control",
+      "app2": "Testing Equipment Cooling - 24/7 continuous operation support",
+      "app3": "Precision Instrument Cooling - Strong environmental adaptability",
+      "learnMore": "Learn More"
+    },
+    "automotive": {
+      "title": "Automotive Thermal Management Systems",
+      "description": "Providing highly reliable thermal dissipation solutions for electric vehicle batteries, power systems, and vehicle electronics. Our designs comply with automotive industry standards ensuring optimal performance under various driving conditions.",
+      "app1": "Battery Management System - Safe and reliable temperature control",
+      "app2": "Power Electronics Cooling - High-efficiency power conversion",
+      "app3": "Vehicle Electronics Cooling - Extreme environment adaptation",
+      "learnMore": "Learn More"
+    },
+    "dataCenter": {
+      "title": "Data Center Thermal Dissipation",
+      "description": "Providing enterprise-grade thermal dissipation solutions for servers, switches, and high-power power supplies. Our system design effectively reduces data center energy consumption and improves overall efficiency.",
+      "app1": "Server CPU Cooling - Low-noise high-performance",
+      "app2": "Cabinet Thermal Management - Overall temperature equilibrium",
+      "app3": "Power Module Cooling - Reliability and efficiency combined",
+      "learnMore": "Learn More"
+    },
+    "networking": {
+      "title": "Network Communication Thermal Dissipation",
+      "description": "Providing professional thermal dissipation solutions for 5G base stations, network switches, and communication equipment. Our designs ensure stable network connectivity is maintained in high-temperature environments.",
+      "app1": "5G Base Station Cooling - High-power density cooling",
+      "app2": "Switch Heat Dissipation Module - Reliable connection assurance",
+      "app3": "Communication Power Cooling - Long-term stable operation",
+      "learnMore": "Learn More"
+    }
+  },
+  "cta": {
+    "title": "Ready to Solve Your Thermal Management Challenges?",
+    "description": "Our expert team is ready to provide customized solutions for your projects. No matter how complex your requirements are, we can find the most suitable solution.",
+    "startProject": "Start Your Project"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "coreTechnology": "Core Technology",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "serviceItems": "Service Items",
+    "thermalAnalysis": "Thermal Flow Field Analysis",
+    "thermalDesign": "Thermal Design",
+    "productDevelopment": "Product Development",
+    "performanceOptimization": "Performance Optimization",
+    "copyright": "© 2026 Therlect Thermal Management Technology Co., Ltd. All rights reserved."
+  }
+}

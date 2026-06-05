@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "首頁",
+    "coreTechnology": "核心技術",
+    "solutions": "解決方案",
+    "about": "關於我們",
+    "contact": "聯絡我們",
+    "language": "中文",
+    "getInTouch": "GET IN TOUCH"
+  },
+  "hero": {
+    "badge": "THERMAL MANAGEMENT EXPERTS",
+    "title": "釋放熱能的",
+    "titleHighlight": "無限潛力",
+    "description": "Therlect 汎海科技，憑藉超過20年的熱管理專業經驗，致力於為全球客戶提供從理論分析到市場應用的全方位解決方案。",
+    "exploreSolutions": "探索解決方案",
+    "contactUs": "聯絡我們"
+  },
+  "stats": {
+    "temperatureControl": "溫度控制",
+    "temperatureControlValue": "±0.5°C",
+    "performanceImprovement": "效能提升",
+    "performanceImprovementValue": "45%",
+    "yearsOfExperience": "年專業經驗",
+    "yearsOfExperienceValue": "20+",
+    "globalClients": "全球客戶",
+    "globalClientsValue": "100+",
+    "successfulProjects": "成功項目",
+    "successfulProjectsValue": "50+"
+  },
+  "solutions": {
+    "title": "我們的解決方案",
+    "subtitle": "從被動散熱到主動冷卻，涵蓋全方位的熱管理需求",
+    "passiveCooling": {
+      "title": "被動散熱",
+      "description": "高效能散熱片和導熱材料，無需額外電力消耗"
+    },
+    "activeCooling": {
+      "title": "主動冷卻",
+      "description": "風扇和液冷系統，為高功率設備提供強大冷卻能力"
+    },
+    "thermalInterface": {
+      "title": "熱介面材料",
+      "description": "導熱膏、墊片和相變材料，優化熱傳導效率"
+    },
+    "systemIntegration": {
+      "title": "系統集成",
+      "description": "完整的熱管理系統設計和集成解決方案"
+    },
+    "temperatureMonitoring": {
+      "title": "溫度監測",
+      "description": "實時溫度監測和智能控制系統"
+    },
+    "energyOptimization": {
+      "title": "能效優化",
+      "description": "降低能耗，提高系統效能和可靠性"
+    }
+  },
+  "applications": {
+    "title": "全方位散熱解決方案",
+    "subtitle": "從消費電子到工業應用，為各行業提供專業的熱管理方案",
+    "wearables": {
+      "title": "穿戴式產品散熱",
+      "description": "為智慧手錶、AR/VR眼鏡和健康監測設備提供輕量化、高效能的散熱解決方案。我們的設計確保設備在長時間運行中保持最佳溫度，同時不影響產品的輕薄設計。",
+      "app1": "智慧手錶散熱模組 - 超薄設計，溫度控制精準",
+      "app2": "AR/VR眼鏡冷卻系統 - 長時間佩戴舒適體驗",
+      "app3": "健康監測設備 - 精密溫度控制，數據準確",
+      "learnMore": "了解更多"
+    },
+    "industrial": {
+      "title": "工業應用散熱",
+      "description": "為工業製造、測試設備和精密儀器提供可靠的散熱解決方案。我們的產品經過嚴格測試，能在惡劣環境中保持穩定性能。",
+      "app1": "CNC機械散熱 - 高精度溫度控制",
+      "app2": "測試設備冷卻 - 24/7連續運行支持",
+      "app3": "精密儀器散熱 - 環境適應性強",
+      "learnMore": "了解更多"
+    },
+    "automotive": {
+      "title": "車用散熱系統",
+      "description": "為電動車電池、動力系統和車載電子提供高可靠性散熱方案。我們的設計符合汽車工業標準，確保在各種駕駛條件下的最佳性能。",
+      "app1": "電池管理系統 - 安全可靠的溫度控制",
+      "app2": "動力電子散熱 - 高效能功率轉換",
+      "app3": "車載電子冷卻 - 極端環境適應",
+      "learnMore": "了解更多"
+    },
+    "dataCenter": {
+      "title": "數據中心散熱",
+      "description": "為伺服器、交換機和高功率電源提供企業級散熱解決方案。我們的系統設計能有效降低數據中心能耗，提高整體效率。",
+      "app1": "伺服器CPU散熱 - 低噪音高效能",
+      "app2": "機櫃熱管理 - 整體溫度均衡",
+      "app3": "電源模組冷卻 - 可靠性和效率並行",
+      "learnMore": "了解更多"
+    },
+    "networking": {
+      "title": "網路通訊散熱",
+      "description": "為5G基地台、網路交換機和通訊設備提供專業散熱方案。我們的設計確保在高溫環境中保持穩定的網路連接。",
+      "app1": "5G基地台散熱 - 高功率密度冷卻",
+      "app2": "交換機散熱模組 - 可靠連接保障",
+      "app3": "通訊電源散熱 - 長期穩定運行",
+      "learnMore": "了解更多"
+    }
+  },
+  "cta": {
+    "title": "準備好解決您的熱管理挑戰？",
+    "description": "我們的專家團隊隨時準備為您的項目提供定制化的解決方案。無論您的需求有多複雜，我們都能找到最適合的方案。",
+    "startProject": "開始您的項目"
+  },
+  "footer": {
+    "quickLinks": "快速連結",
+    "home": "首頁",
+    "coreTechnology": "核心技術",
+    "solutions": "解決方案",
+    "about": "關於我們",
+    "contact": "聯絡我們",
+    "serviceItems": "服務項目",
+    "thermalAnalysis": "熱流場分析",
+    "thermalDesign": "熱設計",
+    "productDevelopment": "產品開發",
+    "performanceOptimization": "性能優化",
+    "copyright": "© 2026 Therlect 汎海科技股份有限公司。版權所有。"
+  }
+}
