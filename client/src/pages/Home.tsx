@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Cpu, Thermometer, Zap, Activity, Layers, Globe } from "lucide-react";
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
-import { useLanguage } from "@/hooks/useLanguage";
 
 /**
  * All content in this page are only for example, replace with your own feature implementation
  * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
  */
 export default function Home() {
-  const { t } = useLanguage();
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
@@ -55,30 +55,30 @@ export default function Home() {
             <div className="space-y-8" style={{ animation: 'slide-in-from-left 1s ease-out both' }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-xs font-mono text-primary tracking-wider">{t('hero.badge')}</span>
+              <span className="text-xs font-mono text-primary tracking-wider">THERMAL MANAGEMENT EXPERTS</span>
             </div>
             
             <h1 className="font-display font-bold text-5xl md:text-7xl leading-tight">
-              {t('hero.title')} <br />
+              釋放熱能的 <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-gradient-x">
-                {t('hero.titleHighlight')}
+                無限潛力
               </span>
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed border-l-2 border-primary/30 pl-6">
-              {t('hero.description')}
+              Therlect 汎海科技，憑藉超過20年的熱管理專業經驗，致力於為全球客戶提供從理論分析到市場應用的全方位解決方案。
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="/solutions">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                  {t('hero.exploreSolutions')}
+                  探索解決方案
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
               <Link href="/contact">
                 <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 hover:text-primary rounded-sm px-8">
-                  {t('hero.contactUs')}
+                  聯絡我們
                 </Button>
               </Link>
             </div>
@@ -88,8 +88,8 @@ export default function Home() {
             <div className="relative w-full max-w-[640px] mx-auto">
               {/* Rocket Launch Hero Image */}
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/eSiuoTiHRLUScVgB.webp" 
-                alt="Thermal Management Analysis" 
+                src="/manus-storage/rocket_launch_hero_f51d3cd5.png" 
+                alt="Rocket Launch - Thermal Energy" 
                 className="relative z-10 w-full h-auto object-contain drop-shadow-[0_0_50px_rgba(255,100,0,0.3)] rounded-2xl border border-primary/30"
                 loading="lazy"
                 decoding="async"
@@ -101,8 +101,8 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <Thermometer className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-xs text-muted-foreground">{t('stats.temperatureControl')}</p>
-                    <p className="text-sm font-semibold">{t('stats.temperatureControlValue')}</p>
+                    <p className="text-xs text-muted-foreground">溫度控制</p>
+                    <p className="text-sm font-semibold">±0.5°C</p>
                   </div>
                 </div>
               </div>
@@ -111,8 +111,8 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-xs text-muted-foreground">{t('stats.performanceImprovement')}</p>
-                    <p className="text-sm font-semibold">{t('stats.performanceImprovementValue')}</p>
+                    <p className="text-xs text-muted-foreground">效能提升</p>
+                    <p className="text-sm font-semibold">45%</p>
                   </div>
                 </div>
               </div>
@@ -126,22 +126,22 @@ export default function Home() {
             <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">{t('stats.yearsOfExperienceValue')}</p>
-                <p className="text-base text-muted-foreground">{t('stats.yearsOfExperience')}</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">20+</p>
+                <p className="text-base text-muted-foreground">年專業經驗</p>
               </div>
             </div>
             <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">{t('stats.globalClientsValue')}</p>
-                <p className="text-base text-muted-foreground">{t('stats.globalClients')}</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">100+</p>
+                <p className="text-base text-muted-foreground">全球客戶</p>
               </div>
             </div>
             <div className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-12 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
               <div className="relative text-center">
-                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">{t('stats.successfulProjectsValue')}</p>
-                <p className="text-base text-muted-foreground">{t('stats.successfulProjects')}</p>
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-4">50+</p>
+                <p className="text-base text-muted-foreground">成功項目</p>
               </div>
             </div>
           </div>

@@ -3,17 +3,17 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 function LanguageSwitcher() {
-  const { currentLanguage, switchLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   return (
     <div className="flex items-center gap-2">
       <button
-        onClick={() => switchLanguage('zh')}
+        onClick={() => setLanguage('zh')}
         className={cn(
           "text-xs font-medium px-2 py-1 rounded transition-colors",
-          currentLanguage === 'zh'
+          language === 'zh'
             ? "text-primary bg-primary/10"
             : "text-muted-foreground hover:text-primary"
         )}
@@ -22,10 +22,10 @@ function LanguageSwitcher() {
       </button>
       <span className="text-muted-foreground/50">|</span>
       <button
-        onClick={() => switchLanguage('en')}
+        onClick={() => setLanguage('en')}
         className={cn(
           "text-xs font-medium px-2 py-1 rounded transition-colors",
-          currentLanguage === 'en'
+          language === 'en'
             ? "text-primary bg-primary/10"
             : "text-muted-foreground hover:text-primary"
         )}
