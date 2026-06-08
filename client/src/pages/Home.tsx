@@ -88,8 +88,8 @@ export default function Home() {
             <div className="relative w-full max-w-[640px] mx-auto">
               {/* Rocket Launch Hero Image */}
               <img 
-                src="/manus-storage/rocket_launch_hero_f51d3cd5.png" 
-                alt="Rocket Launch - Thermal Energy" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/eSiuoTiHRLUScVgB.webp" 
+                alt="Thermal Management Analysis" 
                 className="relative z-10 w-full h-auto object-contain drop-shadow-[0_0_50px_rgba(255,100,0,0.3)] rounded-2xl border border-primary/30"
                 loading="lazy"
                 decoding="async"
