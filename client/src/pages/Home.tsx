@@ -152,41 +152,41 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background via-background/95 to-background/90">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl mb-4 text-white">{t('solutions.title')}</h2>
-            <p className="text-muted-foreground text-lg">{t('solutions.subtitle')}</p>
+            <h2 className="font-display font-bold text-4xl mb-4 text-white">我們的解決方案</h2>
+            <p className="text-muted-foreground text-lg">從被動散熱到主動冷卻，涵蓋全方位的熱管理需求</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 icon: <Cpu className="w-12 h-12" />,
-                title: t('solutions.passiveCooling.title'),
-                description: t('solutions.passiveCooling.description')
+                title: "被動散熱",
+                description: "高效能散熱片和導熱材料，無需額外電力消耗"
               },
               {
                 icon: <Activity className="w-12 h-12" />,
-                title: t('solutions.activeCooling.title'),
-                description: t('solutions.activeCooling.description')
+                title: "主動冷卻",
+                description: "風扇和液冷系統，為高功率設備提供強大冷卻能力"
               },
               {
                 icon: <Layers className="w-12 h-12" />,
-                title: t('solutions.thermalInterface.title'),
-                description: t('solutions.thermalInterface.description')
+                title: "熱介面材料",
+                description: "導熱膏、墊片和相變材料，優化熱傳導效率"
               },
               {
                 icon: <Globe className="w-12 h-12" />,
-                title: t('solutions.systemIntegration.title'),
-                description: t('solutions.systemIntegration.description')
+                title: "系統集成",
+                description: "完整的熱管理系統設計和集成解決方案"
               },
               {
                 icon: <Thermometer className="w-12 h-12" />,
-                title: t('solutions.temperatureMonitoring.title'),
-                description: t('solutions.temperatureMonitoring.description')
+                title: "溫度監測",
+                description: "實時溫度監測和智能控制系統"
               },
               {
                 icon: <Zap className="w-12 h-12" />,
-                title: t('solutions.energyOptimization.title'),
-                description: t('solutions.energyOptimization.description')
+                title: "能效優化",
+                description: "降低能耗，提高系統效能和可靠性"
               }
             ].map((solution, index) => (
               <div
@@ -217,33 +217,33 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background/90 via-background to-background/95">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">{t('applications.title')}</h2>
-            <p className="text-muted-foreground text-lg">{t('applications.subtitle')}</p>
+            <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">全方位散熱解決方案</h2>
+            <p className="text-muted-foreground text-lg">從消費電子到工業應用，為各行業提供專業的熱管理方案</p>
           </div>
 
           <div className="space-y-16" style={{ contentVisibility: 'auto' }}>
             {/* Wearable Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">{t('applications.wearables.title')}</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{t('applications.wearables.description')}</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">穿戴式產品散熱</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為智慧手錶、AR/VR眼鏡和健康監測設備提供輕量化、高效能的散熱解決方案。我們的設計確保設備在長時間運行中保持最佳溫度，同時不影響產品的輕薄設計。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.wearables.app1')}</span>
+                    <span className="text-muted-foreground">智慧手錶散熱模組 - 超薄設計，溫度控制精準</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.wearables.app2')}</span>
+                    <span className="text-muted-foreground">AR/VR眼鏡冷卻系統 - 長時間佩戴舒適體驗</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.wearables.app3')}</span>
+                    <span className="text-muted-foreground">健康監測設備 - 精密溫度控制，數據準確</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    {t('applications.wearables.learnMore')}
+                    了解更多
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -273,25 +273,25 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">{t('applications.industrial.title')}</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{t('applications.industrial.description')}</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">工業應用散熱</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為工業製造、測試設備和精密儀器提供可靠的散熱解決方案。我們的產品經過嚴格測試，能在惡劣環境中保持穩定性能。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.industrial.app1')}</span>
+                    <span className="text-muted-foreground">CNC機械散熱 - 高精度溫度控制</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.industrial.app2')}</span>
+                    <span className="text-muted-foreground">測試設備冷卻 - 24/7連續運行支持</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.industrial.app3')}</span>
+                    <span className="text-muted-foreground">精密儀器散熱 - 環境適應性強</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    {t('applications.industrial.learnMore')}
+                    了解更多
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -301,25 +301,25 @@ export default function Home() {
             {/* Automotive Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">{t('applications.automotive.title')}</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{t('applications.automotive.description')}</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">車用散熱系統</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為電動車電池、動力系統和車載電子提供高可靠性散熱方案。我們的設計符合汽車工業標準，確保在各種駕駛條件下的最佳性能。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.automotive.app1')}</span>
+                    <span className="text-muted-foreground">電池管理系統 - 安全可靠的溫度控制</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.automotive.app2')}</span>
+                    <span className="text-muted-foreground">動力電子散熱 - 高效能功率轉換</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.automotive.app3')}</span>
+                    <span className="text-muted-foreground">車載電子冷卻 - 極端環境適應</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    {t('applications.automotive.learnMore')}
+                    了解更多
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -349,25 +349,25 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">{t('applications.dataCenter.title')}</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{t('applications.dataCenter.description')}</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">數據中心散熱</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為伺服器、交換機和高功率電源提供企業級散熱解決方案。我們的系統設計能有效降低數據中心能耗，提高整體效率。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.dataCenter.app1')}</span>
+                    <span className="text-muted-foreground">伺服器CPU散熱 - 低噪音高效能</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.dataCenter.app2')}</span>
+                    <span className="text-muted-foreground">機櫃熱管理 - 整體溫度均衡</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.dataCenter.app3')}</span>
+                    <span className="text-muted-foreground">電源模組冷卻 - 可靠性和效率並行</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    {t('applications.dataCenter.learnMore')}
+                    了解更多
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -377,25 +377,25 @@ export default function Home() {
             {/* Network Communication Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">{t('applications.networking.title')}</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{t('applications.networking.description')}</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">網路通訊散熱</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為5G基地台、網路交換機和通訊設備提供專業散熱方案。我們的設計確保在高溫環境中保持穩定的網路連接。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.networking.app1')}</span>
+                    <span className="text-muted-foreground">5G基地台散熱 - 高功率密度冷卻</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.networking.app2')}</span>
+                    <span className="text-muted-foreground">交換機散熱模組 - 可靠連接保障</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">{t('applications.networking.app3')}</span>
+                    <span className="text-muted-foreground">通訊電源散熱 - 長期穩定運行</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    {t('applications.networking.learnMore')}
+                    了解更多
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>

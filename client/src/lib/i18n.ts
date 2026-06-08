@@ -9,33 +9,19 @@ const resources = {
   en: { translation: en },
 };
 
-// Initialize i18n with language detection
-// Priority: localStorage > navigator > default to 'zh'
-const initializeLanguage = () => {
-  const savedLang = localStorage.getItem('i18nextLng');
-  if (savedLang && (savedLang === 'zh' || savedLang === 'en')) {
-    return savedLang;
-  }
-  
-  // Check browser language
-  const browserLang = navigator.language || navigator.languages?.[0] || '';
-  if (browserLang.startsWith('en')) {
-    return 'en';
-  }
-  
-  // Default to Chinese
-  return 'zh';
-};
-
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: initializeLanguage(),
     fallbackLng: 'zh',
     defaultNS: 'translation',
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage'],
     },
   });
 
