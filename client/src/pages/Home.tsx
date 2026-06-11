@@ -402,7 +402,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/network-cooling.jpg"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/network-cooling-new.png"
                   alt="網路通訊散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
