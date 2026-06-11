@@ -264,7 +264,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="/manus-storage/industrial-cooling_e89db104.webp"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/industrial-cooling.webp"
                   alt="工業用散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
@@ -326,7 +326,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="/manus-storage/automotive-cooling_d99afd10.webp"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-cooling.jpg"
                   alt="車用散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
@@ -340,7 +340,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="/manus-storage/server-cooling_74a01cac.webp"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/server-cooling.jpg"
                   alt="服務器散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
@@ -402,7 +402,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="/manus-storage/network-cooling_584b7519.jpg"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/network-cooling.jpg"
                   alt="網路通訊散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
@@ -424,7 +424,7 @@ export default function Home() {
         {/* Full-width partner logos background with hover zoom effect */}
         <div className="w-full overflow-hidden" style={{ backgroundColor: '#0d1117', minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
           <img
-            src="/manus-storage/partner-logos-combined_f0d673fd.jpg"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/partner-logos-combined.jpg"
             alt="Trusted Partners Logos"
             className="transition-transform duration-500 ease-out hover:scale-105"
             style={{
