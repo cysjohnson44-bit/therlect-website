@@ -89,7 +89,7 @@ export default function Solutions() {
       description: "工業與通訊領域對熱管理的要求最為嚴苛。伺服器機櫃、5G 基地台、工業電腦和大功率電源等設備需要在高溫、高濕、高塵環境下長期穩定運行。我們提供企業級的散熱解決方案，包括無風扇設計、液冷系統和模組化散熱器。這些方案不僅提高了設備的可靠性，還降低了運營成本和能耗。",
       detailedContent: "工業與通訊領域要求 24/7 不間斷運行，熱管理至關重要。我們的企業級解決方案包括：\n\n• 伺服器機櫃：高密度散熱設計，支持大規模部署\n• 5G 基地台：極端環境適應性，確保信號穩定\n• 工業電腦：無風扇設計，降低故障率與維護成本\n• 大功率電源：高效散熱，提升能源轉換效率\n\n我們的方案已應用於全球數據中心和通訊基礎設施。",
       items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/industrial_communication_79d4d55e.png"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/LvFKRTfSfppXIELk.png"
     },
 
     {
