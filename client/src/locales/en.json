@@ -100,6 +100,33 @@
       "app4": "Aerospace Grade Reliability Certification - Passes strictest industry standards"
     }
   },
+  "processSteps": {
+    "conceptDesign": {
+      "title": "Concept & Design",
+      "shortDesc": "Conduct preliminary thermal assessment based on customer requirements and propose multiple feasible thermal dissipation solutions.",
+      "fullDesc": "In the early project phase, we conduct in-depth analysis of your product characteristics, application scenarios, and performance requirements. Through detailed thermal assessment, we identify potential thermal management bottlenecks. We consider space constraints, budget, manufacturing processes, and performance targets to develop multiple feasible solutions. Each solution undergoes preliminary verification to ensure technical feasibility and economic rationality. Our design team will work closely with you to select the optimal solution as the foundation for subsequent development."
+    },
+    "simulationAnalysis": {
+      "title": "Simulation & Analysis",
+      "shortDesc": "Utilize professional software for detailed thermal simulation and structural analysis to predict potential issues.",
+      "fullDesc": "Using industry-leading simulation software such as Ansys and Flotherm, we conduct multi-physics coupled analysis. Through three-dimensional thermal flow analysis (CFD), we precisely predict temperature distribution, flow field characteristics, and thermal stress. Combined with structural finite element analysis (FEA), we evaluate material stress and deformation. We comprehensively verify the design before tooling, significantly reducing trial-and-error costs and development cycles. Simulation results include detailed reports and visual analysis to provide scientific basis for subsequent decisions."
+    },
+    "prototypeTesting": {
+      "title": "Prototype Testing",
+      "shortDesc": "Rapidly manufacture functional prototypes and conduct real-machine testing to verify result accuracy.",
+      "fullDesc": "Based on optimized design, we rapidly manufacture functional prototypes for experimental verification. Using precision testing equipment (infrared thermal cameras, temperature sensor arrays), we collect temperature data under real operating conditions. We compare simulation results with measured data to verify model accuracy. If deviations are found, we conduct root cause analysis and optimize model parameters. Prototype testing covers various conditions including room temperature, high temperature, and low temperature to ensure stable product performance across the full operating range."
+    },
+    "productionManufacturing": {
+      "title": "Production & Manufacturing",
+      "shortDesc": "Integrate supply chain resources to provide high-quality, efficient mass production services.",
+      "fullDesc": "We establish long-term partnerships with global quality suppliers to ensure stable raw material supply. From precision mold development, injection molding, machining to assembly and testing, every step follows strict quality standards. We employ advanced automation equipment and processes to improve production efficiency and product consistency. We establish a comprehensive logistics system to ensure timely delivery. We can provide flexible production solutions based on order volume, from small-batch trial production to large-scale mass production."
+    },
+    "qualityOptimization": {
+      "title": "Quality & Optimization",
+      "shortDesc": "Continuously track product quality and optimize design based on market feedback.",
+      "fullDesc": "After product launch, we establish a comprehensive quality tracking mechanism. Through customer feedback, field testing, and long-term reliability verification, we identify improvement opportunities. Based on actual operating data and market demand changes, we conduct continuous design optimization. Optimization includes material selection, process improvement, cost reduction, and performance enhancement. We are committed to pursuing excellence to ensure products maintain optimal performance and competitiveness throughout their lifecycle. We provide regular technical support and upgrade solutions."
+    }
+  },
   "cta": {
     "title": "Ready to Solve Your Thermal Management Challenges?",
     "description": "Our expert team is ready to provide customized solutions for your projects. No matter how complex your requirements are, we can find the most suitable solution.",
