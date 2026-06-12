@@ -67,29 +67,29 @@ export default function Solutions() {
       description: "在消費性電子領域，我們專注於解決筆記型電腦、智慧型手機、遊戲主機和穿戴式裝置的散熱挑戰。隨著電子產品功能的不斷升級，發熱量也隨之增加。我們通過創新的散熱設計、高效能材料選擇和精密的熱流模擬，確保產品在高性能運行時保持最佳溫度。我們的解決方案不僅提升了產品的穩定性和壽命，還改善了用戶體驗。",
       detailedContent: "消費性電子產品對散熱效能要求日益嚴格。我們針對不同產品類型提供客製化方案：\n\n• 筆記型電腦：採用高效能散熱模組，確保長時間運行不降頻\n• 智慧型手機：超薄液冷設計，在有限空間內實現最大散熱效能\n• 遊戲主機：多層散熱架構，支持高性能遊戲長時間運行\n• 穿戴式裝置：輕量化散熱方案，兼顧舒適度與效能\n\n我們的解決方案已應用於全球知名消費電子品牌，幫助他們提升產品競爭力。",
       items: ["筆記型電腦散熱", "智慧型手機散熱", "遊戲主機冷卻", "穿戴式裝置熱管理"],
-      image: "/manus-storage/consumer_electronics_8e24011a.png"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/HDbcUTVMVfBSqLfR.png"
     },
     {
       title: "無人載具",
       description: "無人機、無人車等無人載具在高性能運行時產生大量熱量。我們提供專業的熱管理解決方案，確保無人載具在長時間飛行或行駛時保持穩定的性能。通過優化散熱設計和材料選擇，我們幫助客戶延長續航時間、提升安全性和可靠性。",
       detailedContent: "無人載具的熱管理直接影響續航能力和安全性。我們提供全面的解決方案：\n\n**無人機系列：**\n• 消費級無人機：輕量化散熱設計，最大化續航時間\n• 工業級無人機：高負載散熱方案，支持長時間作業\n• 無人直升機：複雜熱管理系統，適應多種工況\n\n**無人車系列：**\n• 自動駕駛車輛：高效能電池冷卻系統，確保長時間行駛\n• 物流配送車：穩定的動力系統溫控\n• 特種無人車：極端環境適應性\n\n**核心系統：**\n• 飛行控制系統：精密溫控，保證飛行穩定性\n• 動力電池：專業熱管理模組，延長電池壽命\n• 通訊模組：高可靠性散熱設計\n\n我們的技術已成功應用於多家無人載具製造商，顯著提升了產品性能和續航能力。",
       items: ["無人機散熱", "無人車電池冷卻", "飛行控制系統溫控", "動力電池熱管理"],
-      image: "/manus-storage/unmanned_vehicle_thermal_b9067955.png"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/rQWAiVQhssZTmvbh.png"
     },
     {
       title: "穿戴式產品",
       description: "智慧眼鏡與 AR/VR 穿戴設備代表了下一代計算平台，對散熱技術提出了前所未有的挑戰。我們專門為智慧眼鏡開發了創新的散熱解決方案，在極限的空間限制下實現高效能散熱。通過先進的導熱材料與精密的熱管理設計，確保設備在長時間佩戴中保持舒適溫度，同時不影響產品的輕薄美觀外形。",
       detailedContent: "智慧眼鏡的散熱挑戰獨特而複雜。我們的專業解決方案包括：\n\n**AR/VR 眼鏡散熱系統：**\n• 隱形散熱設計：將散熱模組集成於眼鏡框架，保持產品美觀\n• 導熱路徑優化：利用眼鏡材料本身進行熱傳導，提高散熱效率\n• 低溫工作環境：確保眼鏡貼近皮膚時保持舒適溫度\n• 輕量化設計：散熱模組重量控制在克級，不增加佩戴負擔\n\n**核心技術特點：**\n• 精密的熱管理芯片，實時監測溫度分佈\n• 採用高導熱係數的複合材料\n• 創新的微流道散熱技術\n• 低功耗冷卻方案，不影響電池續航\n\n我們的創新技術已成功應用於多款商用 AR/VR 眼鏡，為用戶提供舒適的長時間佩戴體驗。",
       items: ["AR/VR 眼鏡散熱", "智慧眼鏡溫控", "穿戴式設備冷卻", "導熱模組設計"],
-      images: ["/manus-storage/ar_glasses_1_9320a8b9.png", "/manus-storage/ar_glasses_2_4fb4e51f.png", "/manus-storage/ar_glasses_3_8f21963e.png"],
-      image: "/manus-storage/ar_glasses_1_9320a8b9.png"
+      images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_1_9320a8b9.png", "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_2_4fb4e51f.png", "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_3_8f21963e.png"],
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_1_9320a8b9.png"
     },
     {
       title: "工業與通訊",
       description: "工業與通訊領域對熱管理的要求最為嚴苛。伺服器機櫃、5G 基地台、工業電腦和大功率電源等設備需要在高溫、高濕、高塵環境下長期穩定運行。我們提供企業級的散熱解決方案，包括無風扇設計、液冷系統和模組化散熱器。這些方案不僅提高了設備的可靠性，還降低了運營成本和能耗。",
       detailedContent: "工業與通訊領域要求 24/7 不間斷運行，熱管理至關重要。我們的企業級解決方案包括：\n\n• 伺服器機櫃：高密度散熱設計，支持大規模部署\n• 5G 基地台：極端環境適應性，確保信號穩定\n• 工業電腦：無風扇設計，降低故障率與維護成本\n• 大功率電源：高效散熱，提升能源轉換效率\n\n我們的方案已應用於全球數據中心和通訊基礎設施。",
       items: ["伺服器機櫃散熱", "5G 基地台散熱", "工業電腦無風扇設計", "大功率電源散熱"],
-      image: "/manus-storage/industrial_communication_79d4d55e.png"
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/industrial_communication_79d4d55e.png"
     },
 
     {

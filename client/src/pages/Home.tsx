@@ -17,8 +17,8 @@ export default function Home() {
   useEffect(() => {
     // 預加載關鍵圖片
     const criticalImages = [
-      '/manus-storage/rocket_launch_hero_f51d3cd5.png',
-      '/manus-storage/wearable-cooling_46f219b9.jpg',
+      'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/eSiuoTiHRLUScVgB.webp',
+      'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/wearable-cooling.png',
     ];
     
     criticalImages.forEach(src => {
@@ -250,8 +250,8 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/wearable-cooling.png"
-                  alt="穿戴式產品散熱解決方案"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/bMYVToChYVwzSXGl.png"
+                  alt="穿戴式產品散熱解決方案 - AR/VR眼鏡和熱管理芯片展示"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -264,8 +264,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/industrial-cooling.webp"
-                  alt="工業用散熱解決方案"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/JTgoSLkzOXvCSjxg.webp"
+                  alt="工業應用散熱 - 工程師在實驗室進行熱管理測試"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -326,8 +326,8 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-cooling.jpg"
-                  alt="車用散熱解決方案"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ECZDMUZfBCKZeyAT.webp"
+                  alt="車用散熱系統 - 女工程師測試污查機組件"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -340,8 +340,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/server-cooling.jpg"
-                  alt="服務器散熱解決方案"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/aBAtySdSYyTtZVQO.webp"
+                  alt="數據中心散熱 - 技術人员安裝伺服務器散熱系統"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -402,7 +402,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/network-cooling-new.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ILJdYZdUCbVlACVv.jpg"
                   alt="網路通訊散熱解決方案"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
@@ -415,16 +415,16 @@ export default function Home() {
       </section>
 
       {/* Trusted Partners Section */}
-      <section className="relative overflow-hidden" style={{ backgroundColor: '#0d1117' }}>
+      <section className="relative overflow-hidden bg-background">
         <div className="container py-12 mb-0">
           <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white text-center">值得信賴的合作夥伴</h2>
           <p className="text-gray-300 text-lg text-center">與全球領先企業合作，提供頂級熱管理解決方案</p>
         </div>
         
         {/* Full-width partner logos background with hover zoom effect */}
-        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0d1117', minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
+        <div className="w-full overflow-hidden bg-background" style={{ minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/partner-logos-combined.jpg"
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/thcPWNEeCXyHHZJg.jpg"
             alt="Trusted Partners Logos"
             className="transition-transform duration-500 ease-out hover:scale-105"
             style={{
