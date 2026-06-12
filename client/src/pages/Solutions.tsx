@@ -81,8 +81,8 @@ export default function Solutions() {
       description: "智慧眼鏡與 AR/VR 穿戴設備代表了下一代計算平台，對散熱技術提出了前所未有的挑戰。我們專門為智慧眼鏡開發了創新的散熱解決方案，在極限的空間限制下實現高效能散熱。通過先進的導熱材料與精密的熱管理設計，確保設備在長時間佩戴中保持舒適溫度，同時不影響產品的輕薄美觀外形。",
       detailedContent: "智慧眼鏡的散熱挑戰獨特而複雜。我們的專業解決方案包括：\n\n**AR/VR 眼鏡散熱系統：**\n• 隱形散熱設計：將散熱模組集成於眼鏡框架，保持產品美觀\n• 導熱路徑優化：利用眼鏡材料本身進行熱傳導，提高散熱效率\n• 低溫工作環境：確保眼鏡貼近皮膚時保持舒適溫度\n• 輕量化設計：散熱模組重量控制在克級，不增加佩戴負擔\n\n**核心技術特點：**\n• 精密的熱管理芯片，實時監測溫度分佈\n• 採用高導熱係數的複合材料\n• 創新的微流道散熱技術\n• 低功耗冷卻方案，不影響電池續航\n\n我們的創新技術已成功應用於多款商用 AR/VR 眼鏡，為用戶提供舒適的長時間佩戴體驗。",
       items: ["AR/VR 眼鏡散熱", "智慧眼鏡溫控", "穿戴式設備冷卻", "導熱模組設計"],
-      images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_1_9320a8b9.png", "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_2_4fb4e51f.png", "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_3_8f21963e.png"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/ar_glasses_1_9320a8b9.png"
+      images: ["https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/fxMQvLvpAagqRLpQ.png", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/KrFBaqwhQoUtisZY.png", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/FFaKfehtFLyjyDEE.png"],
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/fxMQvLvpAagqRLpQ.png"
     },
     {
       title: "工業與通訊",
