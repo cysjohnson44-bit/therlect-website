@@ -1,0 +1,171 @@
+ABOUT PAGE - ENGLISH TRANSLATION
+
+Page Header:
+Title: "About Us"
+Subtitle: "A group of engineers passionate about thermodynamics, dedicated to transforming complex theories into elegant solutions."
+
+Company Intro Section:
+Title: "Our Story"
+Content: "Therlect was founded in 2019 by a group of experienced thermal flow engineers. We firmly believe that thermal management is not only a science but also an art.
+
+We have witnessed the rapid development of electronic product performance and have solved the thermal dissipation challenges that accompany it. From early passive cooling to today's active liquid cooling and phase-change technology, we have always been at the forefront of technology.
+
+Beyond thermal management, we have expanded our vision to far-infrared technology, exploring the broad applications of thermal energy in human health and industrial applications. We are not just your supplier; we are your most trusted strategic partner in the thermal energy field."
+
+Founded: "2019"
+
+Core Values Section:
+Title: "Core Values"
+Subtitle: "The beliefs and principles that guide us forward"
+
+Value 1:
+Icon: Lightbulb
+Title: "Innovation"
+Description: "Never satisfied with the status quo, we continuously explore the boundaries of thermodynamics and apply new technologies to more possibilities."
+
+Value 2:
+Icon: Target
+Title: "Precision"
+Description: "From simulation analysis to manufacturing, we pursue perfection in every data point and every tolerance."
+
+Value 3:
+Icon: Users
+Title: "Partnership"
+Description: "We work closely with customers to face challenges together. Your success is our greatest achievement."
+
+---
+
+TECHNOLOGY PAGE - ENGLISH TRANSLATION
+
+Page Header:
+Title: "Core Technology"
+Subtitle: "Therlect combines deep thermodynamic theory with innovative application technology to solve the most challenging thermal management problems for customers."
+
+Thermodynamic Engineering Section:
+Section Title: "Thermodynamic Engineering"
+Description: "Our thermodynamic engineering team focuses on heat generation, conversion, transfer, and utilization. Through advanced simulation analysis tools and rich practical experience, we can accurately predict product thermal performance in real environments and provide optimized thermal design solutions."
+
+Feature 1:
+Title: "Thermal Fluid Dynamics Analysis"
+Description: "Utilize cutting-edge CFD software for precise thermal flow simulation, optimizing airflow field and temperature distribution."
+
+Feature 2:
+Title: "Thermal Module Design"
+Description: "Design efficient, cost-effective, and structurally compact customized thermal modules tailored to different product requirements."
+
+Core Technologies Section:
+Title: "Core Thermal Dissipation Technologies"
+Subtitle: "We provide multiple thermal dissipation solutions, from passive cooling to active refrigeration, meeting different application needs."
+
+Passive Cooling:
+Title: "Passive Cooling"
+Short Description: "Efficient thermal dissipation solutions that do not require active power drive"
+Expanded Content:
+  Technical Features:
+  • No fans or liquid cooling systems required, completely silent operation
+  • Utilizes natural convection and thermal conduction principles
+  • Suitable for low-power and noise-sensitive applications
+  • Heat sink design and material selection are critical
+  
+  Application Scenarios: "LED lighting, low-power power supplies, audio equipment, medical instruments, and other applications with high noise requirements."
+
+Active Cooling:
+Title: "Active Cooling"
+Short Description: "High-performance thermal dissipation solutions with active drive"
+Expanded Content:
+  Technical Features:
+  • Air cooling systems: Utilize fans for forced convection with high dissipation efficiency
+  • Liquid cooling systems: Water or other fluid circulation suitable for ultra-high-power applications
+  • Automatic adjustment of thermal dissipation intensity based on temperature
+  • Suitable for high-power and high-performance devices
+  
+  Application Scenarios: "Data centers, gaming computers, high-power industrial equipment, and other applications requiring extreme thermal management."
+
+---
+
+TECHNOLOGY DETAILS - PASSIVE COOLING PAGE
+
+Title: "Passive Cooling Solutions"
+Subtitle: "Efficient thermal dissipation without active power consumption"
+
+Introduction:
+"Passive cooling represents the most elegant thermal management solution. By optimizing structural design and material selection, we achieve efficient heat dissipation without any active power consumption, resulting in completely silent and maintenance-free operation."
+
+Key Technologies:
+
+1. Heat Sink Design Optimization
+Description: "Through advanced CFD simulation, we optimize heat sink geometry, fin spacing, and material distribution to maximize thermal conductivity and heat dissipation efficiency. Our designs can achieve thermal resistance values as low as 0.1°C/W."
+
+2. Thermal Conductive Materials
+Description: "We select and apply high-performance thermal conductive materials including aluminum alloys, copper alloys, and advanced composite materials. Each material is selected based on specific application requirements, balancing thermal conductivity, weight, cost, and manufacturability."
+
+3. Natural Convection Optimization
+Description: "We leverage natural convection principles to design thermal modules that require no external power. Through careful analysis of airflow patterns and heat transfer mechanisms, we ensure optimal thermal performance in various orientations and environments."
+
+4. Phase-Change Materials (PCM)
+Description: "We integrate phase-change materials to provide thermal buffering, absorbing excess heat during peak loads and releasing it during idle periods, maintaining stable operating temperatures."
+
+Applications:
+• LED lighting fixtures
+• Power supplies and adapters
+• Audio amplifiers
+• Medical monitoring devices
+• Industrial control systems
+• Telecommunications equipment
+
+---
+
+TECHNOLOGY DETAILS - ACTIVE COOLING PAGE
+
+Title: "Active Cooling Solutions"
+Subtitle: "High-performance thermal dissipation for demanding applications"
+
+Introduction:
+"Active cooling technology represents the frontier of thermal management. By combining advanced cooling systems with intelligent control, we enable devices to operate at peak performance even under extreme thermal loads."
+
+Key Technologies:
+
+1. Air Cooling Systems
+Description: "Our advanced fan designs and airflow optimization techniques achieve high cooling efficiency with minimal noise. We utilize variable-speed fans controlled by intelligent algorithms to balance performance and energy consumption."
+
+2. Liquid Cooling Systems
+Description: "For ultra-high-power applications, we provide custom liquid cooling solutions. Our designs feature optimized fluid dynamics, precision pump control, and advanced heat exchangers to achieve exceptional thermal performance."
+
+3. Hybrid Cooling Solutions
+Description: "We combine air and liquid cooling technologies to create hybrid systems that optimize performance, efficiency, and reliability. These solutions are particularly effective for applications with varying thermal loads."
+
+4. Intelligent Temperature Control
+Description: "Our thermal management systems integrate real-time temperature monitoring and predictive algorithms to automatically adjust cooling intensity, ensuring optimal performance while minimizing energy consumption."
+
+5. Thermal Interface Materials (TIM)
+Description: "We develop and apply advanced thermal interface materials including thermal pads, thermal greases, and phase-change materials to maximize heat transfer efficiency between components and cooling systems."
+
+Applications:
+• Data center servers and switches
+• High-performance gaming computers
+• Industrial power electronics
+• Telecommunications base stations
+• Electric vehicle battery systems
+• Aerospace thermal management systems
+
+---
+
+ADDITIONAL PAGES TRANSLATION NOTES:
+
+Contact Page:
+- Keep company contact information consistent
+- Translate form labels professionally
+- Maintain professional tone for inquiry messages
+
+Home Page (Hero Section):
+- Title: "Unleash the Unlimited Potential of Thermal Energy"
+- Subtitle: "Therlect, with over 20 years of professional thermal management expertise, is dedicated to providing comprehensive solutions from theoretical analysis to market applications for global customers."
+- Button: "Explore Solutions" / "Contact Us"
+
+Navigation:
+- Home: "Home"
+- Core Technology: "Core Technology"
+- Solutions: "Solutions"
+- About Us: "About Us"
+- Contact Us: "Contact Us"
+- Get In Touch: "GET IN TOUCH"

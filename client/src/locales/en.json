@@ -59,45 +59,45 @@
   "applications": {
     "title": "Comprehensive Thermal Dissipation Solutions",
     "subtitle": "Providing professional thermal management solutions for various industries from consumer electronics to industrial applications",
+    "consumerElectronics": {
+      "title": "Consumer Electronics",
+      "description": "In the consumer electronics field, we focus on solving thermal dissipation challenges for laptops, smartphones, gaming consoles, and wearable devices. As electronic products continue to upgrade in functionality, heat generation increases accordingly. Through innovative thermal design, high-performance material selection, and precise thermal flow simulation, we ensure products maintain optimal temperatures during high-performance operation. Our solutions not only enhance product stability and lifespan but also improve user experience.",
+      "app1": "Laptop Heat Dissipation - High-performance thermal modules ensure extended operation without throttling",
+      "app2": "Smartphone Cooling - Ultra-thin liquid cooling design for maximum efficiency in limited space",
+      "app3": "Gaming Console Thermal Management - Multi-layer architecture supports extended high-performance gaming",
+      "app4": "Wearable Device Heat Management - Lightweight solutions balance comfort with performance"
+    },
+    "unmanned": {
+      "title": "Unmanned Vehicles",
+      "description": "Unmanned vehicles such as drones and autonomous vehicles generate substantial heat during high-performance operation. We provide professional thermal management solutions ensuring unmanned vehicles maintain stable performance during extended flight or operation. Through optimized thermal design and material selection, we help customers extend flight time, enhance safety, and improve reliability.",
+      "app1": "Drone Heat Dissipation - Lightweight design maximizes flight endurance",
+      "app2": "Autonomous Vehicle Battery Cooling - High-performance systems ensure extended operation",
+      "app3": "Flight Control System Temperature Control - Precision control ensures flight stability",
+      "app4": "Power Battery Thermal Management - Professional modules extend battery lifespan"
+    },
     "wearables": {
-      "title": "Wearable Device Thermal Dissipation",
-      "description": "Providing lightweight, high-performance thermal dissipation solutions for smartwatches, AR/VR glasses, and health monitoring devices. Our designs ensure devices maintain optimal temperatures during extended operation while preserving slim product profiles.",
-      "app1": "Smartwatch Heat Dissipation Module - Ultra-thin design with precise temperature control",
-      "app2": "AR/VR Glasses Cooling System - Comfortable wearing experience for extended periods",
-      "app3": "Health Monitoring Devices - Precise temperature control for accurate data",
-      "learnMore": "Learn More"
+      "title": "Wearable Products",
+      "description": "Smart glasses and AR/VR wearable devices represent the next generation computing platform, presenting unprecedented thermal dissipation challenges. We have specifically developed innovative thermal solutions for smart glasses, achieving high-performance thermal dissipation within extreme space constraints. Through advanced thermal conductive materials and precision thermal management design, we ensure devices maintain comfortable temperatures during extended wear while preserving slim and elegant product form factors.",
+      "app1": "AR/VR Glasses Heat Dissipation - Invisible thermal design maintains aesthetics",
+      "app2": "Smart Glasses Temperature Control - Comfortable temperature when worn on skin",
+      "app3": "Wearable Device Cooling - Lightweight design without adding wearing burden",
+      "app4": "Thermal Conduction Module Design - Innovative micro-channel technology"
     },
     "industrial": {
-      "title": "Industrial Application Thermal Dissipation",
-      "description": "Providing reliable thermal dissipation solutions for industrial manufacturing, testing equipment, and precision instruments. Our products undergo rigorous testing to maintain stable performance in harsh environments.",
-      "app1": "CNC Machinery Cooling - High-precision temperature control",
-      "app2": "Testing Equipment Cooling - 24/7 continuous operation support",
-      "app3": "Precision Instrument Cooling - Strong environmental adaptability",
-      "learnMore": "Learn More"
+      "title": "Industrial & Communications",
+      "description": "The industrial and communications sectors have the most stringent thermal management requirements. Server cabinets, 5G base stations, industrial computers, and high-power power supplies must operate stably for extended periods in high-temperature, high-humidity, and high-dust environments. We provide enterprise-grade thermal dissipation solutions including fanless designs, liquid cooling systems, and modular heat exchangers. These solutions not only enhance equipment reliability but also reduce operational costs and energy consumption.",
+      "app1": "Server Cabinet Heat Dissipation - High-density design supports large-scale deployment",
+      "app2": "5G Base Station Cooling - Extreme environment adaptability ensures signal stability",
+      "app3": "Industrial Computer Fanless Design - Reduces failure rates and maintenance costs",
+      "app4": "High-Power Power Supply Thermal Management - Efficient dissipation enhances energy conversion"
     },
     "automotive": {
-      "title": "Automotive Thermal Management Systems",
-      "description": "Providing highly reliable thermal dissipation solutions for electric vehicle batteries, power systems, and vehicle electronics. Our designs comply with automotive industry standards ensuring optimal performance under various driving conditions.",
-      "app1": "Battery Management System - Safe and reliable temperature control",
-      "app2": "Power Electronics Cooling - High-efficiency power conversion",
-      "app3": "Vehicle Electronics Cooling - Extreme environment adaptation",
-      "learnMore": "Learn More"
-    },
-    "dataCenter": {
-      "title": "Data Center Thermal Dissipation",
-      "description": "Providing enterprise-grade thermal dissipation solutions for servers, switches, and high-power power supplies. Our system design effectively reduces data center energy consumption and improves overall efficiency.",
-      "app1": "Server CPU Cooling - Low-noise high-performance",
-      "app2": "Cabinet Thermal Management - Overall temperature equilibrium",
-      "app3": "Power Module Cooling - Reliability and efficiency combined",
-      "learnMore": "Learn More"
-    },
-    "networking": {
-      "title": "Network Communication Thermal Dissipation",
-      "description": "Providing professional thermal dissipation solutions for 5G base stations, network switches, and communication equipment. Our designs ensure stable network connectivity is maintained in high-temperature environments.",
-      "app1": "5G Base Station Cooling - High-power density cooling",
-      "app2": "Switch Heat Dissipation Module - Reliable connection assurance",
-      "app3": "Communication Power Cooling - Long-term stable operation",
-      "learnMore": "Learn More"
+      "title": "Automotive & Aerospace",
+      "description": "Thermal management needs in automotive and aerospace sectors involve extreme conditions. Electric vehicle battery thermal dissipation, aerospace engine cooling systems, and aircraft electronics temperature control applications have extremely high reliability and performance requirements. We provide targeted solutions including high-performance thermal modules, advanced material applications, and innovative design concepts. These solutions help customers achieve higher efficiency, extended service life, and superior safety performance.",
+      "app1": "Electric Vehicle Battery Heat Dissipation - Efficient dissipation ensures battery lifespan and safety",
+      "app2": "Aircraft Temperature Control Systems - Cooling design for extreme conditions",
+      "app3": "Automotive Electronics Thermal Management - Lightweight high-performance solutions",
+      "app4": "Aerospace Grade Reliability Certification - Passes strictest industry standards"
     }
   },
   "cta": {

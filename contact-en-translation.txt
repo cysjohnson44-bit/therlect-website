@@ -1,0 +1,131 @@
+CONTACT PAGE - ENGLISH TRANSLATION
+
+Page Header:
+Title: "Contact Us"
+Subtitle: "Whether it's project consultation, technical support, or partnership proposals, we look forward to hearing from you."
+
+Contact Information Section:
+Title: "Contact Information"
+Description: "You can reach us through the following methods, or fill out the form on the right side. Our team will respond to you within 24 hours."
+
+Contact Details:
+
+1. Taipei Office
+   Icon: MapPin
+   Title: "Taipei Office"
+   Address: "9F-3, No. 27, Lane 61, Section 1, Guangfu Road,
+            Sanchong District, New Taipei City 241557, Taiwan"
+
+2. Phone
+   Icon: Phone
+   Title: "Phone"
+   Number: "+886-2-2999-XXXX" (to be filled with actual number)
+
+3. Email
+   Icon: Mail
+   Title: "Email"
+   Address: "info@therlect.com" (to be filled with actual email)
+
+4. Business Hours
+   Icon: Clock
+   Title: "Business Hours"
+   Hours: "Monday to Friday: 9:00 AM - 6:00 PM (Taiwan Time)
+           Saturday, Sunday, and holidays: Closed"
+
+Contact Form Section:
+Title: "Send Us a Message"
+Description: "Fill out the form below and we'll get back to you as soon as possible."
+
+Form Fields:
+- Name: "Full Name" (placeholder: "Enter your full name")
+- Email: "Email Address" (placeholder: "your@email.com")
+- Phone: "Phone Number" (placeholder: "+886-9-XXXX-XXXX")
+- Company: "Company Name" (placeholder: "Your company name")
+- Subject: "Subject" (placeholder: "What is this about?")
+- Message: "Message" (placeholder: "Tell us more about your inquiry...")
+
+Form Buttons:
+- Submit: "Send Message" (with Send icon)
+- Loading State: "Sending..."
+
+Toast Messages:
+- Success: "Message sent successfully!"
+- Error: "Failed to send. Please try again later."
+
+Additional Contact Options:
+
+Social Media / Links:
+- YouTube: "Subscribe to our YouTube channel"
+- LinkedIn: "Connect with us on LinkedIn"
+- WeChat: "Contact us via WeChat"
+
+FAQ Section (if applicable):
+Title: "Frequently Asked Questions"
+
+Q1: "What is the typical response time?"
+A1: "Our team typically responds to inquiries within 24 business hours. For urgent matters, please call us directly."
+
+Q2: "Do you offer technical consultations?"
+A2: "Yes, we provide free initial technical consultations. Our engineers can discuss your thermal management challenges and propose solutions."
+
+Q3: "What are your service areas?"
+A3: "We provide services globally. We have partnerships with manufacturers and distributors in multiple countries."
+
+Q4: "Can I visit your facilities?"
+A4: "Yes, we welcome facility visits by appointment. Please contact us to schedule a tour."
+
+Q5: "Do you provide samples?"
+A5: "Yes, we can provide samples for evaluation. Please contact our sales team for details."
+
+---
+
+FORM VALIDATION MESSAGES (if needed):
+
+- "Name is required"
+- "Please enter a valid email address"
+- "Phone number is required"
+- "Company name is required"
+- "Subject is required"
+- "Message is required (minimum 10 characters)"
+
+---
+
+EMAIL NOTIFICATION (Backend):
+
+Subject: "New Contact Form Submission from {name}"
+Body: "
+A new inquiry has been received:
+
+Name: {name}
+Email: {email}
+Phone: {phone}
+Company: {company}
+Subject: {subject}
+
+Message:
+{message}
+
+Please respond to this inquiry as soon as possible.
+"
+
+---
+
+CONFIRMATION EMAIL (to customer):
+
+Subject: "We received your message - Therlect"
+Body: "
+Dear {name},
+
+Thank you for contacting Therlect. We have received your inquiry and will respond within 24 hours.
+
+Your Message Summary:
+Subject: {subject}
+Submitted: {timestamp}
+
+Our team will review your inquiry and provide a detailed response.
+
+If you have any urgent matters, please call us at +886-2-2999-XXXX.
+
+Best regards,
+Therlect Team
+"
