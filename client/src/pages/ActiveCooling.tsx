@@ -152,7 +152,6 @@ export default function ActiveCooling() {
                   <h4 className="font-bold mb-4">應用場景</h4>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• 電動車電池系統</li>
-                    <li>• 航空發動機冷卻</li>
                     <li>• 超級計算機</li>
                     <li>• 高功率 LED 系統</li>
                     <li>• 工業激光設備</li>
@@ -216,15 +215,7 @@ export default function ActiveCooling() {
                 </ul>
               </div>
 
-              <div className="bg-card/30 border border-white/5 p-8 rounded-xl hover:bg-card/50 transition-colors">
-                <h3 className="font-bold text-xl mb-4 text-purple-400">航空航天應用</h3>
-                <p className="text-muted-foreground mb-4">航空發動機和飛行器電子設備需要高可靠性冷卻。</p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• 發動機冷卻</li>
-                  <li>• 航電系統溫控</li>
-                  <li>• 電源管理</li>
-                </ul>
-              </div>
+
             </div>
           </section>
 

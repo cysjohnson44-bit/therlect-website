@@ -68,7 +68,7 @@ export default function Navbar() {
         { href: "/solutions#consumer", label: "消費性電子" },
         { href: "/solutions#industrial", label: "工業通訊" },
         { href: "/solutions#health", label: "健康與生活" },
-        { href: "/solutions#automotive", label: "汽車與航空" },
+        { href: "/solutions#automotive", label: "汽車" }
       ],
     },
     { href: "/about", label: "關於我們" },

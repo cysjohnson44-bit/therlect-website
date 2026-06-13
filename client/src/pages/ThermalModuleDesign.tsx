@@ -70,7 +70,7 @@ export default function ThermalModuleDesign() {
       image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/JnhWyeooMRsJwZCV.png",
       description: "根據您的特定需求，提供靈活且精準的客製化散熱解決方案。",
       details: "我們提供完全客製化的散熱解決方案，針對消費性電子、車用電子、工業設備等不同領域的特殊需求。每個項目都由經驗豐富的工程團隊進行深入分析，考慮您的產品特性、應用場景、性能需求和成本預算。我們的設計方案不僅滿足當前需求，還預留了未來升級空間。提供完整的技術文檔、設計圖紙和製造指南。長期技術支援和升級方案確保您的產品在整個生命週期內保持最佳效能。",
-      applications: ["消費性電子", "車用電子", "工業設備", "航空應用"],
+      applications: ["消費性電子", "車用電子", "工業設備"],
     },
   ];
 
