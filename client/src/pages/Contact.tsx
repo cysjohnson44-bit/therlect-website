@@ -6,10 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, Send, Youtube } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -38,15 +36,15 @@ export default function Contact() {
       
       if (response.ok) {
         setIsSubmitting(false);
-        toast.success(t('contact.successMessage'));
+        toast.success("訊息已發送！");
         (e.target as HTMLFormElement).reset();
       } else {
         setIsSubmitting(false);
-        toast.error(t('contact.errorMessage'));
+        toast.error("發送失敗，請稍後重試。");
       }
     } catch (error) {
       setIsSubmitting(false);
-      toast.error(t('contact.errorMessage'));
+      toast.error("發送失敗，請稍後重試。");
       console.error('Form submission error:', error);
     }
   };
@@ -64,10 +62,10 @@ export default function Contact() {
         
         <div className="container relative z-10 text-center">
           <h1 className="font-display font-bold text-5xl md:text-6xl mb-6 animate-in slide-in-from-bottom-5 fade-in duration-700">
-            {t('contact.pageTitle')}
+            聯絡我們
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-in slide-in-from-bottom-5 fade-in duration-700 delay-100">
-            {t('contact.pageDescription')}
+            無論是專案諮詢、技術支援還是合作提案，我們都期待聽到您的聲音。
           </p>
         </div>
       </section>
@@ -78,9 +76,9 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-10">
               <div>
-                <h2 className="font-display font-bold text-3xl mb-6">{t('contact.infoTitle')}</h2>
+                <h2 className="font-display font-bold text-3xl mb-6">聯絡資訊</h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                  {t('contact.infoDescription')}
+                  您可以透過以下方式聯繫我們，或是填寫右側表單，我們的團隊將在 24 小時內回覆您。
                 </p>
               </div>
 
@@ -90,9 +88,10 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">{t('contact.taipeiOffice')}</h3>
+                    <h3 className="font-bold text-lg mb-2">台北辦公室</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      {t('contact.taipeiAddress')}
+                      241557 新北市三重區<br />
+                      光復路一段61巷27號9樓之3
                     </p>
                   </div>
                 </div>
@@ -102,9 +101,10 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">{t('contact.tainanOffice')}</h3>
+                    <h3 className="font-bold text-lg mb-2">台南辦公室</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      {t('contact.tainanAddress')}
+                      台南市新市區<br />
+                      中華路49號
                     </p>
                   </div>
                 </div>
@@ -114,9 +114,9 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">{t('contact.phoneLabel')}</h3>
+                    <h3 className="font-bold text-lg mb-2">電話</h3>
                     <p className="text-muted-foreground font-mono text-lg">
-                      {t('contact.phoneNumber')}
+                      +886-2-2999-5596
                     </p>
                   </div>
                 </div>
@@ -128,9 +128,9 @@ export default function Contact() {
                     <Clock className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">{t('contact.businessHours')}</h3>
+                    <h3 className="font-bold text-lg mb-2">營業時間</h3>
                     <p className="text-muted-foreground">
-                      {t('contact.businessHoursTime')}
+                      週一至週五 09:00 - 18:00
                     </p>
                   </div>
                 </div>
@@ -141,46 +141,46 @@ export default function Contact() {
             <div className="bg-card border border-white/10 rounded-2xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-[50px] -z-10" />
               
-              <h2 className="font-display font-bold text-3xl mb-8">{t('contact.formTitle')}</h2>
+              <h2 className="font-display font-bold text-3xl mb-8">發送訊息</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-muted-foreground">{t('contact.nameLabel')}</label>
-                    <Input id="name" name="name" required placeholder={t('contact.namePlaceholder')} className="bg-background/50 border-white/10 focus:border-primary/50" />
+                    <label htmlFor="name" className="text-sm font-medium text-muted-foreground">姓名</label>
+                    <Input id="name" name="name" required placeholder="您的姓名" className="bg-background/50 border-white/10 focus:border-primary/50" />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium text-muted-foreground">{t('contact.companyLabel')}</label>
-                    <Input id="company" name="company" placeholder={t('contact.companyPlaceholder')} className="bg-background/50 border-white/10 focus:border-primary/50" />
+                    <label htmlFor="company" className="text-sm font-medium text-muted-foreground">公司名稱</label>
+                    <Input id="company" name="company" placeholder="您的公司" className="bg-background/50 border-white/10 focus:border-primary/50" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-muted-foreground">{t('contact.emailLabel')}</label>
-                    <Input id="email" name="email" type="email" required placeholder={t('contact.emailPlaceholder')} className="bg-background/50 border-white/10 focus:border-primary/50" />
+                    <label htmlFor="email" className="text-sm font-medium text-muted-foreground">電子郵件</label>
+                    <Input id="email" name="email" type="email" required placeholder="name@example.com" className="bg-background/50 border-white/10 focus:border-primary/50" />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-muted-foreground">{t('contact.phoneLabel')}</label>
-                    <Input id="phone" name="phone" type="tel" placeholder={t('contact.phonePlaceholder')} className="bg-background/50 border-white/10 focus:border-primary/50" />
+                    <label htmlFor="phone" className="text-sm font-medium text-muted-foreground">聯絡電話</label>
+                    <Input id="phone" name="phone" type="tel" placeholder="+886 912 345 678" className="bg-background/50 border-white/10 focus:border-primary/50" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium text-muted-foreground">{t('contact.subjectLabel')}</label>
-                  <Input id="subject" name="subject" required placeholder={t('contact.subjectPlaceholder')} className="bg-background/50 border-white/10 focus:border-primary/50" />
+                  <label htmlFor="subject" className="text-sm font-medium text-muted-foreground">主旨</label>
+                  <Input id="subject" name="subject" required placeholder="您感興趣的服務或產品" className="bg-background/50 border-white/10 focus:border-primary/50" />
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-muted-foreground">{t('contact.messageLabel')}</label>
-                  <Textarea id="message" name="message" required placeholder={t('contact.messagePlaceholder')} className="min-h-[150px] bg-background/50 border-white/10 focus:border-primary/50 resize-none" />
+                  <label htmlFor="message" className="text-sm font-medium text-muted-foreground">訊息內容</label>
+                  <Textarea id="message" name="message" required placeholder="請詳細描述您的需求..." className="min-h-[150px] bg-background/50 border-white/10 focus:border-primary/50 resize-none" />
                 </div>
 
                 <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white h-12 text-lg" disabled={isSubmitting}>
                   {isSubmitting ? (
-                    <span className="flex items-center gap-2">{t('contact.sending')}</span>
+                    <span className="flex items-center gap-2">發送中...</span>
                   ) : (
-                    <span className="flex items-center gap-2">{t('contact.sendButton')} <Send className="w-4 h-4" /></span>
+                    <span className="flex items-center gap-2">發送訊息 <Send className="w-4 h-4" /></span>
                   )}
                 </Button>
               </form>
@@ -193,8 +193,8 @@ export default function Contact() {
       <section className="py-20 border-t border-white/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display font-bold text-3xl mb-6">{t('contact.youtubeTitle')}</h2>
-            <p className="text-muted-foreground text-lg mb-8">{t('contact.youtubeDescription')}</p>
+            <h2 className="font-display font-bold text-3xl mb-6">觀看我們的技術分享</h2>
+            <p className="text-muted-foreground text-lg mb-8">了解更多關於 Therlect 汎海科技的熱管理解決方案和技術創新</p>
             <a 
               href="https://www.youtube.com/watch?v=aigp6jhZZnQ" 
               target="_blank" 
@@ -202,7 +202,7 @@ export default function Contact() {
               className="inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-colors duration-300"
             >
               <Youtube className="w-6 h-6" />
-              {t('contact.youtubeButton')}
+              觀看 YouTube 頻道
             </a>
           </div>
         </div>
@@ -211,11 +211,11 @@ export default function Contact() {
       {/* Map Section */}
       <section className="py-20 bg-card/30 border-t border-white/5">
         <div className="container">
-          <h2 className="font-display font-bold text-3xl mb-12 text-center">{t('contact.mapTitle')}</h2>
+          <h2 className="font-display font-bold text-3xl mb-12 text-center">辦公室位置</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Taipei Office Map */}
             <div>
-              <h3 className="font-bold text-xl mb-4">{t('contact.taipeiOffice')}</h3>
+              <h3 className="font-bold text-xl mb-4">台北辦公室</h3>
               <div className="h-[300px] w-full relative grayscale hover:grayscale-0 transition-all duration-700 rounded-xl overflow-hidden border border-white/5">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.467687926646!2d121.46966631500666!3d25.05212898396384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a870a133708f%3A0x6375628004216852!2zMjQx5paw5YyX5biC5LiJ6YeN5Y2A5YWJ5b6p6Lev5LiA5q61NjHlt7cyN-iZnw!5e0!3m2!1szh-TW!2stw!4v1645512345678!5m2!1szh-TW!2stw" 
@@ -230,7 +230,7 @@ export default function Contact() {
 
             {/* Tainan Office Map */}
             <div>
-              <h3 className="font-bold text-xl mb-4">{t('contact.tainanOffice')}</h3>
+              <h3 className="font-bold text-xl mb-4">台南辦公室</h3>
               <div className="h-[300px] w-full relative grayscale hover:grayscale-0 transition-all duration-700 rounded-xl overflow-hidden border border-white/5">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.8742842843897!2d120.29333!3d22.88333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e8c5c5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2z5Y2X5riv5biC5Y2X5riv5biC5Y2X5riv5biC5Y2X5riv5biC5Y2X5riv5biC5Y2X5riv5biC!5e0!3m2!1szh-TW!2stw!4v1645512345678!5m2!1szh-TW!2stw" 

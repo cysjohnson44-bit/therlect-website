@@ -4,10 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Cpu, Wind, Layers, ChevronDown } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 export default function Technology() {
-  const { t } = useTranslation();
   const [passiveExpanded, setPassiveExpanded] = useState(false);
   const [activeExpanded, setActiveExpanded] = useState(false);
 
@@ -24,10 +22,10 @@ export default function Technology() {
         
         <div className="container relative z-10 text-center">
           <h1 className="font-display font-bold text-5xl md:text-6xl mb-6 animate-in slide-in-from-bottom-5 fade-in duration-700">
-            {t('technology.pageTitle')}
+            核心技術
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-in slide-in-from-bottom-5 fade-in duration-700 delay-100">
-            {t('technology.pageDescription')}
+            Therlect 結合深厚的熱力學理論與創新的應用技術，為客戶解決最棘手的熱管理難題。
           </p>
         </div>
       </section>
@@ -57,24 +55,24 @@ export default function Technology() {
                 <div className="p-2 bg-cyan-500/10 rounded-lg border border-cyan-500/20">
                   <Cpu className="w-6 h-6 text-cyan-400" />
                 </div>
-                <h2 className="font-display font-bold text-3xl md:text-4xl text-cyan-400">{t('technology.thermodynamicsTitle')}</h2>
+                <h2 className="font-display font-bold text-3xl md:text-4xl text-cyan-400">熱力學工程</h2>
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                {t('technology.thermodynamicsDescription')}
+                我們的熱力學工程團隊專注於熱能的產生、轉換、傳遞與利用。透過先進的模擬分析工具與豐富的實務經驗，我們能精準預測產品在真實環境中的熱表現，並提供最優化的散熱設計。
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                 <div className="bg-card/30 border border-white/5 p-5 rounded-xl hover:bg-card/50 transition-colors">
                   <Wind className="w-8 h-8 text-cyan-400 mb-3" />
-                  <h3 className="font-bold text-lg mb-2">{t('technology.cfdAnalysis')}</h3>
-                  <p className="text-sm text-muted-foreground">{t('technology.cfdDescription')}</p>
+                  <h3 className="font-bold text-lg mb-2">熱流體動力學分析</h3>
+                  <p className="text-sm text-muted-foreground">運用尖端 CFD 軟體進行精準的熱流模擬，優化氣流場與溫度分佈。</p>
                 </div>
                 
                 <div className="bg-card/30 border border-white/5 p-5 rounded-xl hover:bg-card/50 transition-colors">
                   <Layers className="w-8 h-8 text-cyan-400 mb-3" />
-                  <h3 className="font-bold text-lg mb-2">{t('technology.heatModuleDesign')}</h3>
-                  <p className="text-sm text-muted-foreground">{t('technology.heatModuleDescription')}</p>
+                  <h3 className="font-bold text-lg mb-2">散熱模組設計</h3>
+                  <p className="text-sm text-muted-foreground">針對不同產品需求，設計高效、低成本且結構緊湊的客製化散熱模組。</p>
                 </div>
               </div>
 
@@ -90,8 +88,8 @@ export default function Technology() {
       <section className="py-20 relative">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl mb-4">{t('technology.coreTechnologiesTitle')}</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t('technology.coreTechnologiesSubtitle')}</p>
+            <h2 className="font-display font-bold text-4xl mb-4">核心散熱技術</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">我們提供多種散熱解決方案，從被動散熱到主動冷卻，滿足不同應用需求。</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -102,25 +100,25 @@ export default function Technology() {
                   onClick={() => setPassiveExpanded(!passiveExpanded)}
                   className="w-full flex items-center justify-between mb-4 hover:text-cyan-300 transition-colors"
                 >
-                  <h3 className="font-display font-bold text-2xl text-cyan-400">{t('technology.passiveCoolingTitle')}</h3>
+                  <h3 className="font-display font-bold text-2xl text-cyan-400">被動散熱</h3>
                   <ChevronDown className={`w-6 h-6 text-cyan-400 transition-transform duration-300 ${passiveExpanded ? 'rotate-180' : ''}`} />
                 </button>
               </Link>
-              <p className="text-muted-foreground mb-4">{t('technology.passiveCoolingShortDesc')}</p>
+              <p className="text-muted-foreground mb-4">無需主動能源驅動的高效散熱方案</p>
               {passiveExpanded && (
                 <div className="mt-6 space-y-4 pt-6 border-t border-white/10 animate-in fade-in duration-300">
                   <div className="space-y-3">
-                    <h4 className="font-bold text-cyan-300">{t('technology.passiveCoolingFeatures')}</h4>
+                    <h4 className="font-bold text-cyan-300">技術特點：</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• {t('technology.passiveCoolingFeature1')}</li>
-                      <li>• {t('technology.passiveCoolingFeature2')}</li>
-                      <li>• {t('technology.passiveCoolingFeature3')}</li>
-                      <li>• {t('technology.passiveCoolingFeature4')}</li>
+                      <li>• 無需風扇或液冷系統，完全無聲運行</li>
+                      <li>• 利用自然對流和熱傳導原理</li>
+                      <li>• 適用於低功率和對噪音敏感的應用</li>
+                      <li>• 散熱片設計和材料選擇至關重要</li>
                     </ul>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="font-bold text-cyan-300">{t('technology.passiveCoolingApplications')}</h4>
-                    <p className="text-sm text-muted-foreground">{t('technology.passiveCoolingApplicationsDesc')}</p>
+                    <h4 className="font-bold text-cyan-300">應用場景：</h4>
+                    <p className="text-sm text-muted-foreground">LED 照明、小功率電源、音頻設備、醫療儀器等對噪音要求高的應用。</p>
                   </div>
                 </div>
               )}
@@ -133,25 +131,25 @@ export default function Technology() {
                   onClick={() => setActiveExpanded(!activeExpanded)}
                   className="w-full flex items-center justify-between mb-4 hover:text-purple-300 transition-colors"
                 >
-                  <h3 className="font-display font-bold text-2xl text-purple-400">{t('technology.activeCoolingTitle')}</h3>
+                  <h3 className="font-display font-bold text-2xl text-purple-400">主動冷卻</h3>
                   <ChevronDown className={`w-6 h-6 text-purple-400 transition-transform duration-300 ${activeExpanded ? 'rotate-180' : ''}`} />
                 </button>
               </Link>
-              <p className="text-muted-foreground mb-4">{t('technology.activeCoolingShortDesc')}</p>
+              <p className="text-muted-foreground mb-4">主動驅動的高效能散熱解決方案</p>
               {activeExpanded && (
                 <div className="mt-6 space-y-4 pt-6 border-t border-white/10 animate-in fade-in duration-300">
                   <div className="space-y-3">
-                    <h4 className="font-bold text-purple-300">{t('technology.activeCoolingFeatures')}</h4>
+                    <h4 className="font-bold text-purple-300">技術特點：</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• {t('technology.activeCoolingFeature1')}</li>
-                      <li>• {t('technology.activeCoolingFeature2')}</li>
-                      <li>• {t('technology.activeCoolingFeature3')}</li>
-                      <li>• {t('technology.activeCoolingFeature4')}</li>
+                      <li>• 風冷系統：利用風扇強制對流，散熱效率高</li>
+                      <li>• 液冷系統：水或其他液體循環，適合超高功率應用</li>
+                      <li>• 可根據溫度自動調節散熱強度</li>
+                      <li>• 適用於高功率和高性能設備</li>
                     </ul>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="font-bold text-purple-300">{t('technology.activeCoolingApplications')}</h4>
-                    <p className="text-sm text-muted-foreground">{t('technology.activeCoolingApplicationsDesc')}</p>
+                    <h4 className="font-bold text-purple-300">應用場景：</h4>
+                    <p className="text-sm text-muted-foreground">伺服器、高性能計算、電動車電池、工業設備、5G 基地台等高功率應用。</p>
                   </div>
                 </div>
               )}
@@ -163,13 +161,13 @@ export default function Technology() {
       {/* CTA */}
       <section className="py-24 text-center">
         <div className="container max-w-3xl">
-          <h2 className="font-display font-bold text-3xl md:text-4xl mb-6">{t('technology.ctaTitle')}</h2>
+          <h2 className="font-display font-bold text-3xl md:text-4xl mb-6">想了解更多技術細節？</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            {t('technology.ctaDescription')}
+            我們的工程團隊隨時準備為您解答技術疑問，並提供專業的諮詢服務。
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8">
-              {t('nav.contact')} <ArrowRight className="ml-2 w-4 h-4" />
+              聯繫技術專家 <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </Link>
         </div>

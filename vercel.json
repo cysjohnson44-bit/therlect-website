@@ -1,9 +1,7 @@
 {
-  "buildCommand": "pnpm install && pnpm run build",
+  "buildCommand": "pnpm install && pnpm build",
   "outputDirectory": "dist",
-  "framework": "other",
-  "devCommand": "pnpm run dev",
-  "installCommand": "pnpm install",
+  "framework": "vite",
   "env": {
     "DATABASE_URL": "@database_url",
     "JWT_SECRET": "@jwt_secret",

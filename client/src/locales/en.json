@@ -12,7 +12,7 @@
     "badge": "THERMAL MANAGEMENT EXPERTS",
     "title": "Unleash the",
     "titleHighlight": "Unlimited Potential of Thermal Energy",
-    "description": "Therlect, with over 20 years of professional thermal management expertise, is dedicated to providing theoretical analysis to market applications for global customers.",
+    "description": "Therlect, with over 20 years of professional thermal management expertise, is dedicated to providing comprehensive solutions from theoretical analysis to market applications for global customers.",
     "exploreSolutions": "Explore Solutions",
     "contactUs": "Contact Us"
   },
@@ -92,148 +92,20 @@
       "app4": "High-Power Power Supply Thermal Management - Efficient dissipation enhances energy conversion"
     },
     "automotive": {
-      "title": "Automotive",
-      "description": "Thermal management needs in the automotive sector involve extreme conditions. Electric vehicle battery thermal dissipation and automotive electronics temperature control applications have extremely high reliability and performance requirements. We provide targeted solutions including high-performance thermal modules, advanced material applications, and innovative design concepts. These solutions help customers achieve higher efficiency, extended service life, and superior safety performance.",
+      "title": "Automotive & Aerospace",
+      "description": "Thermal management needs in automotive and aerospace sectors involve extreme conditions. Electric vehicle battery thermal dissipation, aerospace engine cooling systems, and aircraft electronics temperature control applications have extremely high reliability and performance requirements. We provide targeted solutions including high-performance thermal modules, advanced material applications, and innovative design concepts. These solutions help customers achieve higher efficiency, extended service life, and superior safety performance.",
       "app1": "Electric Vehicle Battery Heat Dissipation - Efficient dissipation ensures battery lifespan and safety",
-      "app2": "Automotive Electronics Thermal Management - Lightweight high-performance solutions",
-      "app3": "Cooling System Thermal Management - Reliability and efficiency in parallel",
-      "app4": "Powertrain Thermal Management - High-efficiency power conversion"
+      "app2": "Aircraft Temperature Control Systems - Cooling design for extreme conditions",
+      "app3": "Automotive Electronics Thermal Management - Lightweight high-performance solutions",
+      "app4": "Aerospace Grade Reliability Certification - Passes strictest industry standards"
     }
   },
-  "processSteps": {
-    "conceptDesign": {
-      "title": "Concept & Design",
-      "shortDesc": "Conduct preliminary thermal assessment based on customer requirements and propose multiple feasible thermal dissipation solutions.",
-      "fullDesc": "In the early stages of a project, we conduct in-depth analysis of your product characteristics, application scenarios, and performance requirements. Through detailed thermal assessment, we identify potential thermal management bottlenecks. We consider space constraints, budget, manufacturing processes, and performance objectives to develop multiple feasible solutions. Each solution undergoes preliminary verification to ensure technical feasibility and economic rationality. Our design team works closely with you to select the optimal solution as the foundation for subsequent development."
-    },
-    "simulationAnalysis": {
-      "title": "Simulation & Analysis",
-      "shortDesc": "Utilize professional software for detailed thermal simulation and structural analysis to predict potential issues.",
-      "fullDesc": "Using industry-leading simulation software such as Ansys and Flotherm, we perform multi-physics coupled analysis. Through three-dimensional thermal flow analysis (CFD), we accurately predict temperature distribution, flow field characteristics, and thermal stress. Combined with structural finite element analysis (FEA), we evaluate material stress and deformation. We comprehensively validate the design before tooling, significantly reducing trial-and-error costs and development cycles. Simulation results include detailed reports and visual analysis to provide scientific basis for subsequent decisions."
-    },
-    "prototypeTesting": {
-      "title": "Prototype Testing",
-      "shortDesc": "Rapidly manufacture functional prototypes and conduct real-world testing to verify result accuracy.",
-      "fullDesc": "Based on optimized design, we rapidly manufacture functional prototypes for experimental verification. Using precision testing equipment such as infrared thermal cameras and temperature sensor arrays, we collect temperature data under real operating conditions. We compare simulation results with measured data to verify model accuracy. If deviations are found, we conduct root cause analysis and optimize model parameters. Prototype testing covers multiple operating conditions including ambient temperature, high temperature, and low temperature to ensure stable product performance across the entire working range."
-    },
-    "productionManufacturing": {
-      "title": "Production & Manufacturing",
-      "shortDesc": "Integrate supply chain resources to provide high-quality, efficient mass production services.",
-      "fullDesc": "We establish long-term partnerships with premium global suppliers to ensure stable raw material supply. From precision mold development, injection molding, machining to assembly and testing, every step adheres to strict quality standards. We employ advanced automated equipment and processes to improve production efficiency and product consistency. We establish a comprehensive logistics system to ensure timely delivery. We can provide flexible production solutions based on order volume, from small-batch trial production to large-scale mass production."
-    },
-    "qualityOptimization": {
-      "title": "Quality & Optimization",
-      "shortDesc": "Continuously track product quality and perform design optimization based on market feedback.",
-      "fullDesc": "After product launch, we establish a comprehensive quality tracking mechanism. Through customer feedback, field testing, and long-term reliability verification, we identify improvement opportunities. Based on actual operating data and market demand changes, we perform continuous design optimization. Optimization includes material selection, process improvement, cost reduction, and performance enhancement. We are committed to pursuing excellence, ensuring products maintain optimal performance and competitiveness throughout their lifecycle. We provide regular technical support and upgrade solutions."
-    }
-  },
-  "about": {
-    "pageTitle": "About Us",
-    "pageDescription": "A group of engineers passionate about thermodynamics, dedicated to transforming complex theories into elegant solutions.",
-    "storyTitle": "Our Story",
-    "storyPart1": "Therlect was founded in 2019 by a group of experienced thermal and fluid engineers. We believe that thermal management is not only a science but also an art.",
-    "storyPart2": "We have witnessed the rapid development of electronic product performance and solved the thermal dissipation challenges that followed. From early passive cooling to today's active liquid cooling and phase-change technology, we have always been at the forefront of technology.",
-    "storyPart3": "Beyond thermal management, we have expanded our vision to infrared technology, exploring the broad applications of thermal energy to human health and industrial applications. We are not just your supplier, but your most trusted strategic partner in the field of thermal energy.",
-    "foundedYear": "Founded",
-    "foundedYearValue": "2019",
-    "coreValuesTitle": "Core Values",
-    "coreValuesSubtitle": "Beliefs and principles that guide us forward",
-    "innovation": {
-      "title": "Innovation",
-      "description": "We are not satisfied with the status quo and continuously explore the boundaries of thermodynamics, applying new technologies to more possibilities."
-    },
-    "precision": {
-      "title": "Precision",
-      "description": "From simulation analysis to manufacturing, we pursue perfection in every data point and every tolerance."
-    },
-    "partnership": {
-      "title": "Partnership",
-      "description": "We work closely with customers to face challenges together. Your success is our greatest achievement."
-    },
-    "ctaTitle": "Join Our Team",
-    "ctaDescription": "We are always looking for talented individuals passionate about thermodynamics. If you want to drive technological progress, welcome to join Therlect.",
-    "conflictFreeTitle": "Conflict-Free Minerals Policy",
-    "conflictFreeIntro": "Therlect is committed to supporting responsible sourcing practices and pledges not to purchase or use conflict metals.",
-    "backgroundTitle": "Background & Commitment",
-    "backgroundContent": "Armed rebel organizations in the Democratic Republic of Congo (DRC) and surrounding countries have caused numerous social and environmental problems through metal mining and trade, including human rights violations and armed violence. These metal minerals include Tantalum (Ta), Tin (Sn), Tungsten (W), Cobalt (Co), and Gold (Au). Metals from DRC and adjacent conflict regions are known as Conflict Minerals.",
-    "commitmentContent": "To protect human rights and mitigate armed conflict in DRC and neighboring countries, Therlect supports the Conflict-Free Sourcing Initiative (CFSI) established by the Electronic Industry Citizenship Coalition (EICC) and the Global e-Sustainability Initiative (GeSi).",
-    "ourCommitmentTitle": "Our Commitment",
-    "ourCommitmentContent": "We are committed to implementing conflict-free procurement practices and will not knowingly purchase materials containing conflict minerals. We require all suppliers to comply with conflict-free sourcing standards and maintain transparent supply chain documentation."
-  },
-  "technology": {
-    "pageTitle": "Core Technology",
-    "pageDescription": "Therlect combines deep thermodynamic theory with innovative application technology to solve the most challenging thermal management problems for customers.",
-    "thermodynamicsTitle": "Thermodynamic Engineering",
-    "thermodynamicsDescription": "Our thermodynamic engineering team focuses on the generation, conversion, transfer, and utilization of thermal energy. Through advanced simulation analysis tools and rich practical experience, we can accurately predict thermal performance in real environments and provide optimized thermal design solutions.",
-    "cfdAnalysis": "Computational Fluid Dynamics Analysis",
-    "cfdDescription": "Utilize cutting-edge CFD software for precise thermal flow simulation, optimizing airflow fields and temperature distribution.",
-    "heatModuleDesign": "Heat Module Design",
-    "heatModuleDescription": "Design high-efficiency, low-cost, and compact custom thermal modules tailored to different product requirements.",
-    "coreTechnologiesTitle": "Core Cooling Technologies",
-    "coreTechnologiesSubtitle": "We provide multiple thermal dissipation solutions, from passive cooling to active cooling, meeting different application needs.",
-    "passiveCoolingTitle": "Passive Cooling",
-    "passiveCoolingShortDesc": "Efficient thermal dissipation solutions without active power-driven systems",
-    "passiveCoolingFeatures": "Technical Features:",
-    "passiveCoolingFeature1": "No fans or liquid cooling systems, completely silent operation",
-    "passiveCoolingFeature2": "Utilizes natural convection and heat conduction principles",
-    "passiveCoolingFeature3": "Suitable for low-power and noise-sensitive applications",
-    "passiveCoolingFeature4": "Heat sink design and material selection are critical",
-    "passiveCoolingApplications": "Application Scenarios:",
-    "passiveCoolingApplicationsDesc": "LED lighting, low-power power supplies, audio equipment, medical instruments, and other noise-sensitive applications.",
-    "activeCoolingTitle": "Active Cooling",
-    "activeCoolingShortDesc": "Active-driven high-performance thermal dissipation solutions",
-    "activeCoolingFeatures": "Technical Features:",
-    "activeCoolingFeature1": "Air cooling systems: Utilize fan-forced convection for high dissipation efficiency",
-    "activeCoolingFeature2": "Liquid cooling systems: Water or other liquid circulation suitable for ultra-high-power applications",
-    "activeCoolingFeature3": "Automatically adjust dissipation intensity based on temperature",
-    "activeCoolingFeature4": "Suitable for high-power and high-performance equipment",
-    "activeCoolingApplications": "Application Scenarios:",
-    "activeCoolingApplicationsDesc": "High-performance servers, data centers, gaming computers, industrial equipment, and aerospace applications.",
-    "liquidCoolingTitle": "Liquid Cooling Systems",
-    "liquidCoolingShortDesc": "Advanced liquid cooling technology for extreme thermal challenges",
-    "infraredTitle": "Infrared Technology",
-    "infraredShortDesc": "Innovative far-infrared applications for health and industrial use",
-    "ctaTitle": "Ready to Solve Your Thermal Challenges?",
-    "ctaDescription": "Our expert team is ready to provide customized solutions for your project. No matter how complex your needs are, we can find the most suitable solution."
-  },
-  "contact": {
-    "pageTitle": "Contact Us",
-    "pageDescription": "Whether it's project consultation, technical support, or partnership proposals, we look forward to hearing from you.",
-    "contactInfoTitle": "Contact Information",
-    "contactInfoDescription": "You can reach us through the following methods, or fill out the form on the right. Our team will respond within 24 hours.",
-    "taipeiOffice": "Taipei Office",
-    "taipeiAddress": "241557 Sanchong District, New Taipei City<br/>No. 27, Lane 61, Section 1, Guangfu Road, 9th Floor, Building 3",
-    "phone": "Phone",
-    "phoneNumber": "+886-2-XXXX-XXXX",
-    "email": "Email",
-    "emailAddress": "contact@therlect.com",
-    "businessHours": "Business Hours",
-    "businessHoursDesc": "Monday - Friday: 9:00 AM - 6:00 PM (Taiwan Time)",
-    "formTitle": "Send us a Message",
-    "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
-    "nameLabel": "Name",
-    "namePlaceholder": "Your full name",
-    "emailLabel": "Email",
-    "emailPlaceholder": "your.email@example.com",
-    "phoneLabel": "Phone",
-    "phonePlaceholder": "+886-XXXX-XXXX",
-    "companyLabel": "Company",
-    "companyPlaceholder": "Your company name",
-    "subjectLabel": "Subject",
-    "subjectPlaceholder": "What is this about?",
-    "messageLabel": "Message",
-    "messagePlaceholder": "Tell us more about your inquiry...",
-    "submitButton": "Send Message",
-    "successMessage": "Message sent successfully!",
-    "errorMessage": "Failed to send message. Please try again later.",
-    "youtubeTitle": "Follow Us on YouTube",
-    "youtubeDescription": "Subscribe to our channel for the latest thermal management insights and technology updates.",
-    "subscribeButton": "Subscribe Now",
-    "officeMapTitle": "Our Locations",
-    "officeMapDescription": "Visit us at our offices or contact us for more information."
+  "cta": {
+    "title": "Ready to Solve Your Thermal Management Challenges?",
+    "description": "Our expert team is ready to provide customized solutions for your projects. No matter how complex your requirements are, we can find the most suitable solution.",
+    "startProject": "Start Your Project"
   },
   "footer": {
-    "companyDescription": "Therlect is a professional thermal management solution provider dedicated to solving thermal dissipation challenges across industries.",
     "quickLinks": "Quick Links",
     "home": "Home",
     "coreTechnology": "Core Technology",
@@ -241,12 +113,10 @@
     "about": "About Us",
     "contact": "Contact Us",
     "serviceItems": "Service Items",
-    "thermalAnalysis": "Thermal Flow Analysis",
+    "thermalAnalysis": "Thermal Flow Field Analysis",
     "thermalDesign": "Thermal Design",
     "productDevelopment": "Product Development",
     "performanceOptimization": "Performance Optimization",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "copyright": "© 2026 Therlect. All rights reserved."
+    "copyright": "© 2026 Therlect Thermal Management Technology Co., Ltd. All rights reserved."
   }
 }
