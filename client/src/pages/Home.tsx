@@ -15,10 +15,9 @@ export default function Home() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    // 預加載關鍵圖片
+    // 預加載關鍵圖片 (Hero 圖片)
     const criticalImages = [
       'https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/eSiuoTiHRLUScVgB.webp',
-      'https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/wearable-cooling.png',
     ];
     
     criticalImages.forEach(src => {
@@ -26,7 +25,6 @@ export default function Home() {
       img.src = src;
     });
     
-    // 標記圖片已加載
     setImagesLoaded(true);
   }, []);
 
@@ -38,16 +36,9 @@ export default function Home() {
       <section className="relative min-h-auto flex flex-col items-center justify-center pt-32 pb-24 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/assets/background_1.jpg" 
-            alt="Therlect Technology Background" 
-            className="w-full h-full object-cover opacity-40"
-            loading="lazy"
-            decoding="async"
-            fetchPriority="low"
-          />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-950/40 via-background to-purple-950/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-900/20 via-transparent to-transparent" />
         </div>
 
         {/* Main Hero Content */}
