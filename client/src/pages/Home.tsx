@@ -317,7 +317,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-aerospace-thermal-3kyyiJRp8kgbJeA6odhDs6.webp"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-satellite-thermal-MvBmckeGc9Nj9fX6T29pa2.webp"
                   alt="汽車與航空散熱 - 電動車電池熱管理系統"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
