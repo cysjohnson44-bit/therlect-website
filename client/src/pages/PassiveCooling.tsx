@@ -33,17 +33,6 @@ export default function PassiveCooling() {
       {/* Main Content */}
       <section className="py-20 relative">
         <div className="container">
-          {/* Hero Image */}
-          <div className="mb-20 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-            <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/tech-passive-cooling-hero-BZu5BzPbdFDcmfNxq47WV3.webp" 
-              alt="Passive Cooling Technology" 
-              className="w-full h-auto object-cover"
-              loading="lazy"
-              decoding="async"
-              style={{ contentVisibility: 'auto' }}
-            />
-          </div>
 
           {/* Technical Overview */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
