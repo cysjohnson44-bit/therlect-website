@@ -1,7 +1,10 @@
 import { Link } from "wouter";
 import { MapPin, Phone, Mail, Facebook, Linkedin, Youtube } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-background border-t border-border/50 pt-16 pb-8 relative overflow-hidden">
       {/* Background decoration */}
@@ -16,7 +19,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-            專注於熱管理與遠紅外線技術的創新解決方案，為全球客戶提供從理論分析到市場應用的全方位服務。
+            {t('footer.description')}
           </p>
           <div className="flex gap-4">
             <a href="https://www.facebook.com/Therlect" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook size={20} /></a>
@@ -26,42 +29,42 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display font-bold text-foreground mb-6 text-lg">快速連結</h4>
+          <h4 className="font-display font-bold text-foreground mb-6 text-lg">{t('footer.quickLinks')}</h4>
           <ul className="space-y-3">
-            <li><Link href="/"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">首頁</span></Link></li>
-            <li><Link href="/technology"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">核心技術</span></Link></li>
-            <li><Link href="/solutions"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">解決方案</span></Link></li>
-            <li><Link href="/about"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">關於我們</span></Link></li>
-            <li><Link href="/contact"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">聯絡我們</span></Link></li>
+            <li><Link href="/"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">{t('footer.home')}</span></Link></li>
+            <li><Link href="/technology"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">{t('footer.coreTechnology')}</span></Link></li>
+            <li><Link href="/solutions"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">{t('footer.solutions')}</span></Link></li>
+            <li><Link href="/about"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">{t('footer.aboutUs')}</span></Link></li>
+            <li><Link href="/contact"><span className="text-muted-foreground hover:text-primary text-sm cursor-pointer transition-colors">{t('footer.contactUs')}</span></Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-display font-bold text-foreground mb-6 text-lg">服務項目</h4>
+          <h4 className="font-display font-bold text-foreground mb-6 text-lg">{t('footer.services')}</h4>
           <ul className="space-y-3">
-            <li className="text-muted-foreground text-sm">熱流體動力學分析</li>
-            <li className="text-muted-foreground text-sm">散熱模組設計與優化</li>
-            <li className="text-muted-foreground text-sm">遠紅外線應用開發</li>
-            <li className="text-muted-foreground text-sm">熱管理顧問服務</li>
-            <li className="text-muted-foreground text-sm">產品量產與製造</li>
+            <li className="text-muted-foreground text-sm">{t('footer.service1')}</li>
+            <li className="text-muted-foreground text-sm">{t('footer.service2')}</li>
+            <li className="text-muted-foreground text-sm">{t('footer.service3')}</li>
+            <li className="text-muted-foreground text-sm">{t('footer.service4')}</li>
+            <li className="text-muted-foreground text-sm">{t('footer.service5')}</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-display font-bold text-foreground mb-6 text-lg">聯絡資訊</h4>
+          <h4 className="font-display font-bold text-foreground mb-6 text-lg">{t('footer.contactInfo')}</h4>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
               <div className="text-muted-foreground text-sm">
-                <div className="font-medium text-foreground text-xs mb-1">新北辦公室</div>
-                <div>241557 新北市三重區<br />光復路一段61巷27號9樓之3</div>
+                <div className="font-medium text-foreground text-xs mb-1">{t('footer.newTaipeiOffice')}</div>
+                <div>{t('footer.newTaipeiAddress')}</div>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
               <div className="text-muted-foreground text-sm">
-                <div className="font-medium text-foreground text-xs mb-1">台南辦公室</div>
-                <div>台南市新市區中華路49號</div>
+                <div className="font-medium text-foreground text-xs mb-1">{t('footer.tainanOffice')}</div>
+                <div>{t('footer.tainanAddress')}</div>
               </div>
             </li>
             <li className="flex items-center gap-3">
@@ -81,8 +84,8 @@ export default function Footer() {
           © {new Date().getFullYear()} Therlect Co., Ltd. All rights reserved.
         </p>
         <div className="flex gap-6">
-          <span className="text-xs text-muted-foreground hover:text-foreground cursor-pointer">隱私權政策</span>
-          <span className="text-xs text-muted-foreground hover:text-foreground cursor-pointer">使用條款</span>
+          <span className="text-xs text-muted-foreground hover:text-foreground cursor-pointer">{t('footer.privacy')}</span>
+          <span className="text-xs text-muted-foreground hover:text-foreground cursor-pointer">{t('footer.terms')}</span>
         </div>
       </div>
     </footer>

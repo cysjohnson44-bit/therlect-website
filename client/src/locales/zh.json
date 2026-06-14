@@ -182,17 +182,25 @@
     "app4": "5G 基地台"
   },
   "footer": {
+    "description": "專注於熱管理與遠紅外線技術的創新解決方案，為全球客戶提供從理論分析到市場應用的全方位服務。",
     "quickLinks": "快速連結",
     "home": "首頁",
     "coreTechnology": "核心技術",
     "solutions": "解決方案",
-    "about": "關於我們",
-    "contact": "聯絡我們",
-    "serviceItems": "服務項目",
-    "thermalAnalysis": "熱流場分析",
-    "thermalDesign": "熱設計",
-    "productDevelopment": "產品開發",
-    "performanceOptimization": "性能優化",
-    "copyright": "© 2026 Therlect 汎海科技股份有限公司。版權所有。"
+    "aboutUs": "關於我們",
+    "contactUs": "聯絡我們",
+    "services": "服務項目",
+    "service1": "熱流體動力學分析",
+    "service2": "散熱模組設計與優化",
+    "service3": "遠紅外線應用開發",
+    "service4": "熱管理顧問服務",
+    "service5": "產品量產與製造",
+    "contactInfo": "聯絡資訊",
+    "newTaipeiOffice": "新北辦公室",
+    "newTaipeiAddress": "241557 新北市三重區\n光復路一段61巷27號9樓之3",
+    "tainanOffice": "台南辦公室",
+    "tainanAddress": "台南市新市區中華路49號",
+    "privacy": "隱私權政策",
+    "terms": "使用條款"
   }
 }

@@ -182,17 +182,25 @@
     "app4": "5G Base Stations"
   },
   "footer": {
+    "description": "Dedicated to innovative thermal management and far-infrared technology solutions, providing comprehensive services from theoretical analysis to market applications for global customers.",
     "quickLinks": "Quick Links",
     "home": "Home",
     "coreTechnology": "Core Technology",
     "solutions": "Solutions",
-    "about": "About Us",
-    "contact": "Contact Us",
-    "serviceItems": "Service Items",
-    "thermalAnalysis": "Thermal Flow Field Analysis",
-    "thermalDesign": "Thermal Design",
-    "productDevelopment": "Product Development",
-    "performanceOptimization": "Performance Optimization",
-    "copyright": "© 2026 Therlect Thermal Management Technology Co., Ltd. All rights reserved."
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "services": "Services",
+    "service1": "Thermal Fluid Dynamics Analysis",
+    "service2": "Heat Sink Module Design & Optimization",
+    "service3": "Far-Infrared Application Development",
+    "service4": "Thermal Management Consulting",
+    "service5": "Mass Production & Manufacturing",
+    "contactInfo": "Contact Information",
+    "newTaipeiOffice": "New Taipei Office",
+    "newTaipeiAddress": "9F-3, No. 27, Ln. 61, Sec. 1,\nGuangfu Rd., Sanchong Dist.,\nNew Taipei City 241557",
+    "tainanOffice": "Tainan Office",
+    "tainanAddress": "No. 49, Zhonghua Rd.,\nXinshi Dist., Tainan City",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
   }
 }
