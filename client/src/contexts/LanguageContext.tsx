@@ -45,7 +45,7 @@ const translations: Record<Language, Record<string, string>> = {
     'thermal_management_experts': 'THERMAL MANAGEMENT EXPERTS',
     'release_thermal_energy': 'Release Thermal Energy',
     'unlimited_potential': 'Unlimited Potential',
-    'company_description': 'Therlect, with over 20 years of professional thermal management expertise, is committed to providing comprehensive solutions from theoretical analysis to market application for global customers.',
+    'company_description': 'Therlect, with over 20 years of professional thermal management expertise, is dedicated to providing solutions from theoretical analysis to market application for global customers.',
     'explore_solutions': 'Explore Solutions',
     'contact_us': 'Contact Us',
     'temperature_control': 'Temperature Control',
