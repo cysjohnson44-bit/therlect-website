@@ -95,12 +95,12 @@
       "app4": "High-Power Power Supply Thermal Management - Efficient dissipation enhances energy conversion"
     },
     "automotive": {
-      "title": "Automotive & LEO Satellite",
-      "description": "Thermal management needs in automotive and low earth orbit (LEO) satellite sectors involve extreme conditions. Electric vehicle battery thermal dissipation, LEO satellite thermal control systems, and space electronics temperature management applications have extremely high reliability and performance requirements. We provide targeted solutions including high-performance thermal modules, advanced material applications, and innovative design concepts. These solutions help customers achieve higher efficiency, extended service life, and superior safety performance.",
+      "title": "Automotive & Aerospace",
+      "description": "Thermal management needs in automotive and aerospace sectors involve extreme conditions. Electric vehicle battery thermal dissipation and aircraft electronics temperature control applications have extremely high reliability and performance requirements. We provide targeted solutions including high-performance thermal modules, advanced material applications, and innovative design concepts. These solutions help customers achieve higher efficiency, extended service life, and superior safety performance.",
       "app1": "Electric Vehicle Battery Heat Dissipation - Efficient dissipation ensures battery lifespan and safety",
-      "app2": "LEO Satellite Thermal Control - Thermal management for extreme space environments",
+      "app2": "Aircraft Electronics Thermal Control - Thermal management for high-altitude environments",
       "app3": "Automotive Electronics Thermal Management - Lightweight high-performance solutions",
-      "app4": "Space Grade Reliability Certification - Passes strictest industry standards"
+      "app4": "Aerospace Grade Reliability Certification - Passes strictest industry standards"
     }
   },
   "cta": {
