@@ -289,11 +289,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Automotive Cooling Solution */}
+            {/* Automotive & LEO Satellite Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">車用散熱系統</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為電動車電池、動力系統和車載電子提供高可靠性散熱方案。我們的設計符合汽車工業標準，確保在各種駕駛條件下的最佳性能。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">車用與低軌衛星散熱</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為電動車電池、動力系統和低軌衛星電子系統提供高可靠性散熱方案。我們的設計符合汽車工業與太空環境標準，確保在各種極端條件下的最佳性能。</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
@@ -301,7 +301,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">動力電子散熱 - 高效能功率轉換</span>
+                    <span className="text-muted-foreground">低軌衛星熱控 - 極端太空環境散熱管理</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
@@ -317,8 +317,8 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ECZDMUZfBCKZeyAT.webp"
-                  alt="車用散熱系統 - 女工程師測試污查機組件"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/leo-satellite-thermal-mk8AXC68FDtPKQZiy7ywcm.webp"
+                  alt="車用與低軌衛星散熱 - 低軌衛星熱控系統"
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
