@@ -40,6 +40,7 @@ export default function Navbar() {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,27 +53,27 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navLinks = [
-    { href: "/", label: "首頁" },
+    { href: "/", label: t('nav.home') },
     {
-      label: "核心技術",
+      label: t('nav.coreTechnology'),
       submenu: [
-        { href: "/technology#passive", label: "被動散熱" },
-        { href: "/technology#active", label: "主動冷卻" },
-        { href: "/technology#liquid", label: "液冷系統" },
-        { href: "/technology#infrared", label: "遠紅外線" },
+        { href: "/technology#passive", label: t('technology.passiveCooling') },
+        { href: "/technology#active", label: t('technology.activeCooling') },
+        { href: "/technology#liquid", label: t('nav.liquidCooling') },
+        { href: "/technology#infrared", label: t('nav.farInfrared') },
       ],
     },
     {
-      label: "解決方案",
+      label: t('nav.solutions'),
       submenu: [
-        { href: "/solutions#consumer", label: "消費性電子" },
-        { href: "/solutions#industrial", label: "工業通訊" },
-        { href: "/solutions#health", label: "健康與生活" },
-        { href: "/solutions#automotive", label: "汽車" }
+        { href: "/solutions#consumer", label: t('applications.consumerElectronics.title') },
+        { href: "/solutions#industrial", label: t('applications.industrial.title') },
+        { href: "/solutions#health", label: t('nav.healthLife') },
+        { href: "/solutions#automotive", label: t('applications.automotive.title') }
       ],
     },
-    { href: "/about", label: "關於我們" },
-    { href: "/contact", label: "聯絡我們" },
+    { href: "/about", label: t('nav.about') },
+    { href: "/contact", label: t('nav.contact') },
   ];
 
   return (

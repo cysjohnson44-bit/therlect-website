@@ -8,20 +8,33 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
 
-// 代碼分割 - 延遲加載非首頁路由
-const Technology = lazy(() => import("./pages/Technology"));
-const PassiveCooling = lazy(() => import("./pages/PassiveCooling"));
-const ActiveCooling = lazy(() => import("./pages/ActiveCooling"));
-const Solutions = lazy(() => import("./pages/Solutions"));
-const CFDAnalysis = lazy(() => import("./pages/CFDAnalysis"));
-const ThermalModuleDesign = lazy(() => import("./pages/ThermalModuleDesign"));
-const AluminumModuleDesign = lazy(() => import("./pages/AluminumModuleDesign"));
-const ThermalManagementSolution = lazy(() => import("./pages/ThermalManagementSolution"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const EmailMessaging = lazy(() => import("./pages/EmailMessaging"));
-const AdminEmailDashboard = lazy(() => import("./pages/AdminEmailDashboard"));
-const Messages = lazy(() => import("./pages/Messages"));
+// 動態匯入重試邏輯 - 當部署新版本後舊 chunk 不存在時自動重新載入
+function retryImport(importFn: () => Promise<any>, retries = 2): Promise<any> {
+  return importFn().catch((error) => {
+    if (retries > 0 && (error.message?.includes('dynamically imported module') || error.message?.includes('Failed to fetch'))) {
+      // 清除模組快取並重試
+      return new Promise((resolve) => setTimeout(resolve, 1000)).then(() => retryImport(importFn, retries - 1));
+    }
+    // 如果重試仍然失敗，強制重新載入頁面
+    window.location.reload();
+    throw error;
+  });
+}
+
+// 代碼分割 - 延遲加載非首頁路由（帶重試機制）
+const Technology = lazy(() => retryImport(() => import("./pages/Technology")));
+const PassiveCooling = lazy(() => retryImport(() => import("./pages/PassiveCooling")));
+const ActiveCooling = lazy(() => retryImport(() => import("./pages/ActiveCooling")));
+const Solutions = lazy(() => retryImport(() => import("./pages/Solutions")));
+const CFDAnalysis = lazy(() => retryImport(() => import("./pages/CFDAnalysis")));
+const ThermalModuleDesign = lazy(() => retryImport(() => import("./pages/ThermalModuleDesign")));
+const AluminumModuleDesign = lazy(() => retryImport(() => import("./pages/AluminumModuleDesign")));
+const ThermalManagementSolution = lazy(() => retryImport(() => import("./pages/ThermalManagementSolution")));
+const About = lazy(() => retryImport(() => import("./pages/About")));
+const Contact = lazy(() => retryImport(() => import("./pages/Contact")));
+const EmailMessaging = lazy(() => retryImport(() => import("./pages/EmailMessaging")));
+const AdminEmailDashboard = lazy(() => retryImport(() => import("./pages/AdminEmailDashboard")));
+const Messages = lazy(() => retryImport(() => import("./pages/Messages")));
 
 // 加載中組件 - 優化以減少視覺閃動
 function PageLoader() {
