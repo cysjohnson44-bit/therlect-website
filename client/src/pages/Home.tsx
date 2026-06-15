@@ -11,7 +11,8 @@ import { useLanguage } from "@/hooks/useLanguage";
  * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
  */
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
+  const isEn = currentLanguage === 'en';
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
@@ -143,41 +144,41 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background via-background/95 to-background/90">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl mb-4 text-white">我們的解決方案</h2>
-            <p className="text-muted-foreground text-lg">從被動散熱到主動冷卻，涵蓋全方位的熱管理需求</p>
+            <h2 className="font-display font-bold text-4xl mb-4 text-white">{isEn ? 'Our Solutions' : '我們的解決方案'}</h2>
+            <p className="text-muted-foreground text-lg">{isEn ? 'From passive cooling to active cooling, covering comprehensive thermal management needs' : '從被動散熱到主動冷卻，涵蓋全方位的熱管理需求'}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 icon: <Cpu className="w-12 h-12" />,
-                title: "被動散熱",
-                description: "高效能散熱片和導熱材料，無需額外電力消耗"
+                title: isEn ? 'Passive Cooling' : '被動散熱',
+                description: isEn ? 'High-performance heat sinks and thermal materials, no additional power required' : '高效能散熱片和導熱材料，無需額外電力消耗'
               },
               {
                 icon: <Activity className="w-12 h-12" />,
-                title: "主動冷卻",
-                description: "風扇和液冷系統，為高功率設備提供強大冷卻能力"
+                title: isEn ? 'Active Cooling' : '主動冷卻',
+                description: isEn ? 'Fan and liquid cooling systems for high-power equipment' : '風扇和液冷系統，為高功率設備提供強大冷卻能力'
               },
               {
                 icon: <Layers className="w-12 h-12" />,
-                title: "熱介面材料",
-                description: "導熱膏、墊片和相變材料，優化熱傳導效率"
+                title: isEn ? 'Thermal Interface Materials' : '熱介面材料',
+                description: isEn ? 'Thermal paste, pads and phase-change materials for optimized heat transfer' : '導熱膏、墊片和相變材料，優化熱傳導效率'
               },
               {
                 icon: <Globe className="w-12 h-12" />,
-                title: "系統集成",
-                description: "完整的熱管理系統設計和集成解決方案"
+                title: isEn ? 'System Integration' : '系統集成',
+                description: isEn ? 'Complete thermal management system design and integration solutions' : '完整的熱管理系統設計和集成解決方案'
               },
               {
                 icon: <Thermometer className="w-12 h-12" />,
-                title: "溫度監測",
-                description: "實時溫度監測和智能控制系統"
+                title: isEn ? 'Temperature Monitoring' : '溫度監測',
+                description: isEn ? 'Real-time temperature monitoring and intelligent control systems' : '實時溫度監測和智能控制系統'
               },
               {
                 icon: <Zap className="w-12 h-12" />,
-                title: "能效優化",
-                description: "降低能耗，提高系統效能和可靠性"
+                title: isEn ? 'Energy Optimization' : '能效優化',
+                description: isEn ? 'Reduce energy consumption, improve system performance and reliability' : '降低能耗，提高系統效能和可靠性'
               }
             ].map((solution, index) => (
               <div
@@ -208,33 +209,33 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background/90 via-background to-background/95">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">全方位散熱解決方案</h2>
-            <p className="text-muted-foreground text-lg">從消費電子到工業應用，為各行業提供專業的熱管理方案</p>
+            <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">{isEn ? 'Comprehensive Thermal Solutions' : '全方位散熱解決方案'}</h2>
+            <p className="text-muted-foreground text-lg">{isEn ? 'From consumer electronics to industrial applications, providing professional thermal management for all industries' : '從消費電子到工業應用，為各行業提供專業的熱管理方案'}</p>
           </div>
 
           <div className="space-y-16" style={{ contentVisibility: 'auto' }}>
             {/* Wearable Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">穿戴式產品散熱</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為智慧手錶、AR/VR眼鏡和健康監測設備提供輕量化、高效能的散熱解決方案。我們的設計確保設備在長時間運行中保持最佳溫度，同時不影響產品的輕薄設計。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Wearable Device Cooling' : '穿戴式產品散熱'}</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing lightweight, high-performance thermal solutions for smartwatches, AR/VR glasses, and health monitoring devices. Our designs ensure optimal temperature during extended operation without compromising slim form factors.' : '為智慧手錶、AR/VR眼鏡和健康監測設備提供輕量化、高效能的散熱解決方案。我們的設計確保設備在長時間運行中保持最佳溫度，同時不影響產品的輕薄設計。'}</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">智慧手錶散熱模組 - 超薄設計，溫度控制精準</span>
+                    <span className="text-muted-foreground">{isEn ? 'Smartwatch cooling module - Ultra-thin design, precise temperature control' : '智慧手錶散熱模組 - 超薄設計，溫度控制精準'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">AR/VR眼鏡冷卻系統 - 長時間佩戴舒適體驗</span>
+                    <span className="text-muted-foreground">{isEn ? 'AR/VR glasses cooling - Comfortable for extended wear' : 'AR/VR眼鏡冷卻系統 - 長時間佩戴舒適體驗'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">健康監測設備 - 精密溫度控制，數據準確</span>
+                    <span className="text-muted-foreground">{isEn ? 'Health monitoring devices - Precision temperature control' : '健康監測設備 - 精密溫度控制，數據準確'}</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    了解更多
+                    {isEn ? 'Learn More' : '了解更多'}
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -242,7 +243,7 @@ export default function Home() {
               <div className="order-1 lg:order-2">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/bMYVToChYVwzSXGl.png"
-                  alt="穿戴式產品散熱解決方案 - AR/VR眼鏡和熱管理芯片展示"
+                  alt={isEn ? 'Wearable product thermal solution - AR/VR glasses and thermal management chip' : '穿戴式產品散熱解決方案 - AR/VR眼鏡和熱管理芯片展示'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -256,7 +257,7 @@ export default function Home() {
               <div>
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/JTgoSLkzOXvCSjxg.webp"
-                  alt="工業應用散熱 - 工程師在實驗室進行熱管理測試"
+                  alt={isEn ? 'Industrial cooling - Engineer conducting thermal management tests in laboratory' : '工業應用散熱 - 工程師在實驗室進行熱管理測試'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -264,25 +265,25 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">工業應用散熱</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為工業製造、測試設備和精密儀器提供可靠的散熱解決方案。我們的產品經過嚴格測試，能在惡劣環境中保持穩定性能。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Industrial Cooling' : '工業應用散熱'}</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing reliable thermal solutions for industrial manufacturing, testing equipment, and precision instruments. Our products are rigorously tested to maintain stable performance in harsh environments.' : '為工業製造、測試設備和精密儀器提供可靠的散熱解決方案。我們的產品經過嚴格測試，能在惡劣環境中保持穩定性能。'}</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">CNC機械散熱 - 高精度溫度控制</span>
+                    <span className="text-muted-foreground">{isEn ? 'CNC machinery cooling - High-precision temperature control' : 'CNC機械散熱 - 高精度溫度控制'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">測試設備冷卻 - 24/7連續運行支持</span>
+                    <span className="text-muted-foreground">{isEn ? 'Testing equipment cooling - 24/7 continuous operation' : '測試設備冷卻 - 24/7連續運行支持'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">精密儀器散熱 - 環境適應性強</span>
+                    <span className="text-muted-foreground">{isEn ? 'Precision instrument cooling - Strong environmental adaptability' : '精密儀器散熱 - 環境適應性強'}</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    了解更多
+                    {isEn ? 'Learn More' : '了解更多'}
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -292,25 +293,25 @@ export default function Home() {
             {/* Automotive & LEO Satellite Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">汽車與航空散熱</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為電動車電池、動力系統和航空電子系統提供高可靠性散熱方案。我們的設計符合汽車工業與航空環境標準，確保在各種極端條件下的最佳性能。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Automotive & Aerospace Cooling' : '汽車與航空散熱'}</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing high-reliability thermal solutions for EV batteries, powertrain systems, and aerospace electronics. Our designs meet automotive and aerospace standards, ensuring optimal performance under extreme conditions.' : '為電動車電池、動力系統和航空電子系統提供高可靠性散熱方案。我們的設計符合汽車工業與航空環境標準，確保在各種極端條件下的最佳性能。'}</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">電池管理系統 - 安全可靠的溫度控制</span>
+                    <span className="text-muted-foreground">{isEn ? 'Battery management system - Safe and reliable temperature control' : '電池管理系統 - 安全可靠的溫度控制'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">飛行器電子溫控 - 高空環境散熱管理</span>
+                    <span className="text-muted-foreground">{isEn ? 'Aircraft electronics thermal control - High-altitude cooling management' : '飛行器電子溫控 - 高空環境散熱管理'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">車載電子冷卻 - 極端環境適應</span>
+                    <span className="text-muted-foreground">{isEn ? 'In-vehicle electronics cooling - Extreme environment adaptability' : '車載電子冷卻 - 極端環境適應'}</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    了解更多
+                    {isEn ? 'Learn More' : '了解更多'}
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -318,7 +319,7 @@ export default function Home() {
               <div className="order-1 lg:order-2">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-satellite-unified-f2syL6Tvkct6uxVwQB6J2V.webp"
-                  alt="汽車與航空散熱 - 電動車電池熱管理系統"
+                  alt={isEn ? 'Automotive & Aerospace cooling - EV battery thermal management system' : '汽車與航空散熱 - 電動車電池熱管理系統'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -332,7 +333,7 @@ export default function Home() {
               <div>
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/aBAtySdSYyTtZVQO.webp"
-                  alt="數據中心散熱 - 技術人员安裝伺服務器散熱系統"
+                  alt={isEn ? 'Data center cooling - Technician installing server cooling system' : '數據中心散熱 - 技術人员安裝伺服務器散熱系統'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -340,25 +341,25 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">數據中心散熱</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為伺服器、交換機和高功率電源提供企業級散熱解決方案。我們的系統設計能有效降低數據中心能耗，提高整體效率。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Data Center Cooling' : '數據中心散熱'}</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing enterprise-grade thermal solutions for servers, switches, and high-power supplies. Our system designs effectively reduce data center energy consumption and improve overall efficiency.' : '為伺服器、交換機和高功率電源提供企業級散熱解決方案。我們的系統設計能有效降低數據中心能耗，提高整體效率。'}</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">伺服器CPU散熱 - 低噪音高效能</span>
+                    <span className="text-muted-foreground">{isEn ? 'Server CPU cooling - Low noise, high performance' : '伺服器CPU散熱 - 低噪音高效能'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">機櫃熱管理 - 整體溫度均衡</span>
+                    <span className="text-muted-foreground">{isEn ? 'Rack thermal management - Overall temperature balance' : '機櫃熱管理 - 整體溫度均衡'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">電源模組冷卻 - 可靠性和效率並行</span>
+                    <span className="text-muted-foreground">{isEn ? 'Power module cooling - Reliability and efficiency combined' : '電源模組冷卻 - 可靠性和效率並行'}</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    了解更多
+                    {isEn ? 'Learn More' : '了解更多'}
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -368,25 +369,25 @@ export default function Home() {
             {/* Network Communication Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="font-display font-bold text-3xl mb-4 text-white">網路通訊散熱</h3>
-                <p className="text-muted-foreground text-base mb-6 leading-relaxed">為5G基地台、網路交換機和通訊設備提供專業散熱方案。我們的設計確保在高溫環境中保持穩定的網路連接。</p>
+                <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Network & Telecom Cooling' : '網路通訊散熱'}</h3>
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing professional thermal solutions for 5G base stations, network switches, and telecom equipment. Our designs ensure stable network connectivity in high-temperature environments.' : '為5G基地台、網路交換機和通訊設備提供專業散熱方案。我們的設計確保在高溫環境中保持穩定的網路連接。'}</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">5G基地台散熱 - 高功率密度冷卻</span>
+                    <span className="text-muted-foreground">{isEn ? '5G base station cooling - High power density cooling' : '5G基地台散熱 - 高功率密度冷卻'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">交換機散熱模組 - 可靠連接保障</span>
+                    <span className="text-muted-foreground">{isEn ? 'Switch cooling module - Reliable connectivity assurance' : '交換機散熱模組 - 可靠連接保障'}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-bold mt-1">•</span>
-                    <span className="text-muted-foreground">通訊電源散熱 - 長期穩定運行</span>
+                    <span className="text-muted-foreground">{isEn ? 'Telecom power cooling - Long-term stable operation' : '通訊電源散熱 - 長期穩定運行'}</span>
                   </li>
                 </ul>
                 <Link href="/contact">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                    了解更多
+                    {isEn ? 'Learn More' : '了解更多'}
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -394,7 +395,7 @@ export default function Home() {
               <div className="order-1 lg:order-2">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ILJdYZdUCbVlACVv.jpg"
-                  alt="網路通訊散熱解決方案"
+                  alt={isEn ? 'Network & Telecom cooling solution' : '網路通訊散熱解決方案'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
                   decoding="async"
@@ -408,8 +409,8 @@ export default function Home() {
       {/* Trusted Partners Section */}
       <section className="relative overflow-hidden bg-background">
         <div className="container py-12 mb-0">
-          <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white text-center">值得信賴的合作夥伴</h2>
-          <p className="text-gray-300 text-lg text-center">與全球領先企業合作，提供頂級熱管理解決方案</p>
+          <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white text-center">{isEn ? 'Trusted Partners' : '值得信賴的合作夥伴'}</h2>
+          <p className="text-gray-300 text-lg text-center">{isEn ? 'Partnering with global leading enterprises to provide top-tier thermal management solutions' : '與全球領先企業合作，提供頂級熱管理解決方案'}</p>
         </div>
         
         {/* Full-width partner logos background with hover zoom effect */}
@@ -449,17 +450,17 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-xs font-mono text-primary tracking-wider">準備開始</span>
+              <span className="text-xs font-mono text-primary tracking-wider">{isEn ? 'GET STARTED' : '準備開始'}</span>
             </div>
             <h2 className="font-display font-bold text-4xl md:text-5xl mb-6 text-white">
-              準備好解決您的熱管理挑戰？
+              {isEn ? 'Ready to Solve Your Thermal Challenges?' : '準備好解決您的熱管理挑戰？'}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              我們的專家團隊隨時準備為您的項目提供定制化的解決方案。無論您的需求有多複雜，我們都能找到最適合的方案。
+              {isEn ? 'Our expert team is ready to provide customized solutions for your project. No matter how complex your needs, we can find the best solution.' : '我們的專家團隊隨時準備為您的項目提供定制化的解決方案。無論您的需求有多複雜，我們都能找到最適合的方案。'}
             </p>
             <Link href="/contact">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8 group">
-                開始您的項目
+                {isEn ? 'Start Your Project' : '開始您的項目'}
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
