@@ -1,9 +1,29 @@
 import { Link } from "wouter";
-import { MapPin, Phone, Mail, Facebook, Linkedin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Linkedin, Youtube, Copy, Check } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
+import { useState } from "react";
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("jimmy.chen@therlect.com");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = "jimmy.chen@therlect.com";
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   return (
     <footer className="bg-background border-t border-border/50 pt-16 pb-8 relative overflow-hidden">
@@ -22,9 +42,9 @@ export default function Footer() {
             {t('footer.description')}
           </p>
           <div className="flex gap-4">
-            <a href="https://www.facebook.com/Therlect" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook size={20} /></a>
-            <a href="https://tw.linkedin.com/company/therlect-co-ltd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={20} /></a>
-            <a href="https://www.youtube.com/watch?v=aigp6jhZZnQ" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Youtube size={20} /></a>
+            <a href="https://www.facebook.com/Therlect" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Facebook"><Facebook size={20} /></a>
+            <a href="https://tw.linkedin.com/company/therlect-co-ltd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn"><Linkedin size={20} /></a>
+            <a href="https://www.youtube.com/watch?v=aigp6jhZZnQ" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="YouTube"><Youtube size={20} /></a>
           </div>
         </div>
 
@@ -69,13 +89,45 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary shrink-0" />
-              <span className="text-muted-foreground text-sm">+886-2-2999-5596</span>
+              <a href="tel:+886229995596" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                +886-2-2999-5596
+              </a>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-primary shrink-0" />
-              <span className="text-muted-foreground text-sm">jimmy.chen@therlect.com</span>
+              <div className="flex items-center gap-2">
+                <a href="mailto:jimmy.chen@therlect.com" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                  jimmy.chen@therlect.com
+                </a>
+                <button
+                  onClick={handleCopyEmail}
+                  className="text-muted-foreground hover:text-primary transition-colors p-1 rounded hover:bg-primary/10"
+                  title={copied ? (t('footer.copied') || 'Copied!') : (t('footer.copyEmail') || 'Copy email')}
+                >
+                  {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
+                </button>
+              </div>
             </li>
           </ul>
+
+          {/* Social Media Links in Contact Section */}
+          <div className="mt-6 pt-4 border-t border-border/30">
+            <p className="text-xs text-muted-foreground mb-3">{t('footer.followUs')}</p>
+            <div className="flex gap-3">
+              <a href="https://www.facebook.com/Therlect" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all" title="Facebook">
+                <Facebook size={16} />
+              </a>
+              <a href="https://tw.linkedin.com/company/therlect-co-ltd" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all" title="LinkedIn">
+                <Linkedin size={16} />
+              </a>
+              <a href="https://www.youtube.com/watch?v=aigp6jhZZnQ" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all" title="YouTube">
+                <Youtube size={16} />
+              </a>
+              <a href="mailto:jimmy.chen@therlect.com" className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all" title="Email">
+                <Mail size={16} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
