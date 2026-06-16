@@ -318,7 +318,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="/manus-storage/automotive-aerospace-cooling_21599762.webp"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/FJCwCnjfWXtIndQX.webp"
                   alt={isEn ? 'Automotive & Aerospace cooling - EV battery thermal management system' : '汽車與航空散熱 - 電動車電池熱管理系統'}
                   className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
                   loading="lazy"
