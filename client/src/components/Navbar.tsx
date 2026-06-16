@@ -40,7 +40,8 @@ export default function Navbar() {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
+  const isEn = currentLanguage === 'en';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,10 +67,11 @@ export default function Navbar() {
     {
       label: t('nav.solutions'),
       submenu: [
-        { href: "/solutions#consumer", label: t('applications.consumerElectronics.title') },
-        { href: "/solutions#industrial", label: t('applications.industrial.title') },
-        { href: "/solutions#health", label: t('nav.healthLife') },
-        { href: "/solutions#automotive", label: t('applications.automotive.title') }
+        { href: "/solutions#process", label: isEn ? 'Concept & Design' : '概念與設計' },
+        { href: "/solutions#process", label: isEn ? 'Simulation & Analysis' : '仿真與分析' },
+        { href: "/solutions#process", label: isEn ? 'Prototyping' : '原型製作' },
+        { href: "/solutions#process", label: isEn ? 'Production & Manufacturing' : '生產製造' },
+        { href: "/solutions#process", label: isEn ? 'Quality & Optimization' : '品質與優化' },
       ],
     },
     { href: "/about", label: t('nav.about') },
