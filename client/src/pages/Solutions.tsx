@@ -99,7 +99,7 @@ export default function Solutions() {
       description: isEn ? "Thermal management in the automotive and aerospace fields involves extreme conditions. Applications such as EV battery cooling and aircraft electronics temperature control demand extremely high reliability and performance. We provide targeted solutions including high-performance cooling modules, advanced material applications, and innovative design concepts. These solutions help clients achieve higher efficiency, longer lifespan, and superior safety performance." : "汽車與航空領域的熱管理需求涉及極端條件。電動車電池散熱、飛行器電子設備溫控等應用對可靠性和性能要求極高。我們提供針對性的解決方案，包括高效能散熱模組、先進的材料應用和創新的設計理念。這些方案幫助客戶實現更高的效率、更長的使用壽命和更優的安全性能。",
       detailedContent: isEn ? "The automotive and aerospace fields have the highest reliability requirements, with thermal management directly related to safety. Our professional solutions include:\n\n• EV Batteries: Efficient cooling ensuring battery lifespan and safety\n• Aircraft Electronics: Temperature control management in high-altitude environments\n• Automotive Electronics: Automotive-grade reliability certification\n\nOur technology has passed the industry's most stringent certification standards." : "汽車與航空領域對可靠性要求最高，熱管理直接關係安全性。我們的專業方案包括：\n\n• 電動車電池：高效散熱確保電池壽命與安全性\n• 飛行器電子：高空環境下的溫控管理\n• 汽車電子：車規級可靠性認證\n\n我們的技術已通過業界最嚴格的認證標準。",
       items: isEn ? ["EV Battery Cooling", "Aircraft Electronics Thermal Control", "Automotive Electronics Cooling"] : ["電動車電池散熱", "飛行器電子溫控", "汽車電子散熱"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663272903053/6a2H4uYcRvYtNrWj4wnxzN/automotive-satellite-unified-f2syL6Tvkct6uxVwQB6J2V.webp"
+      image: "/manus-storage/automotive-aerospace-cooling_21599762.webp"
     },
     {
       title: isEn ? "Semiconductor Equipment Cooling" : "半導體設備散熱",
