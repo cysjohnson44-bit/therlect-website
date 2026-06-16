@@ -67,11 +67,11 @@ export default function Navbar() {
     {
       label: t('nav.solutions'),
       submenu: [
-        { href: "/solutions#process", label: isEn ? 'Concept & Design' : '概念與設計' },
-        { href: "/solutions#process", label: isEn ? 'Simulation & Analysis' : '仿真與分析' },
-        { href: "/solutions#process", label: isEn ? 'Prototyping' : '原型製作' },
-        { href: "/solutions#process", label: isEn ? 'Production & Manufacturing' : '生產製造' },
-        { href: "/solutions#process", label: isEn ? 'Quality & Optimization' : '品質與優化' },
+        { href: "/solutions#concept", label: isEn ? 'Concept & Design' : '概念與設計' },
+        { href: "/solutions#simulation", label: isEn ? 'Simulation & Analysis' : '仿真與分析' },
+        { href: "/solutions#prototyping", label: isEn ? 'Prototyping' : '原型製作' },
+        { href: "/solutions#production", label: isEn ? 'Production & Manufacturing' : '生產製造' },
+        { href: "/solutions#quality", label: isEn ? 'Quality & Optimization' : '品質與優化' },
       ],
     },
     { href: "/about", label: t('nav.about') },
