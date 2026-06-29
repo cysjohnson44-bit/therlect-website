@@ -113,7 +113,7 @@ export default function Solutions() {
       description: isEn ? "Robots under high-load operation face heat accumulation in motors, drivers, and control boards as the greatest threat to reliability. Therlect provides customized thermal designs for industrial robotic arms and service robots, ensuring long-duration continuous operation without performance degradation." : "機器人在高負載運作下，馬達、驅動器、控制板的熱累積是可靠度的最大威脅。汎海科技提供工業機械手臂與服務型機器人的客製化散熱設計，確保長時間連續運作不降效",
       detailedContent: isEn ? "Robot thermal management directly affects operational reliability and service life. Our professional solutions include:\n\n• Joint Motors: Long-duration high-torque heat generation management\n• Servo Drivers: High power density cooling in compact spaces\n• Main Control Boards / AI Chips: Dense computation with high peak thermal throughput\n\nOur customized thermal designs ensure robots maintain stable performance during extended high-load operation, significantly extending equipment lifespan and reducing downtime." : "機器人熱管理直接影響運作可靠度與使用壽命。我們的專業方案包括：\n\n• 關節馬達：長時間高扣矩發熱管理\n• 伺服驅動器：功率密度高、空間小的散熱設計\n• 主控板 / AI 晶片：運算密集、峰值熱通量高\n\n我們的客製化散熱設計確保機器人在長時間高負載運作下保持穩定性能，顯著延長設備壽命並降低停機時間。",
       items: isEn ? ["Joint Motor Cooling", "Servo Driver Cooling", "Main Control Board / AI Chip Cooling"] : ["關節馬達散熱", "伺服驅動器散熱", "主控板 / AI 晶片散熱"],
-      image: ""
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GBUNjgOAzvnhvaSz.webp"
     }
   ];
 
