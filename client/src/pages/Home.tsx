@@ -452,13 +452,13 @@ export default function Home() {
         {/* Full-width partner logos background */}
         <div className="w-full overflow-hidden bg-background" style={{ minHeight: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px' }}>
           <img
-            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/VMkNfdgmSifoBxAf.png"
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/UJRDGgXRgjtWyaOg.png"
             alt={isEn ? 'Partner Logos' : '合作夥伴'}
             className="transition-transform duration-500 ease-out hover:scale-105"
             style={{
               imageRendering: 'crisp-edges',
               display: 'block',
-              width: '80%',
+              width: '90%',
               height: 'auto',
               maxWidth: '100%',
               objectFit: 'contain',
