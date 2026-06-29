@@ -254,7 +254,7 @@ export default function Home() {
 
             {/* Robot Thermal Management Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="order-1 lg:order-1">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/GBUNjgOAzvnhvaSz.webp"
                   alt={isEn ? 'Robot thermal management - Industrial robotic arm with cooling system' : '機器人散熱解決方案 - 工業機械手臂散熱系統'}
@@ -264,7 +264,7 @@ export default function Home() {
                   style={{ contentVisibility: 'auto' }}
                 />
               </div>
-              <div>
+              <div className="order-2 lg:order-2">
                 <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Robot Thermal Management' : '機器人散熱解決方案'}</h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Robots under high-load operation face heat accumulation in motors, drivers, and control boards as the greatest threat to reliability. Therlect provides customized thermal designs for industrial robotic arms and service robots, ensuring long-duration continuous operation without performance degradation.' : '機器人在高負載運作下，馬達、驅動器、控制板的熱累積是可靠度的最大威脅。汎海科技提供工業機械手臂與服務型機器人的客製化散熱設計，確保長時間連續運作不降效。'}</p>
                 <ul className="space-y-3 mb-8">
@@ -292,7 +292,7 @@ export default function Home() {
 
             {/* Industrial Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="order-1 lg:order-2">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/JTgoSLkzOXvCSjxg.webp"
                   alt={isEn ? 'Industrial cooling - Engineer conducting thermal management tests in laboratory' : '工業應用散熱 - 工程師在實驗室進行熱管理測試'}
@@ -302,7 +302,7 @@ export default function Home() {
                   style={{ contentVisibility: 'auto' }}
                 />
               </div>
-              <div>
+              <div className="order-2 lg:order-1">
                 <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Industrial Cooling' : '工業應用散熱'}</h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing reliable thermal solutions for industrial manufacturing, testing equipment, and precision instruments. Our products are rigorously tested to maintain stable performance in harsh environments.' : '為工業製造、測試設備和精密儀器提供可靠的散熱解決方案。我們的產品經過嚴格測試，能在惡劣環境中保持穩定性能。'}</p>
                 <ul className="space-y-3 mb-8">
@@ -330,7 +330,17 @@ export default function Home() {
 
             {/* Automotive & LEO Satellite Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="order-1 lg:order-1">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ivncfsQipagKGpJE.webp"
+                  alt={isEn ? 'LEO Satellite ground station thermal management' : '低軌衛星地面站散熱管理'}
+                  className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ contentVisibility: 'auto' }}
+                />
+              </div>
+              <div className="order-2 lg:order-2">
                 <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Automotive & Aerospace Cooling' : '汽車與航空散熱'}</h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing high-reliability thermal solutions for EV batteries, powertrain systems, and aerospace electronics. Our designs meet automotive and aerospace standards, ensuring optimal performance under extreme conditions.' : '為電動車電池、動力系統和航空電子系統提供高可靠性散熱方案。我們的設計符合汽車工業與航空環境標準，確保在各種極端條件下的最佳性能。'}</p>
                 <ul className="space-y-3 mb-8">
@@ -354,21 +364,11 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="order-1 lg:order-2">
-                <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ivncfsQipagKGpJE.webp"
-                  alt={isEn ? 'LEO Satellite ground station thermal management' : '低軌衛星地面站散熱管理'}
-                  className="w-full h-auto rounded-lg shadow-lg border border-primary/30"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ contentVisibility: 'auto' }}
-                />
-              </div>
             </div>
 
             {/* Server Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="order-1 lg:order-2">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/aBAtySdSYyTtZVQO.webp"
                   alt={isEn ? 'Data center cooling - Technician installing server cooling system' : '數據中心散熱 - 技術人员安裝伺服務器散熱系統'}
@@ -378,7 +378,7 @@ export default function Home() {
                   style={{ contentVisibility: 'auto' }}
                 />
               </div>
-              <div>
+              <div className="order-2 lg:order-1">
                 <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Data Center Cooling' : '數據中心散熱'}</h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing enterprise-grade thermal solutions for servers, switches, and high-power supplies. Our system designs effectively reduce data center energy consumption and improve overall efficiency.' : '為伺服器、交換機和高功率電源提供企業級散熱解決方案。我們的系統設計能有效降低數據中心能耗，提高整體效率。'}</p>
                 <ul className="space-y-3 mb-8">
@@ -406,7 +406,7 @@ export default function Home() {
 
             {/* Network Communication Cooling Solution */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="order-2 lg:order-2">
                 <h3 className="font-display font-bold text-3xl mb-4 text-white">{isEn ? 'Network & Telecom Cooling' : '網路通訊散熱'}</h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">{isEn ? 'Providing professional thermal solutions for 5G base stations, network switches, and telecom equipment. Our designs ensure stable network connectivity in high-temperature environments.' : '為5G基地台、網路交換機和通訊設備提供專業散熱方案。我們的設計確保在高溫環境中保持穩定的網路連接。'}</p>
                 <ul className="space-y-3 mb-8">
@@ -430,7 +430,7 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="order-1 lg:order-2">
+              <div className="order-1 lg:order-1">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272903053/ILJdYZdUCbVlACVv.jpg"
                   alt={isEn ? 'Network & Telecom cooling solution' : '網路通訊散熱解決方案'}
