@@ -50,7 +50,7 @@ export default function Home() {
               <span className="text-xs font-mono text-primary tracking-wider">{t('hero.badge')}</span>
             </div>
             
-            <h1 className="font-display font-bold text-5xl md:text-7xl leading-tight">
+            <h1 className="font-display font-bold text-3xl md:text-5xl leading-tight">
               {t('hero.title')} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-gradient-x">
                 {t('hero.titleHighlight')}
