@@ -578,3 +578,13 @@
 - [ ] 在 Solutions 頁面添加「半導體設備散熱」項目（含中英文 i18n）
 - [ ] 圖片預留位置（等用戶提供）
 - [ ] 保存檢查點並推送到 GitHub
+
+
+## SEO & GEO 關鍵字優化 - 2026年7月1日
+- [x] 添加 SEO meta tags（title、description、keywords）含目標關鍵字：散熱模組、散熱設計、散熱器、風冷、水冷、機器人、無人機、伺服器、AI
+- [x] 添加 GEO meta tags（地理位置 SEO - 台灣）
+- [x] 添加 Open Graph 和 Twitter Card meta tags（社群分享優化）
+- [x] 添加 Schema.org 結構化資料（Organization、Service、WebSite）
+- [x] 創建 robots.txt（爬蟲優化）
+- [x] 創建 sitemap.xml（搜尋引擎索引）
+- [ ] 推送到 GitHub/Vercel 同步部署
