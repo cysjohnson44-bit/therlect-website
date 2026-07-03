@@ -587,4 +587,4 @@
 - [x] 添加 Schema.org 結構化資料（Organization、Service、WebSite）
 - [x] 創建 robots.txt（爬蟲優化）
 - [x] 創建 sitemap.xml（搜尋引擎索引）
-- [ ] 推送到 GitHub/Vercel 同步部署
+- [x] 推送到 GitHub/Vercel 同步部署
