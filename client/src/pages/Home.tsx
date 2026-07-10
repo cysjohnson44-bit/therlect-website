@@ -121,70 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solutions Section */}
-      <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background via-background/95 to-background/90">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="font-display font-bold text-4xl mb-4 text-white">{isEn ? 'Our Solutions' : '我們的解決方案'}</h2>
-            <p className="text-muted-foreground text-lg">{isEn ? 'From passive cooling to active cooling, covering comprehensive thermal management needs' : '從被動散熱到主動冷卻，涵蓋全方位的熱管理需求'}</p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                icon: <Cpu className="w-12 h-12" />,
-                title: isEn ? 'Passive Cooling' : '被動散熱',
-                description: isEn ? 'High-performance heat sinks and thermal materials, no additional power required' : '高效能散熱片和導熱材料，無需額外電力消耗'
-              },
-              {
-                icon: <Activity className="w-12 h-12" />,
-                title: isEn ? 'Active Cooling' : '主動冷卻',
-                description: isEn ? 'Fan and liquid cooling systems for high-power equipment' : '風扇和液冷系統，為高功率設備提供強大冷卻能力'
-              },
-              {
-                icon: <Layers className="w-12 h-12" />,
-                title: isEn ? 'Thermal Interface Materials' : '熱介面材料',
-                description: isEn ? 'Thermal paste, pads and phase-change materials for optimized heat transfer' : '導熱膏、墊片和相變材料，優化熱傳導效率'
-              },
-              {
-                icon: <Globe className="w-12 h-12" />,
-                title: isEn ? 'System Integration' : '系統集成',
-                description: isEn ? 'Complete thermal management system design and integration solutions' : '完整的熱管理系統設計和集成解決方案'
-              },
-              {
-                icon: <Thermometer className="w-12 h-12" />,
-                title: isEn ? 'Temperature Monitoring' : '溫度監測',
-                description: isEn ? 'Real-time temperature monitoring and intelligent control systems' : '實時溫度監測和智能控制系統'
-              },
-              {
-                icon: <Zap className="w-12 h-12" />,
-                title: isEn ? 'Energy Optimization' : '能效優化',
-                description: isEn ? 'Reduce energy consumption, improve system performance and reliability' : '降低能耗，提高系統效能和可靠性'
-              }
-            ].map((solution, index) => (
-              <div
-                key={index}
-                className="group relative bg-white/5 backdrop-blur-sm border border-primary/30 rounded-lg p-10 hover:border-primary/60 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
-              >
-                {/* Gradient Border Effect */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
-                
-                {/* Top Border Accent */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                {/* Content */}
-                <div className="relative">
-                  <div className="text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {solution.icon}
-                  </div>
-                  <h3 className="font-semibold text-lg md:text-xl mb-4 text-white">{solution.title}</h3>
-                  <p className="text-muted-foreground text-base leading-relaxed line-clamp-3">{solution.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Comprehensive Thermal Solutions Section */}
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background/90 via-background to-background/95">
