@@ -213,7 +213,10 @@ export default function Solutions() {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-display font-bold text-3xl text-foreground group-hover:text-primary transition-colors">{app.title}</h3>
-                        <ChevronDown className={`w-6 h-6 text-primary transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
+                        <div className="flex items-center gap-2 text-primary">
+                          <span className="text-sm font-medium">{isExpanded ? (isEn ? 'Collapse' : '收起') : (isEn ? 'More Info' : '更多資訊')}</span>
+                          <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
+                        </div>
                       </div>
                     </button>
                     <p className="text-muted-foreground leading-relaxed text-base">{app.description}</p>
