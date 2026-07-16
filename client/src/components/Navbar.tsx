@@ -61,7 +61,6 @@ export default function Navbar() {
         { href: "/technology#passive", label: t('technology.passiveCooling') },
         { href: "/technology#active", label: t('technology.activeCooling') },
         { href: "/technology#liquid", label: t('nav.liquidCooling') },
-        { href: "/technology#infrared", label: t('nav.farInfrared') },
       ],
     },
     {

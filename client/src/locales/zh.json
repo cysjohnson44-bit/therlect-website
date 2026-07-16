@@ -8,8 +8,8 @@
     "language": "中文",
     "getInTouch": "GET IN TOUCH",
     "liquidCooling": "液冷系統",
-    "farInfrared": "遠紅外線",
-    "healthLife": "健康與生活"
+    "farInfrared": "",
+    "healthLife": ""
   },
   "hero": {
     "badge": "產品可靠度的守護者",
@@ -182,7 +182,7 @@
     "app4": "5G 基地台"
   },
   "footer": {
-    "description": "專注於熱管理與遠紅外線技術的創新解決方案，為全球客戶提供從理論分析到市場應用的全方位服務。",
+    "description": "專注於熱管理技術的創新解決方案，為全球客戶提供從理論分析到市場應用的全方位散熱服務。",
     "quickLinks": "快速連結",
     "home": "首頁",
     "coreTechnology": "核心技術",
@@ -192,7 +192,7 @@
     "services": "服務項目",
     "service1": "熱流體動力學分析",
     "service2": "散熱模組設計與優化",
-    "service3": "遠紅外線應用開發",
+    "service3": "水冷系統設計與測試",
     "service4": "熱管理顧問服務",
     "service5": "產品量產與製造",
     "contactInfo": "聯絡資訊",

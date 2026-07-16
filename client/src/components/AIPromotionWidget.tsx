@@ -31,7 +31,7 @@ export default function AIPromotionWidget() {
         id: "welcome",
         role: "assistant",
         content:
-          "👋 歡迎來到 Therlect 汎海科技！我是您的 AI 助手。\n\n我們專注於熱力學與遠紅外線技術，為全球客戶提供從理論分析到市場應用的全方位解決方案。\n\n請問有什麼我可以幫助您的嗎？或者您想了解我們的服務？",
+          "👋 歡迎來到 Therlect 汎海科技！我是您的 AI 助手。\n\n我們專注於熱管理技術，為全球客戶提供從理論分析到市場應用的全方位散熱解決方案。\n\n請問有什麼我可以幫助您的嗎？或者您想了解我們的服務？",
         timestamp: new Date(),
       };
       setMessages([welcomeMessage]);

@@ -84,7 +84,7 @@ export default function About() {
                 {isEn ? "We have witnessed the rapid development of electronic product performance and solved the accompanying thermal challenges. From early passive cooling to today's active liquid cooling and phase change technologies, we have always been at the forefront of technology." : "我們見證了電子產品效能的快速發展，也解決了隨之而來的散熱挑戰。從早期的被動散熱到現在的主動式液冷與相變技術，我們始終走在技術的最前沿。"}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                {isEn ? "Beyond thermal management, we have expanded our vision to far-infrared technology, exploring the broad applications of thermal energy in human health and industrial applications. We are not just your supplier, but your most trusted strategic partner in the thermal energy field." : "除了熱管理，我們更將視野拓展至遠紅外線技術，探索熱能對人體健康與工業應用的廣汎應用。我們不僅是您的供應商，更是您在熱能領域最值得信賴的策略夥伴。"}
+                {isEn ? "We are not just your supplier, but your most trusted strategic partner in the thermal management field. From concept design to mass production, we provide end-to-end thermal solutions that ensure your products perform reliably in any environment." : "我們不僅是您的供應商，更是您在熱管理領域最值得信賴的策略夥伴。從概念設計到量產製造，我們提供端到端的散熱解決方案，確保您的產品在任何環境下都能穩定運作。"}
               </p>
             </div>
           </div>

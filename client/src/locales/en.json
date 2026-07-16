@@ -8,8 +8,8 @@
     "language": "English",
     "getInTouch": "GET IN TOUCH",
     "liquidCooling": "Liquid Cooling",
-    "farInfrared": "Far Infrared",
-    "healthLife": "Health & Life"
+    "farInfrared": "",
+    "healthLife": ""
   },
   "hero": {
     "badge": "GUARDIAN OF PRODUCT RELIABILITY",
@@ -182,7 +182,7 @@
     "app4": "5G Base Stations"
   },
   "footer": {
-    "description": "Dedicated to innovative thermal management and far-infrared technology solutions, providing comprehensive services from theoretical analysis to market applications for global customers.",
+    "description": "Dedicated to innovative thermal management solutions, providing comprehensive heat dissipation services from theoretical analysis to market applications for global customers.",
     "quickLinks": "Quick Links",
     "home": "Home",
     "coreTechnology": "Core Technology",
@@ -192,7 +192,7 @@
     "services": "Services",
     "service1": "Thermal Fluid Dynamics Analysis",
     "service2": "Heat Sink Module Design & Optimization",
-    "service3": "Far-Infrared Application Development",
+    "service3": "Water Cooling System Design & Testing",
     "service4": "Thermal Management Consulting",
     "service5": "Mass Production & Manufacturing",
     "contactInfo": "Contact Information",
